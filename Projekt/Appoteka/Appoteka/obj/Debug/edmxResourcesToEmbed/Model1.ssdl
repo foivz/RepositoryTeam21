@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="appotekaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lijekovi">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+    </Key>
+    <Property Name="serijskiBroj" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="proizvodac" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="rokTrajanja" Type="date" Nullable="false" />
+    <Property Name="cijenaKupovna" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="cijenaProdajna" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="kolicina" Type="int" Nullable="false" />
+    <Property Name="dopunsko" Type="int" />
+  </EntityType>
+  <EntityType Name="lijekovi_has_racun">
+    <Key>
+      <PropertyRef Name="lijekoviSerijskiBroj" />
+      <PropertyRef Name="racunIdRacun" />
+    </Key>
+    <Property Name="lijekoviSerijskiBroj" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="racunIdRacun" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="racun">
+    <Key>
+      <PropertyRef Name="IdRacuna" />
+    </Key>
+    <Property Name="IdRacuna" Type="int" Nullable="false" />
+    <Property Name="datum" Type="date" Nullable="false" />
+    <Property Name="iznos" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_lijekovi_has_racun_0">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="1" />
+    <End Role="lijekovi_has_racun" Type="Self.lijekovi_has_racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lijekovi">
+        <PropertyRef Name="serijskiBroj" />
+      </Principal>
+      <Dependent Role="lijekovi_has_racun">
+        <PropertyRef Name="lijekoviSerijskiBroj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lijekovi_has_racun_1">
+    <End Role="racun" Type="Self.racun" Multiplicity="1" />
+    <End Role="lijekovi_has_racun" Type="Self.lijekovi_has_racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="racun">
+        <PropertyRef Name="IdRacuna" />
+      </Principal>
+      <Dependent Role="lijekovi_has_racun">
+        <PropertyRef Name="racunIdRacun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="appotekaDBModelStoreContainer">
+    <EntitySet Name="lijekovi" EntityType="Self.lijekovi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lijekovi_has_racun" EntityType="Self.lijekovi_has_racun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="racun" EntityType="Self.racun" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_lijekovi_has_racun_0" Association="Self.FK_lijekovi_has_racun_0">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="lijekovi_has_racun" EntitySet="lijekovi_has_racun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lijekovi_has_racun_1" Association="Self.FK_lijekovi_has_racun_1">
+      <End Role="racun" EntitySet="racun" />
+      <End Role="lijekovi_has_racun" EntitySet="lijekovi_has_racun" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

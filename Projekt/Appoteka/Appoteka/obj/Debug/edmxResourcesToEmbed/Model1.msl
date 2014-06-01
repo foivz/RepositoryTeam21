@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="appotekaDBModelStoreContainer" CdmEntityContainer="appotekaDBEntities">
+    <EntitySetMapping Name="lijekovi">
+      <EntityTypeMapping TypeName="appotekaDBModel.lijekovi">
+        <MappingFragment StoreEntitySet="lijekovi">
+          <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="proizvodac" ColumnName="proizvodac" />
+          <ScalarProperty Name="rokTrajanja" ColumnName="rokTrajanja" />
+          <ScalarProperty Name="cijenaKupovna" ColumnName="cijenaKupovna" />
+          <ScalarProperty Name="cijenaProdajna" ColumnName="cijenaProdajna" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+          <ScalarProperty Name="dopunsko" ColumnName="dopunsko" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="racun">
+      <EntityTypeMapping TypeName="appotekaDBModel.racun">
+        <MappingFragment StoreEntitySet="racun">
+          <ScalarProperty Name="iznos" ColumnName="iznos" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="IdRacuna" ColumnName="IdRacuna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="lijekovi_has_racun" TypeName="appotekaDBModel.lijekovi_has_racun" StoreEntitySet="lijekovi_has_racun">
+      <EndProperty Name="racun">
+        <ScalarProperty Name="IdRacuna" ColumnName="racunIdRacun" />
+      </EndProperty>
+      <EndProperty Name="lijekovi">
+        <ScalarProperty Name="serijskiBroj" ColumnName="lijekoviSerijskiBroj" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
