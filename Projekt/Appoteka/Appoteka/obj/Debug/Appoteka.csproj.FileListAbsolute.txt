@@ -6,8 +6,9 @@ C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\bi
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\bin\Debug\EntityFramework.xml
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.csprojResolveAssemblyReference.cache
-C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.Form1.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.Properties.Resources.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.csproj.GenerateResource.Cache
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.exe
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.pdb
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.AplikacijaForm.resources
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka\Appoteka\obj\Debug\Appoteka.LijekoviForm.resources

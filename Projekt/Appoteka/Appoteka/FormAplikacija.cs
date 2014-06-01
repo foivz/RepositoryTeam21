@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Appoteka
 {
-    public partial class Form1 : Form
+    public partial class FormAplikacija : Form
     {
-        public Form1()
+        public FormAplikacija()
         {
             InitializeComponent();
         }
@@ -22,6 +22,15 @@ namespace Appoteka
             // TODO: This line of code loads data into the 'appotekaDBDataSet.lijekovi' table. You can move, or remove it, as needed.
             this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet.lijekovi);
 
+            
         }
+
+        private void prikaziLijek_Click(object sender, EventArgs e)
+        {
+            FormLijekovi prikaziLijekoveFrm = new FormLijekovi();
+            prikaziLijekoveFrm.ShowDialog();
+        }
+
+        
     }
 }

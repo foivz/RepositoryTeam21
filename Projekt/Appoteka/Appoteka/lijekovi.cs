@@ -22,10 +22,10 @@ namespace Appoteka
         public string serijskiBroj { get; set; }
         public string naziv { get; set; }
         public string proizvodac { get; set; }
-        public System.DateTime rokTrajanja { get; set; }
+        public Nullable<System.DateTime> rokTrajanja { get; set; }
         public string cijenaKupovna { get; set; }
         public string cijenaProdajna { get; set; }
-        public int kolicina { get; set; }
+        public Nullable<int> kolicina { get; set; }
         public Nullable<int> dopunsko { get; set; }
     
         public virtual ICollection<racun> racun { get; set; }

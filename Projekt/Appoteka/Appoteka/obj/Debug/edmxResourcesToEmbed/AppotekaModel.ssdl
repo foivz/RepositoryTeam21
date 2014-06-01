@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="appotekaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lijekovi">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+    </Key>
+    <Property Name="serijskiBroj" Type="int" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="proizvodac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="rokTrajanja" Type="date" />
+    <Property Name="cijenaKupovna" Type="money" />
+    <Property Name="cijenaProdajna" Type="money" />
+    <Property Name="kolicina" Type="int" />
+    <Property Name="dopunsko" Type="int" />
+  </EntityType>
+  <EntityContainer Name="appotekaDBModelStoreContainer">
+    <EntitySet Name="lijekovi" EntityType="Self.lijekovi" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="appotekaDBModelStoreContainer" CdmEntityContainer="appotekaDBEntities">
+    <EntitySetMapping Name="lijekovi">
+      <EntityTypeMapping TypeName="appotekaDBModel.lijekovi">
+        <MappingFragment StoreEntitySet="lijekovi">
+          <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="proizvodac" ColumnName="proizvodac" />
+          <ScalarProperty Name="rokTrajanja" ColumnName="rokTrajanja" />
+          <ScalarProperty Name="cijenaKupovna" ColumnName="cijenaKupovna" />
+          <ScalarProperty Name="cijenaProdajna" ColumnName="cijenaProdajna" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+          <ScalarProperty Name="dopunsko" ColumnName="dopunsko" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
