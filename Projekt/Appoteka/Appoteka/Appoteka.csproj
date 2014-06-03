@@ -32,15 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -58,21 +57,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dobavljaci.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
     <Compile Include="FormAplikacija.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAplikacija.Designer.cs">
       <DependentUpon>FormAplikacija.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AppotekaModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppotekaModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AppotekaModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppotekaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="FormDobavljaciAzuriraj.cs">
       <SubType>Form</SubType>
@@ -80,17 +72,23 @@
     <Compile Include="FormDobavljaciAzuriraj.Designer.cs">
       <DependentUpon>FormDobavljaciAzuriraj.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDobavljaciNovi.cs">
+    <Compile Include="FormLijekovi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDobavljaciNovi.Designer.cs">
-      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    <Compile Include="FormLijekovi.Designer.cs">
+      <DependentUpon>FormLijekovi.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLijekoviAzuriraj.cs">
+    <Compile Include="FormLijekoviNovi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLijekoviAzuriraj.Designer.cs">
-      <DependentUpon>FormLijekoviAzuriraj.cs</DependentUpon>
+    <Compile Include="FormLijekoviNovi.Designer.cs">
+      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNarudzbaNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNarudzbaNovi.Designer.cs">
+      <DependentUpon>FormNarudzbaNovi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNarudzbe.cs">
       <SubType>Form</SubType>
@@ -98,41 +96,32 @@
     <Compile Include="FormNarudzbe.Designer.cs">
       <DependentUpon>FormNarudzbe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNarudzbeAzuriraj.cs">
-      <SubType>Form</SubType>
+    <Compile Include="kategorijeLijekova.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
-    <Compile Include="FormNarudzbeAzuriraj.Designer.cs">
-      <DependentUpon>FormNarudzbeAzuriraj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormNarudzbeNovi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNarudzbeNovi.Designer.cs">
-      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
+    <Compile Include="ladice.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
     <Compile Include="lijekovi.cs">
-      <DependentUpon>AppotekaModel.tt</DependentUpon>
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
-    <Compile Include="FormLijekovi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLijekovi.Designer.cs">
-      <DependentUpon>FormLijekovi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
+    <Compile Include="ModelAppoteka.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>ModelAppoteka.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
+    <Compile Include="ModelAppoteka.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppotekaModel.Designer.cs">
+    <Compile Include="ModelAppoteka.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="narudzbe.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="FormDobavljaci.cs">
@@ -143,13 +132,10 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="racun.cs">
-      <DependentUpon>AppotekaModel.tt</DependentUpon>
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
-    <Compile Include="FormLijekoviNovi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLijekoviNovi.Designer.cs">
-      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    <Compile Include="zaposlenici.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormAplikacija.resx">
       <DependentUpon>FormAplikacija.cs</DependentUpon>
@@ -157,26 +143,20 @@
     <EmbeddedResource Include="FormDobavljaciAzuriraj.resx">
       <DependentUpon>FormDobavljaciAzuriraj.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDobavljaciNovi.resx">
-      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    <EmbeddedResource Include="FormDobavljaci.resx">
+      <DependentUpon>FormDobavljaci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLijekovi.resx">
       <DependentUpon>FormLijekovi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDobavljaci.resx">
-      <DependentUpon>FormDobavljaci.cs</DependentUpon>
+    <EmbeddedResource Include="FormLijekoviNovi.resx">
+      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLijekoviAzuriraj.resx">
-      <DependentUpon>FormLijekoviAzuriraj.cs</DependentUpon>
+    <EmbeddedResource Include="FormNarudzbaNovi.resx">
+      <DependentUpon>FormNarudzbaNovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNarudzbe.resx">
       <DependentUpon>FormNarudzbe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNarudzbeAzuriraj.resx">
-      <DependentUpon>FormNarudzbeAzuriraj.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNarudzbeNovi.resx">
-      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,12 +167,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormLijekoviNovi.resx">
-      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EntityDeploy Include="AppotekaModel.edmx">
+    <EntityDeploy Include="ModelAppoteka.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AppotekaModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelAppoteka.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="appotekaDBDataSet.xsc">
       <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
@@ -205,30 +182,22 @@
     <None Include="appotekaDBDataSet.xss">
       <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AppotekaModel.Context.tt">
+    <None Include="ModelAppoteka.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AppotekaModel.Context.cs</LastGenOutput>
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+      <LastGenOutput>ModelAppoteka.Context.cs</LastGenOutput>
     </None>
-    <None Include="AppotekaModel.tt">
+    <None Include="ModelAppoteka.edmx.diagram">
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+    </None>
+    <None Include="ModelAppoteka.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AppotekaModel.cs</LastGenOutput>
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+      <LastGenOutput>ModelAppoteka.cs</LastGenOutput>
     </None>
-    <None Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
     </None>
-    <None Include="AppotekaModel.edmx.diagram">
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
-    </None>
-    <None Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AppotekaModel.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

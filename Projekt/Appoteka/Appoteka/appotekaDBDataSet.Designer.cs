@@ -26,14 +26,6 @@ namespace Appoteka {
         
         private lijekoviDataTable tablelijekovi;
         
-        private lijekovi_has_racunDataTable tablelijekovi_has_racun;
-        
-        private racunDataTable tableracun;
-        
-        private global::System.Data.DataRelation relationFK_lijekovi_has_racun_0;
-        
-        private global::System.Data.DataRelation relationFK_lijekovi_has_racun_1;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -65,12 +57,6 @@ namespace Appoteka {
                 if ((ds.Tables["lijekovi"] != null)) {
                     base.Tables.Add(new lijekoviDataTable(ds.Tables["lijekovi"]));
                 }
-                if ((ds.Tables["lijekovi_has_racun"] != null)) {
-                    base.Tables.Add(new lijekovi_has_racunDataTable(ds.Tables["lijekovi_has_racun"]));
-                }
-                if ((ds.Tables["racun"] != null)) {
-                    base.Tables.Add(new racunDataTable(ds.Tables["racun"]));
-                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -96,26 +82,6 @@ namespace Appoteka {
         public lijekoviDataTable lijekovi {
             get {
                 return this.tablelijekovi;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public lijekovi_has_racunDataTable lijekovi_has_racun {
-            get {
-                return this.tablelijekovi_has_racun;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public racunDataTable racun {
-            get {
-                return this.tableracun;
             }
         }
         
@@ -189,12 +155,6 @@ namespace Appoteka {
                 if ((ds.Tables["lijekovi"] != null)) {
                     base.Tables.Add(new lijekoviDataTable(ds.Tables["lijekovi"]));
                 }
-                if ((ds.Tables["lijekovi_has_racun"] != null)) {
-                    base.Tables.Add(new lijekovi_has_racunDataTable(ds.Tables["lijekovi_has_racun"]));
-                }
-                if ((ds.Tables["racun"] != null)) {
-                    base.Tables.Add(new racunDataTable(ds.Tables["racun"]));
-                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -234,20 +194,6 @@ namespace Appoteka {
                     this.tablelijekovi.InitVars();
                 }
             }
-            this.tablelijekovi_has_racun = ((lijekovi_has_racunDataTable)(base.Tables["lijekovi_has_racun"]));
-            if ((initTable == true)) {
-                if ((this.tablelijekovi_has_racun != null)) {
-                    this.tablelijekovi_has_racun.InitVars();
-                }
-            }
-            this.tableracun = ((racunDataTable)(base.Tables["racun"]));
-            if ((initTable == true)) {
-                if ((this.tableracun != null)) {
-                    this.tableracun.InitVars();
-                }
-            }
-            this.relationFK_lijekovi_has_racun_0 = this.Relations["FK_lijekovi_has_racun_0"];
-            this.relationFK_lijekovi_has_racun_1 = this.Relations["FK_lijekovi_has_racun_1"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -260,35 +206,11 @@ namespace Appoteka {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablelijekovi = new lijekoviDataTable();
             base.Tables.Add(this.tablelijekovi);
-            this.tablelijekovi_has_racun = new lijekovi_has_racunDataTable();
-            base.Tables.Add(this.tablelijekovi_has_racun);
-            this.tableracun = new racunDataTable();
-            base.Tables.Add(this.tableracun);
-            this.relationFK_lijekovi_has_racun_0 = new global::System.Data.DataRelation("FK_lijekovi_has_racun_0", new global::System.Data.DataColumn[] {
-                        this.tablelijekovi.serijskiBrojColumn}, new global::System.Data.DataColumn[] {
-                        this.tablelijekovi_has_racun.lijekoviSerijskiBrojColumn}, false);
-            this.Relations.Add(this.relationFK_lijekovi_has_racun_0);
-            this.relationFK_lijekovi_has_racun_1 = new global::System.Data.DataRelation("FK_lijekovi_has_racun_1", new global::System.Data.DataColumn[] {
-                        this.tableracun.IdRacunaColumn}, new global::System.Data.DataColumn[] {
-                        this.tablelijekovi_has_racun.racunIdRacunColumn}, false);
-            this.Relations.Add(this.relationFK_lijekovi_has_racun_1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializelijekovi() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializelijekovi_has_racun() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeracun() {
             return false;
         }
         
@@ -349,12 +271,6 @@ namespace Appoteka {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void lijekoviRowChangeEventHandler(object sender, lijekoviRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void lijekovi_has_racunRowChangeEventHandler(object sender, lijekovi_has_racunRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void racunRowChangeEventHandler(object sender, racunRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -513,7 +429,7 @@ namespace Appoteka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekoviRow AddlijekoviRow(string serijskiBroj, string naziv, string proizvodac, System.DateTime rokTrajanja, string cijenaKupovna, string cijenaProdajna, int kolicina, int dopunsko) {
+            public lijekoviRow AddlijekoviRow(int serijskiBroj, string naziv, string proizvodac, System.DateTime rokTrajanja, double cijenaKupovna, double cijenaProdajna, int kolicina, int dopunsko) {
                 lijekoviRow rowlijekoviRow = ((lijekoviRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         serijskiBroj,
@@ -531,7 +447,7 @@ namespace Appoteka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekoviRow FindByserijskiBroj(string serijskiBroj) {
+            public lijekoviRow FindByserijskiBroj(int serijskiBroj) {
                 return ((lijekoviRow)(this.Rows.Find(new object[] {
                             serijskiBroj})));
             }
@@ -566,7 +482,7 @@ namespace Appoteka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnserijskiBroj = new global::System.Data.DataColumn("serijskiBroj", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnserijskiBroj = new global::System.Data.DataColumn("serijskiBroj", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnserijskiBroj);
                 this.columnnaziv = new global::System.Data.DataColumn("naziv", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnaziv);
@@ -574,9 +490,9 @@ namespace Appoteka {
                 base.Columns.Add(this.columnproizvodac);
                 this.columnrokTrajanja = new global::System.Data.DataColumn("rokTrajanja", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrokTrajanja);
-                this.columncijenaKupovna = new global::System.Data.DataColumn("cijenaKupovna", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columncijenaKupovna = new global::System.Data.DataColumn("cijenaKupovna", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncijenaKupovna);
-                this.columncijenaProdajna = new global::System.Data.DataColumn("cijenaProdajna", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columncijenaProdajna = new global::System.Data.DataColumn("cijenaProdajna", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncijenaProdajna);
                 this.columnkolicina = new global::System.Data.DataColumn("kolicina", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnkolicina);
@@ -586,17 +502,15 @@ namespace Appoteka {
                                 this.columnserijskiBroj}, true));
                 this.columnserijskiBroj.AllowDBNull = false;
                 this.columnserijskiBroj.Unique = true;
-                this.columnserijskiBroj.MaxLength = 20;
                 this.columnnaziv.AllowDBNull = false;
-                this.columnnaziv.MaxLength = 50;
+                this.columnnaziv.MaxLength = 45;
                 this.columnproizvodac.AllowDBNull = false;
-                this.columnproizvodac.MaxLength = 15;
+                this.columnproizvodac.MaxLength = 45;
                 this.columnrokTrajanja.AllowDBNull = false;
                 this.columncijenaKupovna.AllowDBNull = false;
-                this.columncijenaKupovna.MaxLength = 10;
                 this.columncijenaProdajna.AllowDBNull = false;
-                this.columncijenaProdajna.MaxLength = 10;
                 this.columnkolicina.AllowDBNull = false;
+                this.columndopunsko.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -724,576 +638,6 @@ namespace Appoteka {
         }
         
         /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class lijekovi_has_racunDataTable : global::System.Data.TypedTableBase<lijekovi_has_racunRow> {
-            
-            private global::System.Data.DataColumn columnlijekoviSerijskiBroj;
-            
-            private global::System.Data.DataColumn columnracunIdRacun;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunDataTable() {
-                this.TableName = "lijekovi_has_racun";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal lijekovi_has_racunDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected lijekovi_has_racunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn lijekoviSerijskiBrojColumn {
-                get {
-                    return this.columnlijekoviSerijskiBroj;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn racunIdRacunColumn {
-                get {
-                    return this.columnracunIdRacun;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow this[int index] {
-                get {
-                    return ((lijekovi_has_racunRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event lijekovi_has_racunRowChangeEventHandler lijekovi_has_racunRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event lijekovi_has_racunRowChangeEventHandler lijekovi_has_racunRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event lijekovi_has_racunRowChangeEventHandler lijekovi_has_racunRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event lijekovi_has_racunRowChangeEventHandler lijekovi_has_racunRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addlijekovi_has_racunRow(lijekovi_has_racunRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow Addlijekovi_has_racunRow(lijekoviRow parentlijekoviRowByFK_lijekovi_has_racun_0, racunRow parentracunRowByFK_lijekovi_has_racun_1) {
-                lijekovi_has_racunRow rowlijekovi_has_racunRow = ((lijekovi_has_racunRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        null};
-                if ((parentlijekoviRowByFK_lijekovi_has_racun_0 != null)) {
-                    columnValuesArray[0] = parentlijekoviRowByFK_lijekovi_has_racun_0[0];
-                }
-                if ((parentracunRowByFK_lijekovi_has_racun_1 != null)) {
-                    columnValuesArray[1] = parentracunRowByFK_lijekovi_has_racun_1[0];
-                }
-                rowlijekovi_has_racunRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowlijekovi_has_racunRow);
-                return rowlijekovi_has_racunRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow FindBylijekoviSerijskiBrojracunIdRacun(string lijekoviSerijskiBroj, int racunIdRacun) {
-                return ((lijekovi_has_racunRow)(this.Rows.Find(new object[] {
-                            lijekoviSerijskiBroj,
-                            racunIdRacun})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                lijekovi_has_racunDataTable cln = ((lijekovi_has_racunDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new lijekovi_has_racunDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-                this.columnlijekoviSerijskiBroj = base.Columns["lijekoviSerijskiBroj"];
-                this.columnracunIdRacun = base.Columns["racunIdRacun"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.columnlijekoviSerijskiBroj = new global::System.Data.DataColumn("lijekoviSerijskiBroj", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlijekoviSerijskiBroj);
-                this.columnracunIdRacun = new global::System.Data.DataColumn("racunIdRacun", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnracunIdRacun);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnlijekoviSerijskiBroj,
-                                this.columnracunIdRacun}, true));
-                this.columnlijekoviSerijskiBroj.AllowDBNull = false;
-                this.columnlijekoviSerijskiBroj.MaxLength = 20;
-                this.columnracunIdRacun.AllowDBNull = false;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow Newlijekovi_has_racunRow() {
-                return ((lijekovi_has_racunRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new lijekovi_has_racunRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(lijekovi_has_racunRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.lijekovi_has_racunRowChanged != null)) {
-                    this.lijekovi_has_racunRowChanged(this, new lijekovi_has_racunRowChangeEvent(((lijekovi_has_racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.lijekovi_has_racunRowChanging != null)) {
-                    this.lijekovi_has_racunRowChanging(this, new lijekovi_has_racunRowChangeEvent(((lijekovi_has_racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.lijekovi_has_racunRowDeleted != null)) {
-                    this.lijekovi_has_racunRowDeleted(this, new lijekovi_has_racunRowChangeEvent(((lijekovi_has_racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.lijekovi_has_racunRowDeleting != null)) {
-                    this.lijekovi_has_racunRowDeleting(this, new lijekovi_has_racunRowChangeEvent(((lijekovi_has_racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removelijekovi_has_racunRow(lijekovi_has_racunRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                appotekaDBDataSet ds = new appotekaDBDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "lijekovi_has_racunDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class racunDataTable : global::System.Data.TypedTableBase<racunRow> {
-            
-            private global::System.Data.DataColumn columnIdRacuna;
-            
-            private global::System.Data.DataColumn columndatum;
-            
-            private global::System.Data.DataColumn columniznos;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunDataTable() {
-                this.TableName = "racun";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal racunDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected racunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IdRacunaColumn {
-                get {
-                    return this.columnIdRacuna;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn datumColumn {
-                get {
-                    return this.columndatum;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn iznosColumn {
-                get {
-                    return this.columniznos;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow this[int index] {
-                get {
-                    return ((racunRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event racunRowChangeEventHandler racunRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event racunRowChangeEventHandler racunRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event racunRowChangeEventHandler racunRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event racunRowChangeEventHandler racunRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddracunRow(racunRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow AddracunRow(int IdRacuna, System.DateTime datum, string iznos) {
-                racunRow rowracunRow = ((racunRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        IdRacuna,
-                        datum,
-                        iznos};
-                rowracunRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowracunRow);
-                return rowracunRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow FindByIdRacuna(int IdRacuna) {
-                return ((racunRow)(this.Rows.Find(new object[] {
-                            IdRacuna})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                racunDataTable cln = ((racunDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new racunDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-                this.columnIdRacuna = base.Columns["IdRacuna"];
-                this.columndatum = base.Columns["datum"];
-                this.columniznos = base.Columns["iznos"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.columnIdRacuna = new global::System.Data.DataColumn("IdRacuna", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdRacuna);
-                this.columndatum = new global::System.Data.DataColumn("datum", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndatum);
-                this.columniznos = new global::System.Data.DataColumn("iznos", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columniznos);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdRacuna}, true));
-                this.columnIdRacuna.AllowDBNull = false;
-                this.columnIdRacuna.Unique = true;
-                this.columndatum.AllowDBNull = false;
-                this.columniznos.AllowDBNull = false;
-                this.columniznos.MaxLength = 10;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow NewracunRow() {
-                return ((racunRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new racunRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(racunRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.racunRowChanged != null)) {
-                    this.racunRowChanged(this, new racunRowChangeEvent(((racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.racunRowChanging != null)) {
-                    this.racunRowChanging(this, new racunRowChangeEvent(((racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.racunRowDeleted != null)) {
-                    this.racunRowDeleted(this, new racunRowChangeEvent(((racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.racunRowDeleting != null)) {
-                    this.racunRowDeleting(this, new racunRowChangeEvent(((racunRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveracunRow(racunRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                appotekaDBDataSet ds = new appotekaDBDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "racunDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class lijekoviRow : global::System.Data.DataRow {
@@ -1309,9 +653,9 @@ namespace Appoteka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string serijskiBroj {
+            public int serijskiBroj {
                 get {
-                    return ((string)(this[this.tablelijekovi.serijskiBrojColumn]));
+                    return ((int)(this[this.tablelijekovi.serijskiBrojColumn]));
                 }
                 set {
                     this[this.tablelijekovi.serijskiBrojColumn] = value;
@@ -1353,9 +697,9 @@ namespace Appoteka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string cijenaKupovna {
+            public double cijenaKupovna {
                 get {
-                    return ((string)(this[this.tablelijekovi.cijenaKupovnaColumn]));
+                    return ((double)(this[this.tablelijekovi.cijenaKupovnaColumn]));
                 }
                 set {
                     this[this.tablelijekovi.cijenaKupovnaColumn] = value;
@@ -1364,9 +708,9 @@ namespace Appoteka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string cijenaProdajna {
+            public double cijenaProdajna {
                 get {
-                    return ((string)(this[this.tablelijekovi.cijenaProdajnaColumn]));
+                    return ((double)(this[this.tablelijekovi.cijenaProdajnaColumn]));
                 }
                 set {
                     this[this.tablelijekovi.cijenaProdajnaColumn] = value;
@@ -1388,156 +732,10 @@ namespace Appoteka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int dopunsko {
                 get {
-                    try {
-                        return ((int)(this[this.tablelijekovi.dopunskoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'dopunsko\' in table \'lijekovi\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tablelijekovi.dopunskoColumn]));
                 }
                 set {
                     this[this.tablelijekovi.dopunskoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsdopunskoNull() {
-                return this.IsNull(this.tablelijekovi.dopunskoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetdopunskoNull() {
-                this[this.tablelijekovi.dopunskoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow[] Getlijekovi_has_racunRows() {
-                if ((this.Table.ChildRelations["FK_lijekovi_has_racun_0"] == null)) {
-                    return new lijekovi_has_racunRow[0];
-                }
-                else {
-                    return ((lijekovi_has_racunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_lijekovi_has_racun_0"])));
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class lijekovi_has_racunRow : global::System.Data.DataRow {
-            
-            private lijekovi_has_racunDataTable tablelijekovi_has_racun;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal lijekovi_has_racunRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tablelijekovi_has_racun = ((lijekovi_has_racunDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string lijekoviSerijskiBroj {
-                get {
-                    return ((string)(this[this.tablelijekovi_has_racun.lijekoviSerijskiBrojColumn]));
-                }
-                set {
-                    this[this.tablelijekovi_has_racun.lijekoviSerijskiBrojColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int racunIdRacun {
-                get {
-                    return ((int)(this[this.tablelijekovi_has_racun.racunIdRacunColumn]));
-                }
-                set {
-                    this[this.tablelijekovi_has_racun.racunIdRacunColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekoviRow lijekoviRow {
-                get {
-                    return ((lijekoviRow)(this.GetParentRow(this.Table.ParentRelations["FK_lijekovi_has_racun_0"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_lijekovi_has_racun_0"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow racunRow {
-                get {
-                    return ((racunRow)(this.GetParentRow(this.Table.ParentRelations["FK_lijekovi_has_racun_1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_lijekovi_has_racun_1"]);
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class racunRow : global::System.Data.DataRow {
-            
-            private racunDataTable tableracun;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal racunRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableracun = ((racunDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int IdRacuna {
-                get {
-                    return ((int)(this[this.tableracun.IdRacunaColumn]));
-                }
-                set {
-                    this[this.tableracun.IdRacunaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime datum {
-                get {
-                    return ((global::System.DateTime)(this[this.tableracun.datumColumn]));
-                }
-                set {
-                    this[this.tableracun.datumColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string iznos {
-                get {
-                    return ((string)(this[this.tableracun.iznosColumn]));
-                }
-                set {
-                    this[this.tableracun.iznosColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow[] Getlijekovi_has_racunRows() {
-                if ((this.Table.ChildRelations["FK_lijekovi_has_racun_1"] == null)) {
-                    return new lijekovi_has_racunRow[0];
-                }
-                else {
-                    return ((lijekovi_has_racunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_lijekovi_has_racun_1"])));
                 }
             }
         }
@@ -1562,74 +760,6 @@ namespace Appoteka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public lijekoviRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class lijekovi_has_racunRowChangeEvent : global::System.EventArgs {
-            
-            private lijekovi_has_racunRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRowChangeEvent(lijekovi_has_racunRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lijekovi_has_racunRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class racunRowChangeEvent : global::System.EventArgs {
-            
-            private racunRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRowChangeEvent(racunRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public racunRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1780,51 +910,49 @@ namespace Appoteka.appotekaDBDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[lijekovi] WHERE (([serijskiBroj] = @Original_serijskiBroj) AND ([naziv] = @Original_naziv) AND ([proizvodac] = @Original_proizvodac) AND ([rokTrajanja] = @Original_rokTrajanja) AND ([cijenaKupovna] = @Original_cijenaKupovna) AND ([cijenaProdajna] = @Original_cijenaProdajna) AND ([kolicina] = @Original_kolicina) AND ((@IsNull_dopunsko = 1 AND [dopunsko] IS NULL) OR ([dopunsko] = @Original_dopunsko)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[lijekovi] WHERE (([serijskiBroj] = @Original_serijskiBroj) AND ([naziv] = @Original_naziv) AND ([proizvodac] = @Original_proizvodac) AND ([rokTrajanja] = @Original_rokTrajanja) AND ([cijenaKupovna] = @Original_cijenaKupovna) AND ([cijenaProdajna] = @Original_cijenaProdajna) AND ([kolicina] = @Original_kolicina) AND ([dopunsko] = @Original_dopunsko))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_serijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_serijskiBroj", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_naziv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "naziv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_proizvodac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "proizvodac", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_rokTrajanja", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rokTrajanja", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaKupovna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaProdajna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaKupovna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaProdajna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kolicina", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kolicina", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[lijekovi] ([serijskiBroj], [naziv], [proizvodac], [rokTrajanja], [cijenaKupovna], [cijenaProdajna], [kolicina], [dopunsko]) VALUES (@serijskiBroj, @naziv, @proizvodac, @rokTrajanja, @cijenaKupovna, @cijenaProdajna, @kolicina, @dopunsko);
 SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdajna, kolicina, dopunsko FROM lijekovi WHERE (serijskiBroj = @serijskiBroj)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serijskiBroj", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@naziv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "naziv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@proizvodac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "proizvodac", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@rokTrajanja", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rokTrajanja", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaKupovna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaProdajna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaKupovna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaProdajna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kolicina", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kolicina", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[lijekovi] SET [serijskiBroj] = @serijskiBroj, [naziv] = @naziv, [proizvodac] = @proizvodac, [rokTrajanja] = @rokTrajanja, [cijenaKupovna] = @cijenaKupovna, [cijenaProdajna] = @cijenaProdajna, [kolicina] = @kolicina, [dopunsko] = @dopunsko WHERE (([serijskiBroj] = @Original_serijskiBroj) AND ([naziv] = @Original_naziv) AND ([proizvodac] = @Original_proizvodac) AND ([rokTrajanja] = @Original_rokTrajanja) AND ([cijenaKupovna] = @Original_cijenaKupovna) AND ([cijenaProdajna] = @Original_cijenaProdajna) AND ([kolicina] = @Original_kolicina) AND ((@IsNull_dopunsko = 1 AND [dopunsko] IS NULL) OR ([dopunsko] = @Original_dopunsko)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[lijekovi] SET [serijskiBroj] = @serijskiBroj, [naziv] = @naziv, [proizvodac] = @proizvodac, [rokTrajanja] = @rokTrajanja, [cijenaKupovna] = @cijenaKupovna, [cijenaProdajna] = @cijenaProdajna, [kolicina] = @kolicina, [dopunsko] = @dopunsko WHERE (([serijskiBroj] = @Original_serijskiBroj) AND ([naziv] = @Original_naziv) AND ([proizvodac] = @Original_proizvodac) AND ([rokTrajanja] = @Original_rokTrajanja) AND ([cijenaKupovna] = @Original_cijenaKupovna) AND ([cijenaProdajna] = @Original_cijenaProdajna) AND ([kolicina] = @Original_kolicina) AND ([dopunsko] = @Original_dopunsko));
 SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdajna, kolicina, dopunsko FROM lijekovi WHERE (serijskiBroj = @serijskiBroj)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serijskiBroj", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@naziv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "naziv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@proizvodac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "proizvodac", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@rokTrajanja", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rokTrajanja", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaKupovna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaProdajna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaKupovna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cijenaProdajna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kolicina", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kolicina", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_serijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_serijskiBroj", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_naziv", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "naziv", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_proizvodac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "proizvodac", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_rokTrajanja", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rokTrajanja", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaKupovna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaProdajna", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaKupovna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaKupovna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cijenaProdajna", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cijenaProdajna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kolicina", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kolicina", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_dopunsko", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "dopunsko", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -1903,13 +1031,8 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_serijskiBroj, string Original_naziv, string Original_proizvodac, System.DateTime Original_rokTrajanja, string Original_cijenaKupovna, string Original_cijenaProdajna, int Original_kolicina, global::System.Nullable<int> Original_dopunsko) {
-            if ((Original_serijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("Original_serijskiBroj");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_serijskiBroj));
-            }
+        public virtual int Delete(int Original_serijskiBroj, string Original_naziv, string Original_proizvodac, System.DateTime Original_rokTrajanja, double Original_cijenaKupovna, double Original_cijenaProdajna, int Original_kolicina, int Original_dopunsko) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_serijskiBroj));
             if ((Original_naziv == null)) {
                 throw new global::System.ArgumentNullException("Original_naziv");
             }
@@ -1923,27 +1046,10 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_proizvodac));
             }
             this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_rokTrajanja));
-            if ((Original_cijenaKupovna == null)) {
-                throw new global::System.ArgumentNullException("Original_cijenaKupovna");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_cijenaKupovna));
-            }
-            if ((Original_cijenaProdajna == null)) {
-                throw new global::System.ArgumentNullException("Original_cijenaProdajna");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_cijenaProdajna));
-            }
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(Original_cijenaKupovna));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((double)(Original_cijenaProdajna));
             this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_kolicina));
-            if ((Original_dopunsko.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_dopunsko.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_dopunsko));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1964,13 +1070,8 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string serijskiBroj, string naziv, string proizvodac, System.DateTime rokTrajanja, string cijenaKupovna, string cijenaProdajna, int kolicina, global::System.Nullable<int> dopunsko) {
-            if ((serijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("serijskiBroj");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(serijskiBroj));
-            }
+        public virtual int Insert(int serijskiBroj, string naziv, string proizvodac, System.DateTime rokTrajanja, double cijenaKupovna, double cijenaProdajna, int kolicina, int dopunsko) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(serijskiBroj));
             if ((naziv == null)) {
                 throw new global::System.ArgumentNullException("naziv");
             }
@@ -1984,25 +1085,10 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(proizvodac));
             }
             this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(rokTrajanja));
-            if ((cijenaKupovna == null)) {
-                throw new global::System.ArgumentNullException("cijenaKupovna");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(cijenaKupovna));
-            }
-            if ((cijenaProdajna == null)) {
-                throw new global::System.ArgumentNullException("cijenaProdajna");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(cijenaProdajna));
-            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((double)(cijenaKupovna));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((double)(cijenaProdajna));
             this.Adapter.InsertCommand.Parameters[6].Value = ((int)(kolicina));
-            if ((dopunsko.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(dopunsko.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[7].Value = ((int)(dopunsko));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2024,28 +1110,23 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string serijskiBroj, 
+                    int serijskiBroj, 
                     string naziv, 
                     string proizvodac, 
                     System.DateTime rokTrajanja, 
-                    string cijenaKupovna, 
-                    string cijenaProdajna, 
+                    double cijenaKupovna, 
+                    double cijenaProdajna, 
                     int kolicina, 
-                    global::System.Nullable<int> dopunsko, 
-                    string Original_serijskiBroj, 
+                    int dopunsko, 
+                    int Original_serijskiBroj, 
                     string Original_naziv, 
                     string Original_proizvodac, 
                     System.DateTime Original_rokTrajanja, 
-                    string Original_cijenaKupovna, 
-                    string Original_cijenaProdajna, 
+                    double Original_cijenaKupovna, 
+                    double Original_cijenaProdajna, 
                     int Original_kolicina, 
-                    global::System.Nullable<int> Original_dopunsko) {
-            if ((serijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("serijskiBroj");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(serijskiBroj));
-            }
+                    int Original_dopunsko) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(serijskiBroj));
             if ((naziv == null)) {
                 throw new global::System.ArgumentNullException("naziv");
             }
@@ -2059,31 +1140,11 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(proizvodac));
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(rokTrajanja));
-            if ((cijenaKupovna == null)) {
-                throw new global::System.ArgumentNullException("cijenaKupovna");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(cijenaKupovna));
-            }
-            if ((cijenaProdajna == null)) {
-                throw new global::System.ArgumentNullException("cijenaProdajna");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(cijenaProdajna));
-            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(cijenaKupovna));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(cijenaProdajna));
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(kolicina));
-            if ((dopunsko.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(dopunsko.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            if ((Original_serijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("Original_serijskiBroj");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_serijskiBroj));
-            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(dopunsko));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_serijskiBroj));
             if ((Original_naziv == null)) {
                 throw new global::System.ArgumentNullException("Original_naziv");
             }
@@ -2097,27 +1158,10 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_proizvodac));
             }
             this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_rokTrajanja));
-            if ((Original_cijenaKupovna == null)) {
-                throw new global::System.ArgumentNullException("Original_cijenaKupovna");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_cijenaKupovna));
-            }
-            if ((Original_cijenaProdajna == null)) {
-                throw new global::System.ArgumentNullException("Original_cijenaProdajna");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_cijenaProdajna));
-            }
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((double)(Original_cijenaKupovna));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((double)(Original_cijenaProdajna));
             this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_kolicina));
-            if ((Original_dopunsko.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_dopunsko.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_dopunsko));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2138,656 +1182,8 @@ SELECT serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdaj
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string naziv, string proizvodac, System.DateTime rokTrajanja, string cijenaKupovna, string cijenaProdajna, int kolicina, global::System.Nullable<int> dopunsko, string Original_serijskiBroj, string Original_naziv, string Original_proizvodac, System.DateTime Original_rokTrajanja, string Original_cijenaKupovna, string Original_cijenaProdajna, int Original_kolicina, global::System.Nullable<int> Original_dopunsko) {
+        public virtual int Update(string naziv, string proizvodac, System.DateTime rokTrajanja, double cijenaKupovna, double cijenaProdajna, int kolicina, int dopunsko, int Original_serijskiBroj, string Original_naziv, string Original_proizvodac, System.DateTime Original_rokTrajanja, double Original_cijenaKupovna, double Original_cijenaProdajna, int Original_kolicina, int Original_dopunsko) {
             return this.Update(Original_serijskiBroj, naziv, proizvodac, rokTrajanja, cijenaKupovna, cijenaProdajna, kolicina, dopunsko, Original_serijskiBroj, Original_naziv, Original_proizvodac, Original_rokTrajanja, Original_cijenaKupovna, Original_cijenaProdajna, Original_kolicina, Original_dopunsko);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class lijekovi_has_racunTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public lijekovi_has_racunTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "lijekovi_has_racun";
-            tableMapping.ColumnMappings.Add("lijekoviSerijskiBroj", "lijekoviSerijskiBroj");
-            tableMapping.ColumnMappings.Add("racunIdRacun", "racunIdRacun");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[lijekovi_has_racun] WHERE (([lijekoviSerijskiBroj] = @Original" +
-                "_lijekoviSerijskiBroj) AND ([racunIdRacun] = @Original_racunIdRacun))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lijekoviSerijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lijekoviSerijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_racunIdRacun", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "racunIdRacun", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[lijekovi_has_racun] ([lijekoviSerijskiBroj], [racunIdRacun]) VALUES (@lijekoviSerijskiBroj, @racunIdRacun);
-SELECT lijekoviSerijskiBroj, racunIdRacun FROM lijekovi_has_racun WHERE (lijekoviSerijskiBroj = @lijekoviSerijskiBroj) AND (racunIdRacun = @racunIdRacun)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lijekoviSerijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lijekoviSerijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@racunIdRacun", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "racunIdRacun", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[lijekovi_has_racun] SET [lijekoviSerijskiBroj] = @lijekoviSerijskiBroj, [racunIdRacun] = @racunIdRacun WHERE (([lijekoviSerijskiBroj] = @Original_lijekoviSerijskiBroj) AND ([racunIdRacun] = @Original_racunIdRacun));
-SELECT lijekoviSerijskiBroj, racunIdRacun FROM lijekovi_has_racun WHERE (lijekoviSerijskiBroj = @lijekoviSerijskiBroj) AND (racunIdRacun = @racunIdRacun)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lijekoviSerijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lijekoviSerijskiBroj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@racunIdRacun", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "racunIdRacun", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lijekoviSerijskiBroj", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lijekoviSerijskiBroj", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_racunIdRacun", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "racunIdRacun", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Appoteka.Properties.Settings.Default.appotekaDBConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT lijekoviSerijskiBroj, racunIdRacun FROM dbo.lijekovi_has_racun";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(appotekaDBDataSet.lijekovi_has_racunDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual appotekaDBDataSet.lijekovi_has_racunDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            appotekaDBDataSet.lijekovi_has_racunDataTable dataTable = new appotekaDBDataSet.lijekovi_has_racunDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(appotekaDBDataSet.lijekovi_has_racunDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(appotekaDBDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "lijekovi_has_racun");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_lijekoviSerijskiBroj, int Original_racunIdRacun) {
-            if ((Original_lijekoviSerijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("Original_lijekoviSerijskiBroj");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_lijekoviSerijskiBroj));
-            }
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_racunIdRacun));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string lijekoviSerijskiBroj, int racunIdRacun) {
-            if ((lijekoviSerijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("lijekoviSerijskiBroj");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(lijekoviSerijskiBroj));
-            }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(racunIdRacun));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string lijekoviSerijskiBroj, int racunIdRacun, string Original_lijekoviSerijskiBroj, int Original_racunIdRacun) {
-            if ((lijekoviSerijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("lijekoviSerijskiBroj");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(lijekoviSerijskiBroj));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(racunIdRacun));
-            if ((Original_lijekoviSerijskiBroj == null)) {
-                throw new global::System.ArgumentNullException("Original_lijekoviSerijskiBroj");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_lijekoviSerijskiBroj));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_racunIdRacun));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Original_lijekoviSerijskiBroj, int Original_racunIdRacun) {
-            return this.Update(Original_lijekoviSerijskiBroj, Original_racunIdRacun, Original_lijekoviSerijskiBroj, Original_racunIdRacun);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class racunTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public racunTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "racun";
-            tableMapping.ColumnMappings.Add("IdRacuna", "IdRacuna");
-            tableMapping.ColumnMappings.Add("datum", "datum");
-            tableMapping.ColumnMappings.Add("iznos", "iznos");
-            this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[racun] WHERE (([IdRacuna] = @Original_IdRacuna) AND ([datum] =" +
-                " @Original_datum) AND ([iznos] = @Original_iznos))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdRacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRacuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_datum", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "datum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_iznos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iznos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[racun] ([IdRacuna], [datum], [iznos]) VALUES (@IdRacuna, @datu" +
-                "m, @iznos);\r\nSELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacun" +
-                "a)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdRacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRacuna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datum", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "datum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@iznos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iznos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[racun] SET [IdRacuna] = @IdRacuna, [datum] = @datum, [iznos] = @iznos WHERE (([IdRacuna] = @Original_IdRacuna) AND ([datum] = @Original_datum) AND ([iznos] = @Original_iznos));
-SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdRacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRacuna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datum", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "datum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@iznos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iznos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdRacuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRacuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_datum", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "datum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_iznos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iznos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Appoteka.Properties.Settings.Default.appotekaDBConnectionString;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT IdRacuna, datum, iznos FROM dbo.racun";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(appotekaDBDataSet.racunDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual appotekaDBDataSet.racunDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            appotekaDBDataSet.racunDataTable dataTable = new appotekaDBDataSet.racunDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(appotekaDBDataSet.racunDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(appotekaDBDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "racun");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_IdRacuna, System.DateTime Original_datum, string Original_iznos) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IdRacuna));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_datum));
-            if ((Original_iznos == null)) {
-                throw new global::System.ArgumentNullException("Original_iznos");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_iznos));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int IdRacuna, System.DateTime datum, string iznos) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(IdRacuna));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(datum));
-            if ((iznos == null)) {
-                throw new global::System.ArgumentNullException("iznos");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(iznos));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int IdRacuna, System.DateTime datum, string iznos, int Original_IdRacuna, System.DateTime Original_datum, string Original_iznos) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(IdRacuna));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(datum));
-            if ((iznos == null)) {
-                throw new global::System.ArgumentNullException("iznos");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(iznos));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_IdRacuna));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Original_datum));
-            if ((Original_iznos == null)) {
-                throw new global::System.ArgumentNullException("Original_iznos");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_iznos));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime datum, string iznos, int Original_IdRacuna, System.DateTime Original_datum, string Original_iznos) {
-            return this.Update(Original_IdRacuna, datum, iznos, Original_IdRacuna, Original_datum, Original_iznos);
         }
     }
     
@@ -2804,10 +1200,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
         private UpdateOrderOption _updateOrder;
         
         private lijekoviTableAdapter _lijekoviTableAdapter;
-        
-        private lijekovi_has_racunTableAdapter _lijekovi_has_racunTableAdapter;
-        
-        private racunTableAdapter _racunTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -2840,34 +1232,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public lijekovi_has_racunTableAdapter lijekovi_has_racunTableAdapter {
-            get {
-                return this._lijekovi_has_racunTableAdapter;
-            }
-            set {
-                this._lijekovi_has_racunTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public racunTableAdapter racunTableAdapter {
-            get {
-                return this._racunTableAdapter;
-            }
-            set {
-                this._racunTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -2889,14 +1253,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                             && (this._lijekoviTableAdapter.Connection != null))) {
                     return this._lijekoviTableAdapter.Connection;
                 }
-                if (((this._lijekovi_has_racunTableAdapter != null) 
-                            && (this._lijekovi_has_racunTableAdapter.Connection != null))) {
-                    return this._lijekovi_has_racunTableAdapter.Connection;
-                }
-                if (((this._racunTableAdapter != null) 
-                            && (this._racunTableAdapter.Connection != null))) {
-                    return this._racunTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -2911,12 +1267,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
             get {
                 int count = 0;
                 if ((this._lijekoviTableAdapter != null)) {
-                    count = (count + 1);
-                }
-                if ((this._lijekovi_has_racunTableAdapter != null)) {
-                    count = (count + 1);
-                }
-                if ((this._racunTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -2939,24 +1289,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._racunTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.racun.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._racunTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._lijekovi_has_racunTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.lijekovi_has_racun.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._lijekovi_has_racunTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -2975,22 +1307,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._racunTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.racun.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._racunTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._lijekovi_has_racunTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.lijekovi_has_racun.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._lijekovi_has_racunTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -3001,22 +1317,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(appotekaDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._lijekovi_has_racunTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.lijekovi_has_racun.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._lijekovi_has_racunTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._racunTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.racun.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._racunTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._lijekoviTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.lijekovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -3069,16 +1369,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._lijekovi_has_racunTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._lijekovi_has_racunTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
-            if (((this._racunTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._racunTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -3118,24 +1408,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                     if (this._lijekoviTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._lijekoviTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._lijekoviTableAdapter.Adapter);
-                    }
-                }
-                if ((this._lijekovi_has_racunTableAdapter != null)) {
-                    revertConnections.Add(this._lijekovi_has_racunTableAdapter, this._lijekovi_has_racunTableAdapter.Connection);
-                    this._lijekovi_has_racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._lijekovi_has_racunTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._lijekovi_has_racunTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._lijekovi_has_racunTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._lijekovi_has_racunTableAdapter.Adapter);
-                    }
-                }
-                if ((this._racunTableAdapter != null)) {
-                    revertConnections.Add(this._racunTableAdapter, this._racunTableAdapter.Connection);
-                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._racunTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._racunTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -3199,14 +1471,6 @@ SELECT IdRacuna, datum, iznos FROM racun WHERE (IdRacuna = @IdRacuna)";
                 if ((this._lijekoviTableAdapter != null)) {
                     this._lijekoviTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._lijekoviTableAdapter]));
                     this._lijekoviTableAdapter.Transaction = null;
-                }
-                if ((this._lijekovi_has_racunTableAdapter != null)) {
-                    this._lijekovi_has_racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._lijekovi_has_racunTableAdapter]));
-                    this._lijekovi_has_racunTableAdapter.Transaction = null;
-                }
-                if ((this._racunTableAdapter != null)) {
-                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._racunTableAdapter]));
-                    this._racunTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

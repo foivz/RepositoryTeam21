@@ -28,130 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.lijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.appotekaDBDataSet = new Appoteka.appotekaDBDataSet();
-            this.lijekoviTableAdapter = new Appoteka.appotekaDBDataSetTableAdapters.lijekoviTableAdapter();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.aplikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.izlazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msMain = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.narudžbeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.računiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miFileExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.managamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miDataLijekovi = new System.Windows.Forms.ToolStripMenuItem();
+            this.miDataNarduzbe = new System.Windows.Forms.ToolStripMenuItem();
+            this.miDataRacuni = new System.Windows.Forms.ToolStripMenuItem();
             this.zaposleniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kategorijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ladiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lijekoviBindingSource
+            // msMain
             // 
-            this.lijekoviBindingSource.DataMember = "lijekovi";
-            this.lijekoviBindingSource.DataSource = this.appotekaDBDataSet;
-            // 
-            // appotekaDBDataSet
-            // 
-            this.appotekaDBDataSet.DataSetName = "appotekaDBDataSet";
-            this.appotekaDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lijekoviTableAdapter
-            // 
-            this.lijekoviTableAdapter.ClearBeforeFill = true;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aplikacijaToolStripMenuItem,
+            this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
             this.lijekoviToolStripMenuItem,
-            this.narudžbeToolStripMenuItem,
-            this.računiToolStripMenuItem,
-            this.dobavljačiToolStripMenuItem,
-            this.zaposleniciToolStripMenuItem,
-            this.kategorijeToolStripMenuItem,
-            this.ladiceToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(671, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.managamentToolStripMenuItem});
+            this.msMain.Location = new System.Drawing.Point(0, 0);
+            this.msMain.Name = "msMain";
+            this.msMain.Size = new System.Drawing.Size(904, 24);
+            this.msMain.TabIndex = 1;
+            this.msMain.Text = "menuStrip1";
             // 
-            // aplikacijaToolStripMenuItem
+            // fileToolStripMenuItem
             // 
-            this.aplikacijaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.izlazToolStripMenuItem});
-            this.aplikacijaToolStripMenuItem.Name = "aplikacijaToolStripMenuItem";
-            this.aplikacijaToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.aplikacijaToolStripMenuItem.Text = "File";
-            this.aplikacijaToolStripMenuItem.Click += new System.EventHandler(this.aplikacijaToolStripMenuItem_Click);
-            // 
-            // izlazToolStripMenuItem
-            // 
-            this.izlazToolStripMenuItem.Name = "izlazToolStripMenuItem";
-            this.izlazToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.izlazToolStripMenuItem.Text = "Izlaz";
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miFileExit});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
             // lijekoviToolStripMenuItem
             // 
+            this.lijekoviToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miDataLijekovi,
+            this.miDataNarduzbe,
+            this.miDataRacuni});
             this.lijekoviToolStripMenuItem.Name = "lijekoviToolStripMenuItem";
-            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.lijekoviToolStripMenuItem.Text = "Lijekovi";
-            this.lijekoviToolStripMenuItem.Click += new System.EventHandler(this.lijekoviToolStripMenuItem_Click);
+            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.lijekoviToolStripMenuItem.Text = "Data";
             // 
-            // narudžbeToolStripMenuItem
+            // miFileExit
             // 
-            this.narudžbeToolStripMenuItem.Name = "narudžbeToolStripMenuItem";
-            this.narudžbeToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.narudžbeToolStripMenuItem.Text = "Narudžbe";
+            this.miFileExit.Name = "miFileExit";
+            this.miFileExit.Size = new System.Drawing.Size(152, 22);
+            this.miFileExit.Text = "Exit";
             // 
-            // računiToolStripMenuItem
+            // managamentToolStripMenuItem
             // 
-            this.računiToolStripMenuItem.Name = "računiToolStripMenuItem";
-            this.računiToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.računiToolStripMenuItem.Text = "Računi";
+            this.managamentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zaposleniciToolStripMenuItem,
+            this.dobavljačiToolStripMenuItem,
+            this.kategorijeToolStripMenuItem,
+            this.ladiceToolStripMenuItem});
+            this.managamentToolStripMenuItem.Name = "managamentToolStripMenuItem";
+            this.managamentToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.managamentToolStripMenuItem.Text = "Managament";
             // 
-            // dobavljačiToolStripMenuItem
+            // miDataLijekovi
             // 
-            this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
-            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
+            this.miDataLijekovi.Name = "miDataLijekovi";
+            this.miDataLijekovi.Size = new System.Drawing.Size(152, 22);
+            this.miDataLijekovi.Text = "Lijekovi";
+            this.miDataLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miDataLijekovi_MouseUp);
+            // 
+            // miDataNarduzbe
+            // 
+            this.miDataNarduzbe.Name = "miDataNarduzbe";
+            this.miDataNarduzbe.Size = new System.Drawing.Size(152, 22);
+            this.miDataNarduzbe.Text = "Narudžbe";
+            // 
+            // miDataRacuni
+            // 
+            this.miDataRacuni.Name = "miDataRacuni";
+            this.miDataRacuni.Size = new System.Drawing.Size(152, 22);
+            this.miDataRacuni.Text = "Računi";
             // 
             // zaposleniciToolStripMenuItem
             // 
             this.zaposleniciToolStripMenuItem.Name = "zaposleniciToolStripMenuItem";
-            this.zaposleniciToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.zaposleniciToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zaposleniciToolStripMenuItem.Text = "Zaposlenici";
+            // 
+            // dobavljačiToolStripMenuItem
+            // 
+            this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
+            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
             // 
             // kategorijeToolStripMenuItem
             // 
             this.kategorijeToolStripMenuItem.Name = "kategorijeToolStripMenuItem";
-            this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kategorijeToolStripMenuItem.Text = "Kategorije";
             // 
             // ladiceToolStripMenuItem
             // 
             this.ladiceToolStripMenuItem.Name = "ladiceToolStripMenuItem";
-            this.ladiceToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ladiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ladiceToolStripMenuItem.Text = "Ladice";
             // 
             // FormAplikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 261);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(904, 312);
+            this.Controls.Add(this.msMain);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.msMain;
             this.Name = "FormAplikacija";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Appoteka";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "FormAplikacija";
+            this.Load += new System.EventHandler(this.FormAplikacija_Load);
+            this.msMain.ResumeLayout(false);
+            this.msMain.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,19 +153,17 @@
 
         #endregion
 
-        private appotekaDBDataSet appotekaDBDataSet;
-        private System.Windows.Forms.BindingSource lijekoviBindingSource;
-        private appotekaDBDataSetTableAdapters.lijekoviTableAdapter lijekoviTableAdapter;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem aplikacijaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem izlazToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip msMain;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lijekoviToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem narudžbeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem računiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dobavljačiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miFileExit;
+        private System.Windows.Forms.ToolStripMenuItem miDataLijekovi;
+        private System.Windows.Forms.ToolStripMenuItem miDataNarduzbe;
+        private System.Windows.Forms.ToolStripMenuItem miDataRacuni;
+        private System.Windows.Forms.ToolStripMenuItem managamentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zaposleniciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dobavljačiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kategorijeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ladiceToolStripMenuItem;
     }
 }
-

@@ -17,10 +17,17 @@ namespace Appoteka
             InitializeComponent();
         }
 
-        private void LijekoviForm_Load(object sender, EventArgs e)
+        private void FormLijekovi_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'appotekaDBDataSet.lijekovi' table. You can move, or remove it, as needed.
-            this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet.lijekovi);
+           // this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet.lijekovi);
+
+            BindingList<lijekovi> listaLijekova = null;
+            using (var db = new appotekaDBEntities2())
+            {
+                listaLijekova = new BindingList<lijekovi>(db.lijekovi.ToList());
+            }
+            lijekoviBindingSource.DataSource = listaLijekova;
 
         }
     }

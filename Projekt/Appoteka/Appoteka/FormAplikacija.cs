@@ -17,20 +17,17 @@ namespace Appoteka
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormAplikacija_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'appotekaDBDataSet.lijekovi' table. You can move, or remove it, as needed.
-            this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet.lijekovi);
 
-            
         }
 
-        private void prikaziLijek_Click(object sender, EventArgs e)
+        private void miDataLijekovi_MouseUp(object sender, MouseEventArgs e)
         {
-            FormLijekovi prikaziLijekoveFrm = new FormLijekovi();
-            prikaziLijekoveFrm.ShowDialog();
+            FormLijekovi lijekoviForma = new FormLijekovi();
+            lijekoviForma.MdiParent = this;
+            lijekoviForma.WindowState = FormWindowState.Maximized;
+            lijekoviForma.Show();
         }
-
-        
     }
 }

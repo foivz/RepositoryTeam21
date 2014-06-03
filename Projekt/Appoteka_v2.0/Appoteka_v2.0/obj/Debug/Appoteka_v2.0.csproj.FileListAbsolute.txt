@@ -1,0 +1,12 @@
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
