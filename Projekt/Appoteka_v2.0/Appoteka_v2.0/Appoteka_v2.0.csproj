@@ -56,8 +56,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="appotekaDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dobavljaci.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormAppoteka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAppoteka.Designer.cs">
+      <DependentUpon>FormAppoteka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorije.Designer.cs">
+      <DependentUpon>FormKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategorijeNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorijeNovi.Designer.cs">
+      <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLijekovi.cs">
       <SubType>Form</SubType>
@@ -106,6 +129,15 @@
     <Compile Include="zaposlenici.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAppoteka.resx">
+      <DependentUpon>FormAppoteka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorije.resx">
+      <DependentUpon>FormKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorijeNovi.resx">
+      <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLijekovi.resx">
       <DependentUpon>FormLijekovi.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +167,17 @@
     </None>
     <None Include="appotekaDBDataSet.xss">
       <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet1.xsc">
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appotekaDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appotekaDBDataSet1.xss">
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
     </None>
     <None Include="ModelAppoteka.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
