@@ -27,7 +27,7 @@ namespace Appoteka_v2._0
         private void btnFormHzzoProvjeri_Click(object sender, EventArgs e)
         {
             string selektiraniBroj = textZdrastvena.Text;
-            FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj();
+            FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj(selektiraniBroj);
             ProvjeriBrojForm.ShowDialog();
         }
     }
