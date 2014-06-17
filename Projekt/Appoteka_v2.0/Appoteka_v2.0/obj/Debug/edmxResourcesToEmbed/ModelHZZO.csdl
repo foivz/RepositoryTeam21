@@ -14,7 +14,7 @@
     <Key>
       <PropertyRef Name="serijskiBroj" />
     </Key>
-    <Property Name="serijskiBroj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serijskiBroj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
     <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
     <Property Name="proizvodac" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
     <Property Name="rokTrajanja" Type="DateTime" Precision="0" />

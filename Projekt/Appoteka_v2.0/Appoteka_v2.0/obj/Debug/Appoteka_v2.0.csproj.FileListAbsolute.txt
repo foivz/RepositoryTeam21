@@ -15,3 +15,20 @@ C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appote
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
