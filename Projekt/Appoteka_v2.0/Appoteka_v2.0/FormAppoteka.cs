@@ -45,5 +45,50 @@ namespace Appoteka_v2._0
             ProvjeriForm.WindowState = FormWindowState.Maximized;
             ProvjeriForm.Show();
         }
+
+        private void miManagementLadice_MouseUp(object sender, MouseEventArgs e)
+        {
+            FormLadice LadiceForm = new FormLadice();
+            LadiceForm.MdiParent = this;
+            LadiceForm.WindowState = FormWindowState.Maximized;
+            LadiceForm.Show();
+        }
+
+        private void miManagementZaposlenici_MouseUp(object sender, MouseEventArgs e)
+        {
+            FormZaposlenici ZaposleniciForm = new FormZaposlenici();
+            ZaposleniciForm.MdiParent = this;
+            ZaposleniciForm.WindowState = FormWindowState.Maximized;
+            ZaposleniciForm.Show();
+        }
+
+        private void miManagementDobavljaci_MouseUp(object sender, MouseEventArgs e)
+        {
+            FormDobavljaci DobavljaciForm = new FormDobavljaci();
+            DobavljaciForm.MdiParent = this;
+            DobavljaciForm.WindowState = FormWindowState.Maximized;
+            DobavljaciForm.Show();
+        }
+
+        private void managmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void miBrowseRacuni_MouseUp(object sender, MouseEventArgs e)
+        {
+            FormRacuni RacuniForm = new FormRacuni();
+            RacuniForm.MdiParent = this;
+            RacuniForm.WindowState = FormWindowState.Maximized;
+            RacuniForm.Show();
+        }
+
+        private void miBrowseNarudzbe_MouseUp(object sender, MouseEventArgs e)
+        {
+            FormNarudzbe NarudzbeForm = new FormNarudzbe();
+            NarudzbeForm.MdiParent = this;
+            NarudzbeForm.WindowState = FormWindowState.Maximized;
+            NarudzbeForm.Show();
+        }
     }
 }

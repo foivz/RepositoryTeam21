@@ -86,21 +86,23 @@
             // miBrowseLijekovi
             // 
             this.miBrowseLijekovi.Name = "miBrowseLijekovi";
-            this.miBrowseLijekovi.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseLijekovi.Size = new System.Drawing.Size(152, 22);
             this.miBrowseLijekovi.Text = "Lijekovi";
             this.miBrowseLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseLijekovi_MouseUp);
             // 
             // miBrowseNarudzbe
             // 
             this.miBrowseNarudzbe.Name = "miBrowseNarudzbe";
-            this.miBrowseNarudzbe.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseNarudzbe.Size = new System.Drawing.Size(152, 22);
             this.miBrowseNarudzbe.Text = "Narudžbe";
+            this.miBrowseNarudzbe.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseNarudzbe_MouseUp);
             // 
             // miBrowseRacuni
             // 
             this.miBrowseRacuni.Name = "miBrowseRacuni";
-            this.miBrowseRacuni.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseRacuni.Size = new System.Drawing.Size(152, 22);
             this.miBrowseRacuni.Text = "Računi";
+            this.miBrowseRacuni.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseRacuni_MouseUp);
             // 
             // managmentToolStripMenuItem
             // 
@@ -112,18 +114,21 @@
             this.managmentToolStripMenuItem.Name = "managmentToolStripMenuItem";
             this.managmentToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.managmentToolStripMenuItem.Text = "Managment";
+            this.managmentToolStripMenuItem.Click += new System.EventHandler(this.managmentToolStripMenuItem_Click);
             // 
             // miManagementZaposlenici
             // 
             this.miManagementZaposlenici.Name = "miManagementZaposlenici";
             this.miManagementZaposlenici.Size = new System.Drawing.Size(170, 22);
             this.miManagementZaposlenici.Text = "Zaposlenici";
+            this.miManagementZaposlenici.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miManagementZaposlenici_MouseUp);
             // 
             // miManagementDobavljaci
             // 
             this.miManagementDobavljaci.Name = "miManagementDobavljaci";
             this.miManagementDobavljaci.Size = new System.Drawing.Size(170, 22);
             this.miManagementDobavljaci.Text = "Dobavljači";
+            this.miManagementDobavljaci.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miManagementDobavljaci_MouseUp);
             // 
             // miManagementKategorije
             // 
@@ -137,6 +142,7 @@
             this.miManagementLadice.Name = "miManagementLadice";
             this.miManagementLadice.Size = new System.Drawing.Size(170, 22);
             this.miManagementLadice.Text = "Ladice";
+            this.miManagementLadice.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miManagementLadice_MouseUp);
             // 
             // clientsToolStripMenuItem
             // 
@@ -149,7 +155,7 @@
             // miHzzoProvjeri
             // 
             this.miHzzoProvjeri.Name = "miHzzoProvjeri";
-            this.miHzzoProvjeri.Size = new System.Drawing.Size(152, 22);
+            this.miHzzoProvjeri.Size = new System.Drawing.Size(114, 22);
             this.miHzzoProvjeri.Text = "Provjeri";
             this.miHzzoProvjeri.Click += new System.EventHandler(this.miHzzoProvjeri_Click);
             // 
