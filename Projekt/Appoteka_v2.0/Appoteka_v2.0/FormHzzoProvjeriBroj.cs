@@ -37,37 +37,34 @@ namespace Appoteka_v2._0
                               where r.OIB == klijent.OIB
                               select r).ToList();
 
-                    hzzoRecept selektiraniRecept = hzzoReceptBindingSource.Current as hzzoRecept;
-                    if (selektiraniRecept != null)
-                    {
-                        MessageBox.Show("Ne postoji korisnik sa tom zdrastvenom iskaznicom", "Greška");
-                        lijek = (from l in db.hzzoLijekovi
-                                    where l.serijskiBroj == selektiraniRecept.serijskiBroj
-                                    select l).ToList();
-                        
-                    }
-
                 }
-                
-                           
             }
             hzzoReceptBindingSource.DataSource = recept;
-            
+
+        }
+        private void PrikaziLijek()
+        {
+            hzzoRecept selektiraniRecept = hzzoReceptBindingSource.Current as hzzoRecept;
+            if (selektiraniRecept != null)
+            {
+                using (var db = new HzzoDBEntities())
+                {
+                    lijek = (from l in db.hzzoLijekovi
+                             where l.serijskiBroj == selektiraniRecept.serijskiBroj
+                             select l).ToList();
+                }
+            }
+            hzzoLijekoviBindingSource.DataSource = lijek;
         }
 
-       
-        
 
 
         private void FormHzzoProvjeriBroj_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hzzoDBDataSet.hzzoLijekovi' table. You can move, or remove it, as needed.
-            //this.hzzoLijekoviTableAdapter.Fill(this.hzzoDBDataSet.hzzoLijekovi);
-            // TODO: This line of code loads data into the 'hzzoDBDataSet.hzzoRecept' table. You can move, or remove it, as needed.
-            //this.hzzoReceptTableAdapter.Fill(this.hzzoDBDataSet.hzzoRecept);
-            // TODO: This line of code loads data into the 'hzzoDBDataSet.hzzoKlijent' table. You can move, or remove it, as needed.
-            // this.hzzoKlijentTableAdapter.Fill(this.hzzoDBDataSet.hzzoKlijent);
+           
             PrikaziKlijenta();
+            
+            
             if (klijent == null)
             {
                 MessageBox.Show("Ne postoji korisnik sa tom zdrastvenom iskaznicom", "Greška");
@@ -81,7 +78,23 @@ namespace Appoteka_v2._0
                 textKlijentOib.Text = klijent.OIB.ToString();
                 textKlijentZdrastvena.Text = klijent.zdrastvenaIskaznica.ToString();
             }
-            
+
         }
+
+        private void dataGridView2_MouseUp(object sender, MouseEventArgs e)
+        {
+            PrikaziLijek();
+        }
+
+        private void btnProvjeriBrojIzlaz_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        
+
+        
+
+        
     }
 }

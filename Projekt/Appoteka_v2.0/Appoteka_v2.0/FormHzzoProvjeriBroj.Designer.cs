@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.hzzoKlijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hzzoDBDataSet = new Appoteka_v2._0.HzzoDBDataSet();
-            this.hzzoKlijentTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoKlijentTableAdapter();
             this.textKlijentIme = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,47 +38,32 @@
             this.textKlijentOib = new System.Windows.Forms.TextBox();
             this.textKlijentZdrastvena = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.hzzoReceptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hzzoDBDataSet = new Appoteka_v2._0.HzzoDBDataSet();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.hzzoLijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hzzoDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hzzoKlijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hzzoKlijentTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoKlijentTableAdapter();
+            this.hzzoReceptTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoReceptTableAdapter();
+            this.hzzoLijekoviTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoLijekoviTableAdapter();
             this.idReceptaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumIzdavanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumPocetkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumIstekaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumPodizanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serijskiBrojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oIBDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hzzoReceptBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hzzoReceptTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoReceptTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.hzzoDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hzzoLijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hzzoLijekoviTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoLijekoviTableAdapter();
             this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proizvodacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rokTrajanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaKupovnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaProdajnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).BeginInit();
+            this.btnIzdavanjeRecepta = new System.Windows.Forms.Button();
+            this.btnProvjeriBrojIzlaz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoReceptBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoLijekoviBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // hzzoKlijentBindingSource
-            // 
-            this.hzzoKlijentBindingSource.DataMember = "hzzoKlijent";
-            this.hzzoKlijentBindingSource.DataSource = this.hzzoDBDataSet;
-            // 
-            // hzzoDBDataSet
-            // 
-            this.hzzoDBDataSet.DataSetName = "HzzoDBDataSet";
-            this.hzzoDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hzzoKlijentTableAdapter
-            // 
-            this.hzzoKlijentTableAdapter.ClearBeforeFill = true;
             // 
             // textKlijentIme
             // 
@@ -160,66 +142,23 @@
             this.datumIzdavanjaDataGridViewTextBoxColumn,
             this.datumPocetkaDataGridViewTextBoxColumn,
             this.datumIstekaDataGridViewTextBoxColumn,
-            this.datumPodizanjaDataGridViewTextBoxColumn,
-            this.serijskiBrojDataGridViewTextBoxColumn,
-            this.oIBDataGridViewTextBoxColumn1});
+            this.datumPodizanjaDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.hzzoReceptBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(21, 180);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(753, 124);
+            this.dataGridView2.Size = new System.Drawing.Size(544, 124);
             this.dataGridView2.TabIndex = 9;
-            // 
-            // idReceptaDataGridViewTextBoxColumn
-            // 
-            this.idReceptaDataGridViewTextBoxColumn.DataPropertyName = "idRecepta";
-            this.idReceptaDataGridViewTextBoxColumn.HeaderText = "idRecepta";
-            this.idReceptaDataGridViewTextBoxColumn.Name = "idReceptaDataGridViewTextBoxColumn";
-            this.idReceptaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // datumIzdavanjaDataGridViewTextBoxColumn
-            // 
-            this.datumIzdavanjaDataGridViewTextBoxColumn.DataPropertyName = "datumIzdavanja";
-            this.datumIzdavanjaDataGridViewTextBoxColumn.HeaderText = "datumIzdavanja";
-            this.datumIzdavanjaDataGridViewTextBoxColumn.Name = "datumIzdavanjaDataGridViewTextBoxColumn";
-            // 
-            // datumPocetkaDataGridViewTextBoxColumn
-            // 
-            this.datumPocetkaDataGridViewTextBoxColumn.DataPropertyName = "datumPocetka";
-            this.datumPocetkaDataGridViewTextBoxColumn.HeaderText = "datumPocetka";
-            this.datumPocetkaDataGridViewTextBoxColumn.Name = "datumPocetkaDataGridViewTextBoxColumn";
-            // 
-            // datumIstekaDataGridViewTextBoxColumn
-            // 
-            this.datumIstekaDataGridViewTextBoxColumn.DataPropertyName = "datumIsteka";
-            this.datumIstekaDataGridViewTextBoxColumn.HeaderText = "datumIsteka";
-            this.datumIstekaDataGridViewTextBoxColumn.Name = "datumIstekaDataGridViewTextBoxColumn";
-            // 
-            // datumPodizanjaDataGridViewTextBoxColumn
-            // 
-            this.datumPodizanjaDataGridViewTextBoxColumn.DataPropertyName = "datumPodizanja";
-            this.datumPodizanjaDataGridViewTextBoxColumn.HeaderText = "datumPodizanja";
-            this.datumPodizanjaDataGridViewTextBoxColumn.Name = "datumPodizanjaDataGridViewTextBoxColumn";
-            // 
-            // serijskiBrojDataGridViewTextBoxColumn
-            // 
-            this.serijskiBrojDataGridViewTextBoxColumn.DataPropertyName = "serijskiBroj";
-            this.serijskiBrojDataGridViewTextBoxColumn.HeaderText = "serijskiBroj";
-            this.serijskiBrojDataGridViewTextBoxColumn.Name = "serijskiBrojDataGridViewTextBoxColumn";
-            // 
-            // oIBDataGridViewTextBoxColumn1
-            // 
-            this.oIBDataGridViewTextBoxColumn1.DataPropertyName = "OIB";
-            this.oIBDataGridViewTextBoxColumn1.HeaderText = "OIB";
-            this.oIBDataGridViewTextBoxColumn1.Name = "oIBDataGridViewTextBoxColumn1";
+            this.dataGridView2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGridView2_MouseUp);
             // 
             // hzzoReceptBindingSource
             // 
             this.hzzoReceptBindingSource.DataMember = "hzzoRecept";
             this.hzzoReceptBindingSource.DataSource = this.hzzoDBDataSet;
             // 
-            // hzzoReceptTableAdapter
+            // hzzoDBDataSet
             // 
-            this.hzzoReceptTableAdapter.ClearBeforeFill = true;
+            this.hzzoDBDataSet.DataSetName = "HzzoDBDataSet";
+            this.hzzoDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridView1
             // 
@@ -227,73 +166,110 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.serijskiBrojDataGridViewTextBoxColumn1,
-            this.nazivDataGridViewTextBoxColumn,
-            this.proizvodacDataGridViewTextBoxColumn,
-            this.rokTrajanjaDataGridViewTextBoxColumn,
-            this.cijenaKupovnaDataGridViewTextBoxColumn,
-            this.cijenaProdajnaDataGridViewTextBoxColumn});
+            this.nazivDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.hzzoLijekoviBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 336);
+            this.dataGridView1.Location = new System.Drawing.Point(571, 180);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(245, 124);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // hzzoDBDataSetBindingSource
-            // 
-            this.hzzoDBDataSetBindingSource.DataSource = this.hzzoDBDataSet;
-            this.hzzoDBDataSetBindingSource.Position = 0;
             // 
             // hzzoLijekoviBindingSource
             // 
             this.hzzoLijekoviBindingSource.DataMember = "hzzoLijekovi";
             this.hzzoLijekoviBindingSource.DataSource = this.hzzoDBDataSetBindingSource;
             // 
+            // hzzoDBDataSetBindingSource
+            // 
+            this.hzzoDBDataSetBindingSource.DataSource = this.hzzoDBDataSet;
+            this.hzzoDBDataSetBindingSource.Position = 0;
+            // 
+            // hzzoKlijentBindingSource
+            // 
+            this.hzzoKlijentBindingSource.DataMember = "hzzoKlijent";
+            this.hzzoKlijentBindingSource.DataSource = this.hzzoDBDataSet;
+            // 
+            // hzzoKlijentTableAdapter
+            // 
+            this.hzzoKlijentTableAdapter.ClearBeforeFill = true;
+            // 
+            // hzzoReceptTableAdapter
+            // 
+            this.hzzoReceptTableAdapter.ClearBeforeFill = true;
+            // 
             // hzzoLijekoviTableAdapter
             // 
             this.hzzoLijekoviTableAdapter.ClearBeforeFill = true;
             // 
+            // idReceptaDataGridViewTextBoxColumn
+            // 
+            this.idReceptaDataGridViewTextBoxColumn.DataPropertyName = "idRecepta";
+            this.idReceptaDataGridViewTextBoxColumn.HeaderText = "ID recepta";
+            this.idReceptaDataGridViewTextBoxColumn.Name = "idReceptaDataGridViewTextBoxColumn";
+            this.idReceptaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // datumIzdavanjaDataGridViewTextBoxColumn
+            // 
+            this.datumIzdavanjaDataGridViewTextBoxColumn.DataPropertyName = "datumIzdavanja";
+            this.datumIzdavanjaDataGridViewTextBoxColumn.HeaderText = "Datum izdavanja";
+            this.datumIzdavanjaDataGridViewTextBoxColumn.Name = "datumIzdavanjaDataGridViewTextBoxColumn";
+            // 
+            // datumPocetkaDataGridViewTextBoxColumn
+            // 
+            this.datumPocetkaDataGridViewTextBoxColumn.DataPropertyName = "datumPocetka";
+            this.datumPocetkaDataGridViewTextBoxColumn.HeaderText = "Datum početka";
+            this.datumPocetkaDataGridViewTextBoxColumn.Name = "datumPocetkaDataGridViewTextBoxColumn";
+            // 
+            // datumIstekaDataGridViewTextBoxColumn
+            // 
+            this.datumIstekaDataGridViewTextBoxColumn.DataPropertyName = "datumIsteka";
+            this.datumIstekaDataGridViewTextBoxColumn.HeaderText = "Datum isteka";
+            this.datumIstekaDataGridViewTextBoxColumn.Name = "datumIstekaDataGridViewTextBoxColumn";
+            // 
+            // datumPodizanjaDataGridViewTextBoxColumn
+            // 
+            this.datumPodizanjaDataGridViewTextBoxColumn.DataPropertyName = "datumPodizanja";
+            this.datumPodizanjaDataGridViewTextBoxColumn.HeaderText = "Datum podizanja";
+            this.datumPodizanjaDataGridViewTextBoxColumn.Name = "datumPodizanjaDataGridViewTextBoxColumn";
+            // 
             // serijskiBrojDataGridViewTextBoxColumn1
             // 
             this.serijskiBrojDataGridViewTextBoxColumn1.DataPropertyName = "serijskiBroj";
-            this.serijskiBrojDataGridViewTextBoxColumn1.HeaderText = "serijskiBroj";
+            this.serijskiBrojDataGridViewTextBoxColumn1.HeaderText = "Serijski broj lijeka";
             this.serijskiBrojDataGridViewTextBoxColumn1.Name = "serijskiBrojDataGridViewTextBoxColumn1";
             this.serijskiBrojDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // nazivDataGridViewTextBoxColumn
             // 
             this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
             // 
-            // proizvodacDataGridViewTextBoxColumn
+            // btnIzdavanjeRecepta
             // 
-            this.proizvodacDataGridViewTextBoxColumn.DataPropertyName = "proizvodac";
-            this.proizvodacDataGridViewTextBoxColumn.HeaderText = "proizvodac";
-            this.proizvodacDataGridViewTextBoxColumn.Name = "proizvodacDataGridViewTextBoxColumn";
+            this.btnIzdavanjeRecepta.Location = new System.Drawing.Point(268, 356);
+            this.btnIzdavanjeRecepta.Name = "btnIzdavanjeRecepta";
+            this.btnIzdavanjeRecepta.Size = new System.Drawing.Size(107, 23);
+            this.btnIzdavanjeRecepta.TabIndex = 11;
+            this.btnIzdavanjeRecepta.Text = "Izdavanje recepta";
+            this.btnIzdavanjeRecepta.UseVisualStyleBackColor = true;
             // 
-            // rokTrajanjaDataGridViewTextBoxColumn
+            // btnProvjeriBrojIzlaz
             // 
-            this.rokTrajanjaDataGridViewTextBoxColumn.DataPropertyName = "rokTrajanja";
-            this.rokTrajanjaDataGridViewTextBoxColumn.HeaderText = "rokTrajanja";
-            this.rokTrajanjaDataGridViewTextBoxColumn.Name = "rokTrajanjaDataGridViewTextBoxColumn";
-            // 
-            // cijenaKupovnaDataGridViewTextBoxColumn
-            // 
-            this.cijenaKupovnaDataGridViewTextBoxColumn.DataPropertyName = "cijenaKupovna";
-            this.cijenaKupovnaDataGridViewTextBoxColumn.HeaderText = "cijenaKupovna";
-            this.cijenaKupovnaDataGridViewTextBoxColumn.Name = "cijenaKupovnaDataGridViewTextBoxColumn";
-            // 
-            // cijenaProdajnaDataGridViewTextBoxColumn
-            // 
-            this.cijenaProdajnaDataGridViewTextBoxColumn.DataPropertyName = "cijenaProdajna";
-            this.cijenaProdajnaDataGridViewTextBoxColumn.HeaderText = "cijenaProdajna";
-            this.cijenaProdajnaDataGridViewTextBoxColumn.Name = "cijenaProdajnaDataGridViewTextBoxColumn";
+            this.btnProvjeriBrojIzlaz.Location = new System.Drawing.Point(421, 356);
+            this.btnProvjeriBrojIzlaz.Name = "btnProvjeriBrojIzlaz";
+            this.btnProvjeriBrojIzlaz.Size = new System.Drawing.Size(75, 23);
+            this.btnProvjeriBrojIzlaz.TabIndex = 12;
+            this.btnProvjeriBrojIzlaz.Text = "Izlaz";
+            this.btnProvjeriBrojIzlaz.UseVisualStyleBackColor = true;
+            this.btnProvjeriBrojIzlaz.Click += new System.EventHandler(this.btnProvjeriBrojIzlaz_Click);
             // 
             // FormHzzoProvjeriBroj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 512);
+            this.Controls.Add(this.btnProvjeriBrojIzlaz);
+            this.Controls.Add(this.btnIzdavanjeRecepta);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textKlijentZdrastvena);
@@ -307,13 +283,13 @@
             this.Name = "FormHzzoProvjeriBroj";
             this.Text = "FormHzzoProvjeriBroj";
             this.Load += new System.EventHandler(this.FormHzzoProvjeriBroj_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoReceptBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoLijekoviBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,22 +311,18 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource hzzoReceptBindingSource;
         private HzzoDBDataSetTableAdapters.hzzoReceptTableAdapter hzzoReceptTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource hzzoDBDataSetBindingSource;
+        private System.Windows.Forms.BindingSource hzzoLijekoviBindingSource;
+        private HzzoDBDataSetTableAdapters.hzzoLijekoviTableAdapter hzzoLijekoviTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idReceptaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumIzdavanjaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumPocetkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumIstekaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumPodizanjaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource hzzoDBDataSetBindingSource;
-        private System.Windows.Forms.BindingSource hzzoLijekoviBindingSource;
-        private HzzoDBDataSetTableAdapters.hzzoLijekoviTableAdapter hzzoLijekoviTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn proizvodacDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rokTrajanjaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cijenaKupovnaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cijenaProdajnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnIzdavanjeRecepta;
+        private System.Windows.Forms.Button btnProvjeriBrojIzlaz;
     }
 }
