@@ -66,7 +66,7 @@ namespace Appoteka_v2._0
             kategorijeLijekova selektiranaKategorija = kategorijeLijekovaBindingSource.Current as kategorijeLijekova;
             if (selektiranaKategorija != null)
             {
-                if (MessageBox.Show("Da li ste sigurni?", "Upozorenje!",
+                if (MessageBox.Show("Jeste li sigurni?", "Upozorenje!",
                     MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
                     using (var db = new appotekaDBEntities())

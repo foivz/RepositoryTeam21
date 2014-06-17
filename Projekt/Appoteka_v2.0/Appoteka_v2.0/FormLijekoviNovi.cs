@@ -83,6 +83,8 @@ namespace Appoteka_v2._0
                     LijekZaIzmjenu.kolicina = Convert.ToInt32(textKolicina.Text);
                     LijekZaIzmjenu.dopunsko = Convert.ToInt32(textDopunsko.Text);
                     db.SaveChanges();
+                    MessageBox.Show("Uspješno ste izmijenili podatke o lijeku", "Izmjena podataka");
+
 
                 }
 

@@ -15,3 +15,30 @@ C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appote
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources

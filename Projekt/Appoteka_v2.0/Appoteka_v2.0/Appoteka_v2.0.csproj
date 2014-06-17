@@ -75,6 +75,18 @@
     <Compile Include="FormAppoteka.Designer.cs">
       <DependentUpon>FormAppoteka.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDobavljaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDobavljaci.Designer.cs">
+      <DependentUpon>FormDobavljaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDobavljaciNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDobavljaciNovi.Designer.cs">
+      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHzzoProvjeri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,18 @@
     <Compile Include="FormKategorijeNovi.Designer.cs">
       <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLadice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLadice.Designer.cs">
+      <DependentUpon>FormLadice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLadiceNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLadiceNovi.Designer.cs">
+      <DependentUpon>FormLadiceNovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLijekovi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +134,42 @@
     </Compile>
     <Compile Include="FormLijekoviNovi.Designer.cs">
       <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNarudzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNarudzbe.Designer.cs">
+      <DependentUpon>FormNarudzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNarudzbeNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNarudzbeNovi.Designer.cs">
+      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacuni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacuni.Designer.cs">
+      <DependentUpon>FormRacuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacuniNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacuniNovi.Designer.cs">
+      <DependentUpon>FormRacuniNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZaposlenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZaposlenici.Designer.cs">
+      <DependentUpon>FormZaposlenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZaposleniciNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZaposleniciNovi.Designer.cs">
+      <DependentUpon>FormZaposleniciNovi.cs</DependentUpon>
     </Compile>
     <Compile Include="HzzoDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -178,6 +238,12 @@
     <EmbeddedResource Include="FormAppoteka.resx">
       <DependentUpon>FormAppoteka.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDobavljaci.resx">
+      <DependentUpon>FormDobavljaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDobavljaciNovi.resx">
+      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHzzoProvjeri.resx">
       <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,11 +256,35 @@
     <EmbeddedResource Include="FormKategorijeNovi.resx">
       <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLadice.resx">
+      <DependentUpon>FormLadice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLadiceNovi.resx">
+      <DependentUpon>FormLadiceNovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLijekovi.resx">
       <DependentUpon>FormLijekovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLijekoviNovi.resx">
       <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNarudzbe.resx">
+      <DependentUpon>FormNarudzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNarudzbeNovi.resx">
+      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacuni.resx">
+      <DependentUpon>FormRacuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacuniNovi.resx">
+      <DependentUpon>FormRacuniNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZaposlenici.resx">
+      <DependentUpon>FormZaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZaposleniciNovi.resx">
+      <DependentUpon>FormZaposleniciNovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

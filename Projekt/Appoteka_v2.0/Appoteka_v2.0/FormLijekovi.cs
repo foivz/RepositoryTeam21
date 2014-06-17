@@ -67,7 +67,7 @@ namespace Appoteka_v2._0
             lijekovi selektiraniLijek = lijekoviBindingSource.Current as lijekovi;
             if (selektiraniLijek != null)
             {
-                if (MessageBox.Show("Da li ste sigurni?", "Upozorenje!",
+                if (MessageBox.Show("Jeste li sigurni?", "Upozorenje!",
                     MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
                     using (var db = new appotekaDBEntities())
