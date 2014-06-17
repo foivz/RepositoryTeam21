@@ -61,6 +61,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="appotekaDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dobavljaci.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
@@ -69,6 +74,18 @@
     </Compile>
     <Compile Include="FormAppoteka.Designer.cs">
       <DependentUpon>FormAppoteka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHzzoProvjeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHzzoProvjeri.Designer.cs">
+      <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHzzoProvjeriBroj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHzzoProvjeriBroj.Designer.cs">
+      <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
     </Compile>
     <Compile Include="FormKategorije.cs">
       <SubType>Form</SubType>
@@ -94,6 +111,20 @@
     <Compile Include="FormLijekoviNovi.Designer.cs">
       <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
     </Compile>
+    <Compile Include="HzzoDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoKlijent.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoLijekovi.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoRecept.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
     <Compile Include="kategorijeLijekova.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
@@ -118,6 +149,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelAppoteka.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModelHZZO.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHZZO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHZZO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+    </Compile>
     <Compile Include="narudzbe.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
@@ -131,6 +177,12 @@
     </Compile>
     <EmbeddedResource Include="FormAppoteka.resx">
       <DependentUpon>FormAppoteka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHzzoProvjeri.resx">
+      <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHzzoProvjeriBroj.resx">
+      <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKategorije.resx">
       <DependentUpon>FormKategorije.cs</DependentUpon>
@@ -179,6 +231,28 @@
     <None Include="appotekaDBDataSet1.xss">
       <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="appotekaDBDataSet2.xsc">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appotekaDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appotekaDBDataSet2.xss">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HzzoDBDataSet.xsc">
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HzzoDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HzzoDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HzzoDBDataSet.xss">
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="ModelAppoteka.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelAppoteka.edmx</DependentUpon>
@@ -191,6 +265,23 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelAppoteka.edmx</DependentUpon>
       <LastGenOutput>ModelAppoteka.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="ModelHZZO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelHZZO.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelHZZO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+      <LastGenOutput>ModelHZZO.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModelHZZO.edmx.diagram">
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+    </None>
+    <None Include="ModelHZZO.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+      <LastGenOutput>ModelHZZO.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

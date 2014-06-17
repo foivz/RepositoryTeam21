@@ -33,5 +33,16 @@ namespace Appoteka_v2._0.Properties {
                 return ((string)(this["appotekaDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=rlguoht9fp.database.windows.net,1433;Initial Catalog=HzzoDB;Persist S" +
+            "ecurity Info=True;User ID=admin_appoteka;Password=PIbaza123")]
+        public string HzzoDBConnectionString {
+            get {
+                return ((string)(this["HzzoDBConnectionString"]));
+            }
+        }
     }
 }

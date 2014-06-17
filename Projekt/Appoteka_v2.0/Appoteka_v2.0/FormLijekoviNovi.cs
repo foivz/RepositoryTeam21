@@ -31,6 +31,8 @@ namespace Appoteka_v2._0
 
         private void FormLijekoviNovi_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet1.kategorijeLijekova' table. You can move, or remove it, as needed.
+            //this.kategorijeLijekovaTableAdapter.Fill(this.appotekaDBDataSet1.kategorijeLijekova);
             textSerijskiBroj.Focus();
             if (LijekZaIzmjenu != null)
             {

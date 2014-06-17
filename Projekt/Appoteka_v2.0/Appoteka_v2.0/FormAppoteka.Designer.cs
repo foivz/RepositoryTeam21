@@ -32,14 +32,16 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.managementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.managmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miBrowseLijekovi = new System.Windows.Forms.ToolStripMenuItem();
             this.miBrowseNarudzbe = new System.Windows.Forms.ToolStripMenuItem();
             this.miBrowseRacuni = new System.Windows.Forms.ToolStripMenuItem();
+            this.managmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miManagementZaposlenici = new System.Windows.Forms.ToolStripMenuItem();
             this.miManagementDobavljaci = new System.Windows.Forms.ToolStripMenuItem();
             this.miManagementKategorije = new System.Windows.Forms.ToolStripMenuItem();
             this.miManagementLadice = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.managementToolStripMenuItem,
-            this.managmentToolStripMenuItem});
+            this.managmentToolStripMenuItem,
+            this.clientsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(806, 24);
@@ -66,7 +69,7 @@
             // miFileExit
             // 
             this.miFileExit.Name = "miFileExit";
-            this.miFileExit.Size = new System.Drawing.Size(152, 22);
+            this.miFileExit.Size = new System.Drawing.Size(92, 22);
             this.miFileExit.Text = "Exit";
             this.miFileExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miFileExit_MouseUp);
             // 
@@ -80,6 +83,25 @@
             this.managementToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.managementToolStripMenuItem.Text = "Browse";
             // 
+            // miBrowseLijekovi
+            // 
+            this.miBrowseLijekovi.Name = "miBrowseLijekovi";
+            this.miBrowseLijekovi.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseLijekovi.Text = "Lijekovi";
+            this.miBrowseLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseLijekovi_MouseUp);
+            // 
+            // miBrowseNarudzbe
+            // 
+            this.miBrowseNarudzbe.Name = "miBrowseNarudzbe";
+            this.miBrowseNarudzbe.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseNarudzbe.Text = "Narudžbe";
+            // 
+            // miBrowseRacuni
+            // 
+            this.miBrowseRacuni.Name = "miBrowseRacuni";
+            this.miBrowseRacuni.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseRacuni.Text = "Računi";
+            // 
             // managmentToolStripMenuItem
             // 
             this.managmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -90,25 +112,6 @@
             this.managmentToolStripMenuItem.Name = "managmentToolStripMenuItem";
             this.managmentToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.managmentToolStripMenuItem.Text = "Managment";
-            // 
-            // miBrowseLijekovi
-            // 
-            this.miBrowseLijekovi.Name = "miBrowseLijekovi";
-            this.miBrowseLijekovi.Size = new System.Drawing.Size(152, 22);
-            this.miBrowseLijekovi.Text = "Lijekovi";
-            this.miBrowseLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseLijekovi_MouseUp);
-            // 
-            // miBrowseNarudzbe
-            // 
-            this.miBrowseNarudzbe.Name = "miBrowseNarudzbe";
-            this.miBrowseNarudzbe.Size = new System.Drawing.Size(152, 22);
-            this.miBrowseNarudzbe.Text = "Narudžbe";
-            // 
-            // miBrowseRacuni
-            // 
-            this.miBrowseRacuni.Name = "miBrowseRacuni";
-            this.miBrowseRacuni.Size = new System.Drawing.Size(152, 22);
-            this.miBrowseRacuni.Text = "Računi";
             // 
             // miManagementZaposlenici
             // 
@@ -134,6 +137,21 @@
             this.miManagementLadice.Name = "miManagementLadice";
             this.miManagementLadice.Size = new System.Drawing.Size(170, 22);
             this.miManagementLadice.Text = "Ladice";
+            // 
+            // clientsToolStripMenuItem
+            // 
+            this.clientsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miHzzoProvjeri});
+            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.clientsToolStripMenuItem.Text = "HZZO";
+            // 
+            // miHzzoProvjeri
+            // 
+            this.miHzzoProvjeri.Name = "miHzzoProvjeri";
+            this.miHzzoProvjeri.Size = new System.Drawing.Size(152, 22);
+            this.miHzzoProvjeri.Text = "Provjeri";
+            this.miHzzoProvjeri.Click += new System.EventHandler(this.miHzzoProvjeri_Click);
             // 
             // FormAppoteka
             // 
@@ -167,5 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem miManagementDobavljaci;
         private System.Windows.Forms.ToolStripMenuItem miManagementKategorije;
         private System.Windows.Forms.ToolStripMenuItem miManagementLadice;
+        private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miHzzoProvjeri;
     }
 }

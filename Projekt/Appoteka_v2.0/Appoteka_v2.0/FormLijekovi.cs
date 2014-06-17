@@ -29,6 +29,10 @@ namespace Appoteka_v2._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi_has_kategorije' table. You can move, or remove it, as needed.
+            this.lijekovi_has_kategorijeTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi_has_kategorije);
+            // TODO: This line of code loads data into the 'appotekaDBDataSet1.kategorijeLijekova' table. You can move, or remove it, as needed.
+            this.kategorijeLijekovaTableAdapter.Fill(this.appotekaDBDataSet1.kategorijeLijekova);
             // TODO: This line of code loads data into the 'appotekaDBDataSet.lijekovi' table. You can move, or remove it, as needed.
             //this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet.lijekovi);
             PrikaziLijekove();

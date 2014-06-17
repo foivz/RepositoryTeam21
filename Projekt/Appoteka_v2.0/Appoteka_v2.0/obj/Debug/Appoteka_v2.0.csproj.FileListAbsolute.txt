@@ -13,3 +13,5 @@ C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appote
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
 C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+C:\Users\lklancir\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources

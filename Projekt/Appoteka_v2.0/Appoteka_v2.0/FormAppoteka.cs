@@ -37,5 +37,13 @@ namespace Appoteka_v2._0
             KategorijeForm.WindowState = FormWindowState.Maximized;
             KategorijeForm.Show();
         }
+
+        private void miHzzoProvjeri_Click(object sender, EventArgs e)
+        {
+            FormHzzoProvjeri ProvjeriForm = new FormHzzoProvjeri();
+            ProvjeriForm.MdiParent = this;
+            ProvjeriForm.WindowState = FormWindowState.Maximized;
+            ProvjeriForm.Show();
+        }
     }
 }

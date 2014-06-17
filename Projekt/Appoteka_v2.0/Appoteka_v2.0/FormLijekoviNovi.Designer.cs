@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLijekoviNoviSpremi = new System.Windows.Forms.Button();
             this.btnLijekoviNoviIzlaz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textSerijskiBroj = new System.Windows.Forms.TextBox();
             this.textNaziv = new System.Windows.Forms.TextBox();
@@ -46,10 +46,14 @@
             this.textCijenaKupovna = new System.Windows.Forms.TextBox();
             this.textCijenaProdajna = new System.Windows.Forms.TextBox();
             this.textLadice = new System.Windows.Forms.TextBox();
-            this.textKategorije = new System.Windows.Forms.TextBox();
             this.textDopunsko = new System.Windows.Forms.TextBox();
             this.textKolicina = new System.Windows.Forms.TextBox();
             this.dateRokTrajanja = new System.Windows.Forms.DateTimePicker();
+            this.appotekaDBDataSet1 = new Appoteka_v2._0.appotekaDBDataSet1();
+            this.kategorijeLijekovaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kategorijeLijekovaTableAdapter = new Appoteka_v2._0.appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLijekoviNoviSpremi
@@ -144,19 +148,10 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "Dopunsko (%)";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(289, 136);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Kategorije";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(289, 170);
+            this.label10.Location = new System.Drawing.Point(289, 123);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(39, 13);
             this.label10.TabIndex = 11;
@@ -199,17 +194,10 @@
             // 
             // textLadice
             // 
-            this.textLadice.Location = new System.Drawing.Point(373, 167);
+            this.textLadice.Location = new System.Drawing.Point(373, 120);
             this.textLadice.Name = "textLadice";
             this.textLadice.Size = new System.Drawing.Size(126, 20);
             this.textLadice.TabIndex = 20;
-            // 
-            // textKategorije
-            // 
-            this.textKategorije.Location = new System.Drawing.Point(373, 133);
-            this.textKategorije.Name = "textKategorije";
-            this.textKategorije.Size = new System.Drawing.Size(126, 20);
-            this.textKategorije.TabIndex = 19;
             // 
             // textDopunsko
             // 
@@ -232,6 +220,20 @@
             this.dateRokTrajanja.Size = new System.Drawing.Size(126, 20);
             this.dateRokTrajanja.TabIndex = 21;
             // 
+            // appotekaDBDataSet1
+            // 
+            this.appotekaDBDataSet1.DataSetName = "appotekaDBDataSet1";
+            this.appotekaDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kategorijeLijekovaBindingSource
+            // 
+            this.kategorijeLijekovaBindingSource.DataMember = "kategorijeLijekova";
+            this.kategorijeLijekovaBindingSource.DataSource = this.appotekaDBDataSet1;
+            // 
+            // kategorijeLijekovaTableAdapter
+            // 
+            this.kategorijeLijekovaTableAdapter.ClearBeforeFill = true;
+            // 
             // FormLijekoviNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,7 +241,6 @@
             this.ClientSize = new System.Drawing.Size(573, 316);
             this.Controls.Add(this.dateRokTrajanja);
             this.Controls.Add(this.textLadice);
-            this.Controls.Add(this.textKategorije);
             this.Controls.Add(this.textDopunsko);
             this.Controls.Add(this.textKolicina);
             this.Controls.Add(this.textCijenaProdajna);
@@ -248,7 +249,6 @@
             this.Controls.Add(this.textNaziv);
             this.Controls.Add(this.textSerijskiBroj);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -262,6 +262,8 @@
             this.Name = "FormLijekoviNovi";
             this.Text = "Novi lijek";
             this.Load += new System.EventHandler(this.FormLijekoviNovi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,7 +281,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textSerijskiBroj;
         private System.Windows.Forms.TextBox textNaziv;
@@ -287,9 +288,11 @@
         private System.Windows.Forms.TextBox textCijenaKupovna;
         private System.Windows.Forms.TextBox textCijenaProdajna;
         private System.Windows.Forms.TextBox textLadice;
-        private System.Windows.Forms.TextBox textKategorije;
         private System.Windows.Forms.TextBox textDopunsko;
         private System.Windows.Forms.TextBox textKolicina;
         private System.Windows.Forms.DateTimePicker dateRokTrajanja;
+        private appotekaDBDataSet1 appotekaDBDataSet1;
+        private System.Windows.Forms.BindingSource kategorijeLijekovaBindingSource;
+        private appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter kategorijeLijekovaTableAdapter;
     }
 }
