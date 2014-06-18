@@ -61,15 +61,23 @@ namespace Appoteka_v2._0
                         serijskiBroj = Convert.ToInt32(textSerijskiBroj.Text),
                         naziv = textNaziv.Text,
                         proizvodac = textProizvodac.Text,
-                        cijenaKupovna = Math.Round(Convert.ToSingle(textCijenaKupovna.Text),2),
-                        cijenaProdajna = Math.Round(Convert.ToSingle(textCijenaProdajna.Text),2),
-                        rokTrajanja = Convert.ToDateTime(dateRokTrajanja.Text),
+                        cijenaKupovna = Math.Round(Convert.ToSingle(textCijenaKupovna.Text), 2),
+                        cijenaProdajna = Math.Round(Convert.ToSingle(textCijenaProdajna.Text), 2),
+                        rokTrajanja = dateRokTrajanja.MaxDate,
                         kolicina = Convert.ToInt32(textKolicina.Text),
                         dopunsko = Convert.ToInt32(textDopunsko.Text)
                     };
-                    db.lijekovi.Add(Lijek);
-                    db.SaveChanges();
-                    MessageBox.Show("Uspješno ste dodali novi lijek", "Ispravan unos");
+
+                    if ((textSerijskiBroj.Text).Length != 8)
+                    {
+                        MessageBox.Show("Serijski broj mora sadržavati točno 8 znakova", "Neispravan unos");
+                    }
+                    else
+                    {
+                        db.lijekovi.Add(Lijek);
+                        db.SaveChanges();
+                        MessageBox.Show("Uspješno ste dodali novi lijek", "Ispravan unos");
+                    }
                 }
                 else
                 {

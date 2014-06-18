@@ -29,6 +29,7 @@ namespace Appoteka_v2._0
             textZaposleniciPrezime.Focus();
             if (zaposlenikZaIzmjenu != null)
             {
+                textZaposleniciOIB.Text = zaposlenikZaIzmjenu.OIB;
                 textZaposleniciIme.Text = zaposlenikZaIzmjenu.ime;
                 textZaposleniciPrezime.Text = zaposlenikZaIzmjenu.prezime;
                 textZaposleniciKorime.Text = zaposlenikZaIzmjenu.korIme;
@@ -64,9 +65,21 @@ namespace Appoteka_v2._0
                         lozinka = textZaposleniciLozinka.Text,
                         adresa = textZaposleniciAdresa.Text
                     };
-                    db.zaposlenici.Add(Zaposlenik);
-                    db.SaveChanges();
-                    MessageBox.Show("Uspješno ste dodali novog zaposlenika", "Ispravan unos");
+                    
+
+                    if (textZaposleniciOIB.TextLength != 11)
+                    {
+                        textZaposleniciOIB.Focus();
+                        MessageBox.Show("OIB mora sadržavati 11 znakova", "Neispravan unos");
+                                        
+                        
+                    }
+                    else
+                    {
+                        db.zaposlenici.Add(Zaposlenik);
+                        db.SaveChanges();
+                        MessageBox.Show("Uspješno ste dodali novog zaposlenika", "Ispravan unos");
+                    }
                 }
                 else
                 {
