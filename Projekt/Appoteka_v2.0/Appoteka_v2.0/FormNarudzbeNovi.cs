@@ -13,6 +13,7 @@ namespace Appoteka_v2._0
     public partial class FormNarudzbeNovi : Form
     {
         private narudzbe narudzbaZaIzmjenu;
+        
         public FormNarudzbeNovi()
         {
             InitializeComponent();
@@ -24,15 +25,28 @@ namespace Appoteka_v2._0
             narudzbaZaIzmjenu = Narudzba;
         }
 
+
+
         private void FormNarudzbeNovi_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi' table. You can move, or remove it, as needed.
+            this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi);
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.zaposlenici' table. You can move, or remove it, as needed.
+            this.zaposleniciTableAdapter.Fill(this.appotekaDBDataSet2.zaposlenici);
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.dobavljaci' table. You can move, or remove it, as needed.
+            this.dobavljaciTableAdapter.Fill(this.appotekaDBDataSet2.dobavljaci);
             textNarudzbeIznos.Focus();
             if (narudzbaZaIzmjenu != null)
             {
                 textNarudzbeIznos.Text = narudzbaZaIzmjenu.iznos.ToString();
                 dateTimeNaruzbeDatum.MaxDate = narudzbaZaIzmjenu.datum;
             }
+
+            
         }
+
+       
+        
 
         private void btnNarudzbeNoviSpremi_Click(object sender, EventArgs e)
         {
@@ -68,5 +82,12 @@ namespace Appoteka_v2._0
         {
             Close();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

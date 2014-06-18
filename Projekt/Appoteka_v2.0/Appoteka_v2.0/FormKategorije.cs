@@ -27,14 +27,52 @@ namespace Appoteka_v2._0
 
             kategorijeLijekovaBindingSource.DataSource = listaKategorija;
         }
+        
+
+        private void PrikaziLijek()
+        {
+            kategorijeLijekova selektiranaKategorija = kategorijeLijekovaBindingSource.Current as kategorijeLijekova;
+            if (selektiranaKategorija != null)
+            {
+                using (var db = new appotekaDBEntities())
+                {
+                    var lijek = from t3 in db.lijekovi
+                                from t2 in t3.kategorijeLijekova.Where(
+             x => x.naziv == selektiranaKategorija.naziv)
+                                select new { t3.serijskiBroj, t3.naziv};
+
+                    this.dataGridKategorije.DataSource = lijek.ToList();
+                }
+            }
+            
+        }
+
+        private void PrikaziLadice()
+        {
+            kategorijeLijekova selektiranaKategorija = kategorijeLijekovaBindingSource.Current as kategorijeLijekova;
+            if (selektiranaKategorija != null)
+            {
+                using (var db = new appotekaDBEntities())
+                {
+                    var ladica = from t3 in db.ladice
+                                from t2 in t3.kategorijeLijekova.Where(
+             x => x.naziv == selektiranaKategorija.naziv)
+                                select new { t3.kapacitet };
+
+                    this.dataGridLadice.DataSource = ladica.ToList();
+                }
+            }
+
+        }
 
         private void FormKategorije_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi' table. You can move, or remove it, as needed.
+            //this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi);
             // TODO: This line of code loads data into the 'appotekaDBDataSet1.kategorijeLijekova' table. You can move, or remove it, as needed.
             //this.kategorijeLijekovaTableAdapter.Fill(this.appotekaDBDataSet1.kategorijeLijekova);
 
             PrikaziKategorije();
-
         }
 
         private void btnKategorijeNatrag_Click(object sender, EventArgs e)
@@ -78,6 +116,13 @@ namespace Appoteka_v2._0
                     PrikaziKategorije();
                 }
             }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            PrikaziLijek();
+            PrikaziLadice();
+
         }
 
 
