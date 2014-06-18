@@ -90,5 +90,13 @@ namespace Appoteka_v2._0
             NarudzbeForm.WindowState = FormWindowState.Maximized;
             NarudzbeForm.Show();
         }
+
+        private void lijekoviToolStripMenuItem_MouseUp(object sender, MouseEventArgs e)
+        {
+            Report report = new Report();
+            report.MdiParent = this;
+            report.WindowState = FormWindowState.Maximized;
+            report.Show();
+        }
     }
 }

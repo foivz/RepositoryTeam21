@@ -27,8 +27,47 @@ namespace Appoteka_v2._0
             lijekoviBindingSource.DataSource = listaLijekova;
         }
 
+        private void PrikaziKategorije()
+        {
+            lijekovi selektiraniLijek = lijekoviBindingSource.Current as lijekovi;
+            if (selektiraniLijek != null)
+            {
+                using (var db = new appotekaDBEntities())
+                {
+                    var kategorija = from t3 in db.kategorijeLijekova
+                                 from t2 in t3.lijekovi.Where(
+              x => x.naziv == selektiraniLijek.naziv)
+                                 select new { t3.IdKategorije, t3.naziv };
+
+                    this.dataGridLijekoviKategorije.DataSource = kategorija.ToList();
+                }
+            }
+
+        }
+        /*
+        private void PrikaziLadice()
+        {
+            kategorijeLijekova selektiranaKategorija = kategorijeLijekova.Current as kategorijeLijekova;
+            if (selektiranaKategorija != null)
+            {
+                using (var db = new appotekaDBEntities())
+                {
+                    var ladica = from t3 in db.ladice
+                                     from t2 in t3.kategorijeLijekova.Where(
+                  x => x.naziv == selektiranaKategorija.naziv)
+                                     select new { t3.kapacitet };
+
+                    this.dataGridLijekoviLadice.DataSource = ladica.ToList();
+                }
+            }
+
+        }
+         */
+        
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.kategorijeLijekova' table. You can move, or remove it, as needed.
+            this.kategorijeLijekovaTableAdapter1.Fill(this.appotekaDBDataSet2.kategorijeLijekova);
             // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi_has_kategorije' table. You can move, or remove it, as needed.
             this.lijekovi_has_kategorijeTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi_has_kategorije);
             // TODO: This line of code loads data into the 'appotekaDBDataSet1.kategorijeLijekova' table. You can move, or remove it, as needed.
@@ -80,6 +119,15 @@ namespace Appoteka_v2._0
 
                 }
             }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            PrikaziKategorije();
+        }
+
+        private void dataGridLijekoviKategorije_SelectionChanged(object sender, EventArgs e)
+        {
         }
     }
 }

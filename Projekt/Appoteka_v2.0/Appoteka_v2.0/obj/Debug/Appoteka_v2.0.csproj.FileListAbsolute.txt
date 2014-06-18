@@ -52,3 +52,6 @@ D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appo
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Report.resources
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
