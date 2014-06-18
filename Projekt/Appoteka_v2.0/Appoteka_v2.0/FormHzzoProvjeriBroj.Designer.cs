@@ -54,7 +54,7 @@
             this.datumPodizanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnIzdavanjeRecepta = new System.Windows.Forms.Button();
+            this.btnIzdavanjeRacuna = new System.Windows.Forms.Button();
             this.btnProvjeriBrojIzlaz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoReceptBindingSource)).BeginInit();
@@ -244,14 +244,15 @@
             this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
             // 
-            // btnIzdavanjeRecepta
+            // btnIzdavanjeRacuna
             // 
-            this.btnIzdavanjeRecepta.Location = new System.Drawing.Point(268, 356);
-            this.btnIzdavanjeRecepta.Name = "btnIzdavanjeRecepta";
-            this.btnIzdavanjeRecepta.Size = new System.Drawing.Size(107, 23);
-            this.btnIzdavanjeRecepta.TabIndex = 11;
-            this.btnIzdavanjeRecepta.Text = "Izdavanje recepta";
-            this.btnIzdavanjeRecepta.UseVisualStyleBackColor = true;
+            this.btnIzdavanjeRacuna.Location = new System.Drawing.Point(268, 356);
+            this.btnIzdavanjeRacuna.Name = "btnIzdavanjeRacuna";
+            this.btnIzdavanjeRacuna.Size = new System.Drawing.Size(107, 23);
+            this.btnIzdavanjeRacuna.TabIndex = 11;
+            this.btnIzdavanjeRacuna.Text = "Izdavanje racuna";
+            this.btnIzdavanjeRacuna.UseVisualStyleBackColor = true;
+            this.btnIzdavanjeRacuna.Click += new System.EventHandler(this.btnIzdavanjeRacuna_Click);
             // 
             // btnProvjeriBrojIzlaz
             // 
@@ -269,7 +270,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 512);
             this.Controls.Add(this.btnProvjeriBrojIzlaz);
-            this.Controls.Add(this.btnIzdavanjeRecepta);
+            this.Controls.Add(this.btnIzdavanjeRacuna);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textKlijentZdrastvena);
@@ -322,7 +323,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn datumPodizanjaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnIzdavanjeRecepta;
+        private System.Windows.Forms.Button btnIzdavanjeRacuna;
         private System.Windows.Forms.Button btnProvjeriBrojIzlaz;
     }
 }

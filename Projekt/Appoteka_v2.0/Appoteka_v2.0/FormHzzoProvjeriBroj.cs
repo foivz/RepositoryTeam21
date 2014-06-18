@@ -91,6 +91,35 @@ namespace Appoteka_v2._0
             Close();
         }
 
+        private void btnIzdavanjeRacuna_Click(object sender, EventArgs e)
+        {
+            hzzoLijekovi selektiraniLijek = hzzoLijekoviBindingSource.Current as hzzoLijekovi;
+            if (selektiraniLijek != null)
+            {
+                using (var db = new appotekaDBEntities())
+                {
+                    var lijekApoteka = (from l in db.lijekovi
+                                        where l.serijskiBroj == selektiraniLijek.serijskiBroj
+                                        select l).SingleOrDefault();
+
+                    if (lijekApoteka == null)
+                    {
+                        MessageBox.Show("Lijek ne postoji u bazi", "Upozorenje");
+                    }
+                    else if (lijekApoteka.kolicina == 0)
+                    {
+                        MessageBox.Show("Lijek ne postoji trenutno na zalihi", "Upozorenje");
+                    }
+                    else
+                    {
+                        FormRacuniNovi noviRacunForma = new FormRacuniNovi(lijekApoteka);
+                        noviRacunForma.Show();
+                    }
+                    
+                }
+            }
+        }
+
         
 
         

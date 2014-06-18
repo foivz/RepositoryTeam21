@@ -13,6 +13,7 @@ namespace Appoteka_v2._0
     public partial class FormRacuniNovi : Form
     {
         private racun racunZaIzmjenu;
+        private lijekovi lijekNaRacun;
         public FormRacuniNovi()
         {
             InitializeComponent();
@@ -24,13 +25,27 @@ namespace Appoteka_v2._0
             racunZaIzmjenu = Racun;
         }
 
+        public FormRacuniNovi (lijekovi lnr)
+	    {
+            InitializeComponent();
+            lijekNaRacun = lnr;
+	    }
+
+
         private void FormRacuniNovi_Load(object sender, EventArgs e)
         {
+            
             dateTimeRacuniDatum.Focus();
             if (racunZaIzmjenu != null)
             {
                 textRacuniIznos.Text = racunZaIzmjenu.iznos.ToString();
                 dateTimeRacuniDatum.MaxDate = racunZaIzmjenu.datum;
+            }
+            else
+            {
+                lijekoviBindingSource.DataSource = lijekNaRacun;
+
+
             }
         }
 
