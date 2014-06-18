@@ -51,9 +51,20 @@ namespace Appoteka_v2._0
                         IBAN = textDobavljaciIBAN.Text,
                         adresa = textDobavljaciAdresa.Text
                     };
-                    db.dobavljaci.Add(Dobavljac);
-                    db.SaveChanges();
-                    MessageBox.Show("Uspješno ste dodali novog dobavljača", "Ispravan unos");
+
+                    
+                   
+                    if (textDobavljaciOIB.TextLength != 11 || textDobavljaciIBAN.TextLength != 21)
+                    {
+                        textDobavljaciOIB.Focus();
+                        MessageBox.Show("Neispravna duljina znakova kod unosa", "Neispravan unos");
+                    }
+                    else
+                    {
+                        db.dobavljaci.Add(Dobavljac);
+                        db.SaveChanges();
+                        MessageBox.Show("Uspješno ste dodali novog dobavljača", "Ispravan unos");
+                    }
                 }
                 else
                 {
