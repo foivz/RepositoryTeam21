@@ -13,10 +13,20 @@ namespace Appoteka_v2._0
     public partial class FormRacuniNovi : Form
     {
         private racun racunZaIzmjenu;
-        private lijekovi lijekNaRacun;
+        private BindingList<lijekovi> lijekoviRacun;
+
+
+        
+
         public FormRacuniNovi()
         {
             InitializeComponent();
+        }
+
+        public void PrijenosLijekova(BindingList<lijekovi> r)
+        {
+            lijekoviRacun = r;
+
         }
 
         public FormRacuniNovi(racun Racun)
@@ -25,10 +35,10 @@ namespace Appoteka_v2._0
             racunZaIzmjenu = Racun;
         }
 
-        public FormRacuniNovi (lijekovi lnr)
+        public FormRacuniNovi(BindingList<lijekovi> lR)
 	    {
             InitializeComponent();
-            lijekNaRacun = lnr;
+            lijekoviRacun = lR;
 	    }
 
 
@@ -43,9 +53,7 @@ namespace Appoteka_v2._0
             }
             else
             {
-                lijekoviBindingSource.DataSource = lijekNaRacun;
-
-
+                lijekoviBindingSource.DataSource = lijekoviRacun;
             }
         }
 
@@ -83,6 +91,12 @@ namespace Appoteka_v2._0
         private void btnRacuniNoviIzlaz_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnNoviRacunDodaj_Click(object sender, EventArgs e)
+        {
+            FormDodavanjeLijekova dodajLijekForma = new FormDodavanjeLijekova();
+            dodajLijekForma.Show();
         }
     }
 }

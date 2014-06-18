@@ -61,10 +61,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="appotekaDBDataSet2.cs">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="appotekaDBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DodajLijek.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
     </Compile>
     <Compile Include="dobavljaci.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
@@ -86,6 +94,12 @@
     </Compile>
     <Compile Include="FormDobavljaciNovi.Designer.cs">
       <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodavanjeLijekova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjeLijekova.Designer.cs">
+      <DependentUpon>FormDodavanjeLijekova.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHzzoProvjeri.cs">
       <SubType>Form</SubType>
@@ -244,6 +258,9 @@
     <EmbeddedResource Include="FormDobavljaciNovi.resx">
       <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjeLijekova.resx">
+      <DependentUpon>FormDodavanjeLijekova.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHzzoProvjeri.resx">
       <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +348,17 @@
     </None>
     <None Include="appotekaDBDataSet2.xss">
       <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DodajLijek.xsc">
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
+    </None>
+    <None Include="DodajLijek.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DodajLijek.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DodajLijek.xss">
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
     </None>
     <None Include="HzzoDBDataSet.xsc">
       <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>

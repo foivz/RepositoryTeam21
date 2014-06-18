@@ -61,6 +61,8 @@ namespace Appoteka_v2._0
 
         private void FormHzzoProvjeriBroj_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi' table. You can move, or remove it, as needed.
+            //this.lijekoviTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi);
            
             PrikaziKlijenta();
             
@@ -91,34 +93,55 @@ namespace Appoteka_v2._0
             Close();
         }
 
-        private void btnIzdavanjeRacuna_Click(object sender, EventArgs e)
+        public void StvoriRacun()
+        {
+
+        }
+
+        private BindingList<lijekovi> lijekApoteka = new BindingList<lijekovi>();
+
+        private void btnDodajStavku_Click(object sender, EventArgs e)
         {
             hzzoLijekovi selektiraniLijek = hzzoLijekoviBindingSource.Current as hzzoLijekovi;
             if (selektiraniLijek != null)
             {
                 using (var db = new appotekaDBEntities())
                 {
-                    var lijekApoteka = (from l in db.lijekovi
+                        var privremniLijek = (from l in db.lijekovi
                                         where l.serijskiBroj == selektiraniLijek.serijskiBroj
                                         select l).SingleOrDefault();
+                        
 
-                    if (lijekApoteka == null)
+                    if (privremniLijek == null)
                     {
                         MessageBox.Show("Lijek ne postoji u bazi", "Upozorenje");
                     }
-                    else if (lijekApoteka.kolicina == 0)
+                    else if(privremniLijek.kolicina==0)
                     {
-                        MessageBox.Show("Lijek ne postoji trenutno na zalihi", "Upozorenje");
-                    }
-                    else
-                    {
-                        FormRacuniNovi noviRacunForma = new FormRacuniNovi(lijekApoteka);
-                        noviRacunForma.Show();
+                        MessageBox.Show("Lijek ne postoji na zalihi", "Upozorenje");
                     }
                     
+                    else
+                    {
+                        lijekApoteka.Add(privremniLijek);
+                        lijekoviBindingSource.DataSource = lijekApoteka;
+                    }
+
+
+
                 }
             }
         }
+        private void btnIzdavanjeRacuna_Click(object sender, EventArgs e)
+        {
+            FormRacuniNovi racunNoviForm = new FormRacuniNovi(lijekApoteka);
+            racunNoviForm.ShowDialog();
+        }
+
+        
+            
+        
+
 
         
 

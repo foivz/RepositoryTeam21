@@ -38,24 +38,32 @@
             this.textKlijentOib = new System.Windows.Forms.TextBox();
             this.textKlijentZdrastvena = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idReceptaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumIzdavanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumPocetkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumIstekaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumPodizanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hzzoReceptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hzzoDBDataSet = new Appoteka_v2._0.HzzoDBDataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hzzoLijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hzzoDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hzzoKlijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hzzoKlijentTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoKlijentTableAdapter();
             this.hzzoReceptTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoReceptTableAdapter();
             this.hzzoLijekoviTableAdapter = new Appoteka_v2._0.HzzoDBDataSetTableAdapters.hzzoLijekoviTableAdapter();
-            this.idReceptaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datumIzdavanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datumPocetkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datumIstekaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datumPodizanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnIzdavanjeRacuna = new System.Windows.Forms.Button();
             this.btnProvjeriBrojIzlaz = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.appotekaDBDataSet2 = new Appoteka_v2._0.appotekaDBDataSet2();
+            this.appotekaDBDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lijekoviTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.lijekoviTableAdapter();
+            this.serijskiBrojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDodajStavku = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoReceptBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).BeginInit();
@@ -63,6 +71,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.hzzoLijekoviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textKlijentIme
@@ -150,56 +162,6 @@
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGridView2_MouseUp);
             // 
-            // hzzoReceptBindingSource
-            // 
-            this.hzzoReceptBindingSource.DataMember = "hzzoRecept";
-            this.hzzoReceptBindingSource.DataSource = this.hzzoDBDataSet;
-            // 
-            // hzzoDBDataSet
-            // 
-            this.hzzoDBDataSet.DataSetName = "HzzoDBDataSet";
-            this.hzzoDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.serijskiBrojDataGridViewTextBoxColumn1,
-            this.nazivDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.hzzoLijekoviBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(571, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(245, 124);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // hzzoLijekoviBindingSource
-            // 
-            this.hzzoLijekoviBindingSource.DataMember = "hzzoLijekovi";
-            this.hzzoLijekoviBindingSource.DataSource = this.hzzoDBDataSetBindingSource;
-            // 
-            // hzzoDBDataSetBindingSource
-            // 
-            this.hzzoDBDataSetBindingSource.DataSource = this.hzzoDBDataSet;
-            this.hzzoDBDataSetBindingSource.Position = 0;
-            // 
-            // hzzoKlijentBindingSource
-            // 
-            this.hzzoKlijentBindingSource.DataMember = "hzzoKlijent";
-            this.hzzoKlijentBindingSource.DataSource = this.hzzoDBDataSet;
-            // 
-            // hzzoKlijentTableAdapter
-            // 
-            this.hzzoKlijentTableAdapter.ClearBeforeFill = true;
-            // 
-            // hzzoReceptTableAdapter
-            // 
-            this.hzzoReceptTableAdapter.ClearBeforeFill = true;
-            // 
-            // hzzoLijekoviTableAdapter
-            // 
-            this.hzzoLijekoviTableAdapter.ClearBeforeFill = true;
-            // 
             // idReceptaDataGridViewTextBoxColumn
             // 
             this.idReceptaDataGridViewTextBoxColumn.DataPropertyName = "idRecepta";
@@ -231,6 +193,29 @@
             this.datumPodizanjaDataGridViewTextBoxColumn.HeaderText = "Datum podizanja";
             this.datumPodizanjaDataGridViewTextBoxColumn.Name = "datumPodizanjaDataGridViewTextBoxColumn";
             // 
+            // hzzoReceptBindingSource
+            // 
+            this.hzzoReceptBindingSource.DataMember = "hzzoRecept";
+            this.hzzoReceptBindingSource.DataSource = this.hzzoDBDataSet;
+            // 
+            // hzzoDBDataSet
+            // 
+            this.hzzoDBDataSet.DataSetName = "HzzoDBDataSet";
+            this.hzzoDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.serijskiBrojDataGridViewTextBoxColumn1,
+            this.nazivDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.hzzoLijekoviBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(571, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(245, 124);
+            this.dataGridView1.TabIndex = 10;
+            // 
             // serijskiBrojDataGridViewTextBoxColumn1
             // 
             this.serijskiBrojDataGridViewTextBoxColumn1.DataPropertyName = "serijskiBroj";
@@ -244,9 +229,36 @@
             this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
             // 
+            // hzzoLijekoviBindingSource
+            // 
+            this.hzzoLijekoviBindingSource.DataMember = "hzzoLijekovi";
+            this.hzzoLijekoviBindingSource.DataSource = this.hzzoDBDataSetBindingSource;
+            // 
+            // hzzoDBDataSetBindingSource
+            // 
+            this.hzzoDBDataSetBindingSource.DataSource = this.hzzoDBDataSet;
+            this.hzzoDBDataSetBindingSource.Position = 0;
+            // 
+            // hzzoKlijentBindingSource
+            // 
+            this.hzzoKlijentBindingSource.DataMember = "hzzoKlijent";
+            this.hzzoKlijentBindingSource.DataSource = this.hzzoDBDataSet;
+            // 
+            // hzzoKlijentTableAdapter
+            // 
+            this.hzzoKlijentTableAdapter.ClearBeforeFill = true;
+            // 
+            // hzzoReceptTableAdapter
+            // 
+            this.hzzoReceptTableAdapter.ClearBeforeFill = true;
+            // 
+            // hzzoLijekoviTableAdapter
+            // 
+            this.hzzoLijekoviTableAdapter.ClearBeforeFill = true;
+            // 
             // btnIzdavanjeRacuna
             // 
-            this.btnIzdavanjeRacuna.Location = new System.Drawing.Point(268, 356);
+            this.btnIzdavanjeRacuna.Location = new System.Drawing.Point(188, 373);
             this.btnIzdavanjeRacuna.Name = "btnIzdavanjeRacuna";
             this.btnIzdavanjeRacuna.Size = new System.Drawing.Size(107, 23);
             this.btnIzdavanjeRacuna.TabIndex = 11;
@@ -256,7 +268,7 @@
             // 
             // btnProvjeriBrojIzlaz
             // 
-            this.btnProvjeriBrojIzlaz.Location = new System.Drawing.Point(421, 356);
+            this.btnProvjeriBrojIzlaz.Location = new System.Drawing.Point(319, 373);
             this.btnProvjeriBrojIzlaz.Name = "btnProvjeriBrojIzlaz";
             this.btnProvjeriBrojIzlaz.Size = new System.Drawing.Size(75, 23);
             this.btnProvjeriBrojIzlaz.TabIndex = 12;
@@ -264,11 +276,67 @@
             this.btnProvjeriBrojIzlaz.UseVisualStyleBackColor = true;
             this.btnProvjeriBrojIzlaz.Click += new System.EventHandler(this.btnProvjeriBrojIzlaz_Click);
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.serijskiBrojDataGridViewTextBoxColumn,
+            this.nazivDataGridViewTextBoxColumn1});
+            this.dataGridView3.DataSource = this.lijekoviBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(571, 320);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(245, 129);
+            this.dataGridView3.TabIndex = 13;
+            // 
+            // appotekaDBDataSet2
+            // 
+            this.appotekaDBDataSet2.DataSetName = "appotekaDBDataSet2";
+            this.appotekaDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // appotekaDBDataSet2BindingSource
+            // 
+            this.appotekaDBDataSet2BindingSource.DataSource = this.appotekaDBDataSet2;
+            this.appotekaDBDataSet2BindingSource.Position = 0;
+            // 
+            // lijekoviBindingSource
+            // 
+            this.lijekoviBindingSource.DataMember = "lijekovi";
+            this.lijekoviBindingSource.DataSource = this.appotekaDBDataSet2BindingSource;
+            // 
+            // lijekoviTableAdapter
+            // 
+            this.lijekoviTableAdapter.ClearBeforeFill = true;
+            // 
+            // serijskiBrojDataGridViewTextBoxColumn
+            // 
+            this.serijskiBrojDataGridViewTextBoxColumn.DataPropertyName = "serijskiBroj";
+            this.serijskiBrojDataGridViewTextBoxColumn.HeaderText = "Serijski broj";
+            this.serijskiBrojDataGridViewTextBoxColumn.Name = "serijskiBrojDataGridViewTextBoxColumn";
+            // 
+            // nazivDataGridViewTextBoxColumn1
+            // 
+            this.nazivDataGridViewTextBoxColumn1.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn1.HeaderText = "Naziv";
+            this.nazivDataGridViewTextBoxColumn1.Name = "nazivDataGridViewTextBoxColumn1";
+            // 
+            // btnDodajStavku
+            // 
+            this.btnDodajStavku.Location = new System.Drawing.Point(63, 373);
+            this.btnDodajStavku.Name = "btnDodajStavku";
+            this.btnDodajStavku.Size = new System.Drawing.Size(104, 23);
+            this.btnDodajStavku.TabIndex = 14;
+            this.btnDodajStavku.Text = "Dodaj stavku";
+            this.btnDodajStavku.UseVisualStyleBackColor = true;
+            this.btnDodajStavku.Click += new System.EventHandler(this.btnDodajStavku_Click);
+            // 
             // FormHzzoProvjeriBroj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 512);
+            this.Controls.Add(this.btnDodajStavku);
+            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.btnProvjeriBrojIzlaz);
             this.Controls.Add(this.btnIzdavanjeRacuna);
             this.Controls.Add(this.dataGridView1);
@@ -291,6 +359,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.hzzoLijekoviBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoKlijentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,5 +397,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnIzdavanjeRacuna;
         private System.Windows.Forms.Button btnProvjeriBrojIzlaz;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource appotekaDBDataSet2BindingSource;
+        private appotekaDBDataSet2 appotekaDBDataSet2;
+        private System.Windows.Forms.BindingSource lijekoviBindingSource;
+        private appotekaDBDataSet2TableAdapters.lijekoviTableAdapter lijekoviTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button btnDodajStavku;
     }
 }
