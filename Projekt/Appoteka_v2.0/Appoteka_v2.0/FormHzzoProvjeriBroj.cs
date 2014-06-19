@@ -93,12 +93,10 @@ namespace Appoteka_v2._0
             Close();
         }
 
-        public void StvoriRacun()
-        {
+        
 
-        }
-
-        private BindingList<lijekovi> lijekApoteka = new BindingList<lijekovi>();
+        private  BindingList<lijekovi> lijekApoteka = new BindingList<lijekovi>();
+        
 
         private void btnDodajStavku_Click(object sender, EventArgs e)
         {

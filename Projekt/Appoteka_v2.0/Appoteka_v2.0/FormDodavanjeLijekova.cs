@@ -13,12 +13,9 @@ namespace Appoteka_v2._0
     public partial class FormDodavanjeLijekova : Form
     {
 
-        private readonly FormRacuniNovi frm;
+        
 
-        public FormDodavanjeLijekova(FormRacuniNovi fr)
-        {
-            frm = fr;
-        }
+
         public FormDodavanjeLijekova()
         {
             InitializeComponent();
@@ -43,7 +40,7 @@ namespace Appoteka_v2._0
 
         }
         
-        private BindingList<lijekovi> prijenosLijeka = new BindingList<lijekovi>();
+        private static BindingList<lijekovi> prijenosLijeka = new BindingList<lijekovi>();
 
         private void btnDodajLijek_Click(object sender, EventArgs e)
         {
@@ -57,6 +54,8 @@ namespace Appoteka_v2._0
         private void btnZavrsiDodajLijek_Click(object sender, EventArgs e)
         {
             
+            FormRacuniNovi.lijekoviRacun = prijenosLijeka;
+            this.Close();
         }
     }
 }

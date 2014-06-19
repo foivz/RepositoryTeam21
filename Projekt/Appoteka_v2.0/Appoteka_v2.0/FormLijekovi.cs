@@ -128,6 +128,7 @@ namespace Appoteka_v2._0
 
         private void dataGridLijekoviKategorije_SelectionChanged(object sender, EventArgs e)
         {
+
         }
     }
 }
