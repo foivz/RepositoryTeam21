@@ -47,6 +47,8 @@
             this.lijekoviTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.lijekoviTableAdapter();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridLadice = new System.Windows.Forms.DataGridView();
+            this.lblLijekovi = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).BeginInit();
@@ -67,7 +69,7 @@
             this.nazivDataGridViewTextBoxColumn,
             this.opisDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.kategorijeLijekovaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(205, 29);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(394, 150);
             this.dataGridView1.TabIndex = 0;
@@ -108,9 +110,10 @@
             // 
             // btnKategorijeNatrag
             // 
-            this.btnKategorijeNatrag.Location = new System.Drawing.Point(205, 201);
+            this.btnKategorijeNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKategorijeNatrag.Location = new System.Drawing.Point(12, 359);
             this.btnKategorijeNatrag.Name = "btnKategorijeNatrag";
-            this.btnKategorijeNatrag.Size = new System.Drawing.Size(75, 23);
+            this.btnKategorijeNatrag.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeNatrag.TabIndex = 1;
             this.btnKategorijeNatrag.Text = "Natrag";
             this.btnKategorijeNatrag.UseVisualStyleBackColor = true;
@@ -118,9 +121,10 @@
             // 
             // btnKategorijeNovi
             // 
-            this.btnKategorijeNovi.Location = new System.Drawing.Point(310, 201);
+            this.btnKategorijeNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKategorijeNovi.Location = new System.Drawing.Point(27, 182);
             this.btnKategorijeNovi.Name = "btnKategorijeNovi";
-            this.btnKategorijeNovi.Size = new System.Drawing.Size(75, 23);
+            this.btnKategorijeNovi.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeNovi.TabIndex = 2;
             this.btnKategorijeNovi.Text = "Novi";
             this.btnKategorijeNovi.UseVisualStyleBackColor = true;
@@ -128,9 +132,10 @@
             // 
             // btnKategorijeIzmjeni
             // 
-            this.btnKategorijeIzmjeni.Location = new System.Drawing.Point(418, 201);
+            this.btnKategorijeIzmjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKategorijeIzmjeni.Location = new System.Drawing.Point(151, 182);
             this.btnKategorijeIzmjeni.Name = "btnKategorijeIzmjeni";
-            this.btnKategorijeIzmjeni.Size = new System.Drawing.Size(75, 23);
+            this.btnKategorijeIzmjeni.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeIzmjeni.TabIndex = 3;
             this.btnKategorijeIzmjeni.Text = "Izmjeni";
             this.btnKategorijeIzmjeni.UseVisualStyleBackColor = true;
@@ -138,9 +143,10 @@
             // 
             // btnKategorijeIzbrisi
             // 
-            this.btnKategorijeIzbrisi.Location = new System.Drawing.Point(524, 201);
+            this.btnKategorijeIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKategorijeIzbrisi.Location = new System.Drawing.Point(274, 182);
             this.btnKategorijeIzbrisi.Name = "btnKategorijeIzbrisi";
-            this.btnKategorijeIzbrisi.Size = new System.Drawing.Size(75, 23);
+            this.btnKategorijeIzbrisi.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeIzbrisi.TabIndex = 4;
             this.btnKategorijeIzbrisi.Text = "Izbriši";
             this.btnKategorijeIzbrisi.UseVisualStyleBackColor = true;
@@ -149,9 +155,9 @@
             // dataGridKategorije
             // 
             this.dataGridKategorije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridKategorije.Location = new System.Drawing.Point(12, 284);
+            this.dataGridKategorije.Location = new System.Drawing.Point(454, 36);
             this.dataGridKategorije.Name = "dataGridKategorije";
-            this.dataGridKategorije.Size = new System.Drawing.Size(394, 84);
+            this.dataGridKategorije.Size = new System.Drawing.Size(394, 169);
             this.dataGridKategorije.TabIndex = 5;
             // 
             // lijekoviBindingSource1
@@ -176,16 +182,38 @@
             // dataGridLadice
             // 
             this.dataGridLadice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLadice.Location = new System.Drawing.Point(485, 284);
+            this.dataGridLadice.Location = new System.Drawing.Point(454, 259);
             this.dataGridLadice.Name = "dataGridLadice";
-            this.dataGridLadice.Size = new System.Drawing.Size(363, 84);
+            this.dataGridLadice.Size = new System.Drawing.Size(363, 118);
             this.dataGridLadice.TabIndex = 6;
+            // 
+            // lblLijekovi
+            // 
+            this.lblLijekovi.AutoSize = true;
+            this.lblLijekovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLijekovi.Location = new System.Drawing.Point(454, 13);
+            this.lblLijekovi.Name = "lblLijekovi";
+            this.lblLijekovi.Size = new System.Drawing.Size(140, 20);
+            this.lblLijekovi.TabIndex = 7;
+            this.lblLijekovi.Text = "Lijekovi u kategoriji";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(454, 224);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Naziv ladice";
             // 
             // FormKategorije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 403);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLijekovi);
             this.Controls.Add(this.dataGridLadice);
             this.Controls.Add(this.dataGridKategorije);
             this.Controls.Add(this.btnKategorijeIzbrisi);
@@ -206,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLadice)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -229,5 +258,7 @@
         private System.Windows.Forms.BindingSource lijekoviBindingSource1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridLadice;
+        private System.Windows.Forms.Label lblLijekovi;
+        private System.Windows.Forms.Label label1;
     }
 }
