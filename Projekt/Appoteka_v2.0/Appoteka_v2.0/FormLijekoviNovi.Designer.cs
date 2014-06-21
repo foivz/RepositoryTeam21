@@ -42,13 +42,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.textSerijskiBroj = new System.Windows.Forms.TextBox();
             this.textNaziv = new System.Windows.Forms.TextBox();
             this.textProizvodac = new System.Windows.Forms.TextBox();
             this.textCijenaKupovna = new System.Windows.Forms.TextBox();
             this.textCijenaProdajna = new System.Windows.Forms.TextBox();
-            this.textLadice = new System.Windows.Forms.TextBox();
             this.textDopunsko = new System.Windows.Forms.TextBox();
             this.textKolicina = new System.Windows.Forms.TextBox();
             this.dateRokTrajanja = new System.Windows.Forms.DateTimePicker();
@@ -56,9 +54,9 @@
             this.kategorijeLijekovaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kategorijeLijekovaTableAdapter = new Appoteka_v2._0.appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btnDodajKategoriju = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sadrzan = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,7 +64,7 @@
             // 
             // btnLijekoviNoviSpremi
             // 
-            this.btnLijekoviNoviSpremi.Location = new System.Drawing.Point(198, 266);
+            this.btnLijekoviNoviSpremi.Location = new System.Drawing.Point(184, 324);
             this.btnLijekoviNoviSpremi.Name = "btnLijekoviNoviSpremi";
             this.btnLijekoviNoviSpremi.Size = new System.Drawing.Size(75, 23);
             this.btnLijekoviNoviSpremi.TabIndex = 0;
@@ -76,7 +74,7 @@
             // 
             // btnLijekoviNoviIzlaz
             // 
-            this.btnLijekoviNoviIzlaz.Location = new System.Drawing.Point(297, 266);
+            this.btnLijekoviNoviIzlaz.Location = new System.Drawing.Point(292, 324);
             this.btnLijekoviNoviIzlaz.Name = "btnLijekoviNoviIzlaz";
             this.btnLijekoviNoviIzlaz.Size = new System.Drawing.Size(75, 23);
             this.btnLijekoviNoviIzlaz.TabIndex = 1;
@@ -156,15 +154,6 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "Dopunsko (%)";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(289, 123);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 13);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Ladice";
-            // 
             // textSerijskiBroj
             // 
             this.textSerijskiBroj.Location = new System.Drawing.Point(133, 26);
@@ -199,13 +188,6 @@
             this.textCijenaProdajna.Name = "textCijenaProdajna";
             this.textCijenaProdajna.Size = new System.Drawing.Size(126, 20);
             this.textCijenaProdajna.TabIndex = 16;
-            // 
-            // textLadice
-            // 
-            this.textLadice.Location = new System.Drawing.Point(373, 120);
-            this.textLadice.Name = "textLadice";
-            this.textLadice.Size = new System.Drawing.Size(126, 20);
-            this.textLadice.TabIndex = 20;
             // 
             // textDopunsko
             // 
@@ -255,8 +237,7 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nazivDataGridViewTextBoxColumn,
-            this.sadrzan});
+            this.nazivDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.kategorijeLijekovaBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -266,7 +247,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(297, 156);
+            this.dataGridView1.Location = new System.Drawing.Point(373, 198);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -276,17 +257,27 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(256, 73);
+            this.dataGridView1.Size = new System.Drawing.Size(157, 73);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // checkedListBox1
+            // btnDodajKategoriju
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(60, 210);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 23;
+            this.btnDodajKategoriju.Location = new System.Drawing.Point(373, 160);
+            this.btnDodajKategoriju.Name = "btnDodajKategoriju";
+            this.btnDodajKategoriju.Size = new System.Drawing.Size(75, 23);
+            this.btnDodajKategoriju.TabIndex = 23;
+            this.btnDodajKategoriju.Text = "Dodaj";
+            this.btnDodajKategoriju.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(292, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Kategorije";
             // 
             // nazivDataGridViewTextBoxColumn
             // 
@@ -294,22 +285,15 @@
             this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
             // 
-            // sadrzan
-            // 
-            this.sadrzan.DataPropertyName = "IdKategorije";
-            this.sadrzan.HeaderText = "Sadrzan";
-            this.sadrzan.Name = "sadrzan";
-            this.sadrzan.ReadOnly = true;
-            // 
             // FormLijekoviNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 316);
-            this.Controls.Add(this.checkedListBox1);
+            this.ClientSize = new System.Drawing.Size(563, 370);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnDodajKategoriju);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateRokTrajanja);
-            this.Controls.Add(this.textLadice);
             this.Controls.Add(this.textDopunsko);
             this.Controls.Add(this.textKolicina);
             this.Controls.Add(this.textCijenaProdajna);
@@ -317,7 +301,6 @@
             this.Controls.Add(this.textProizvodac);
             this.Controls.Add(this.textNaziv);
             this.Controls.Add(this.textSerijskiBroj);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -351,13 +334,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textSerijskiBroj;
         private System.Windows.Forms.TextBox textNaziv;
         private System.Windows.Forms.TextBox textProizvodac;
         private System.Windows.Forms.TextBox textCijenaKupovna;
         private System.Windows.Forms.TextBox textCijenaProdajna;
-        private System.Windows.Forms.TextBox textLadice;
         private System.Windows.Forms.TextBox textDopunsko;
         private System.Windows.Forms.TextBox textKolicina;
         private System.Windows.Forms.DateTimePicker dateRokTrajanja;
@@ -365,8 +346,8 @@
         private System.Windows.Forms.BindingSource kategorijeLijekovaBindingSource;
         private appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter kategorijeLijekovaTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn sadrzan;
+        private System.Windows.Forms.Button btnDodajKategoriju;
+        private System.Windows.Forms.Label label9;
     }
 }

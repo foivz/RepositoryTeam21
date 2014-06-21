@@ -98,6 +98,12 @@
     <Compile Include="FormDobavljaciNovi.Designer.cs">
       <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDodavanjeKategorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjeKategorija.Designer.cs">
+      <DependentUpon>FormDodavanjeKategorija.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDodavanjeLijekova.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDobavljaciNovi.resx">
       <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjeKategorija.resx">
+      <DependentUpon>FormDodavanjeKategorija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDodavanjeLijekova.resx">
       <DependentUpon>FormDodavanjeLijekova.cs</DependentUpon>
