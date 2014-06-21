@@ -3,11 +3,11 @@ C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
@@ -23,11 +23,12 @@ C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+<<<<<<< HEAD
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
@@ -91,3 +92,7 @@ D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appo
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
+=======
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+>>>>>>> 4400ec5868842d055c66677c4994dd9b7e247cb6
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources

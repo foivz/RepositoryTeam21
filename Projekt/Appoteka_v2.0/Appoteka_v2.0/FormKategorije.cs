@@ -110,6 +110,7 @@ namespace Appoteka_v2._0
                     using (var db = new appotekaDBEntities())
                     {
                         db.kategorijeLijekova.Attach(selektiranaKategorija);
+
                         db.kategorijeLijekova.Remove(selektiranaKategorija);
                         db.SaveChanges();
                     }

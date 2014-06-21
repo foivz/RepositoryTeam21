@@ -72,7 +72,7 @@
             // miFileExit
             // 
             this.miFileExit.Name = "miFileExit";
-            this.miFileExit.Size = new System.Drawing.Size(92, 22);
+            this.miFileExit.Size = new System.Drawing.Size(152, 22);
             this.miFileExit.Text = "Exit";
             this.miFileExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miFileExit_MouseUp);
             // 
@@ -89,21 +89,21 @@
             // miBrowseLijekovi
             // 
             this.miBrowseLijekovi.Name = "miBrowseLijekovi";
-            this.miBrowseLijekovi.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseLijekovi.Size = new System.Drawing.Size(152, 22);
             this.miBrowseLijekovi.Text = "Lijekovi";
             this.miBrowseLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseLijekovi_MouseUp);
             // 
             // miBrowseNarudzbe
             // 
             this.miBrowseNarudzbe.Name = "miBrowseNarudzbe";
-            this.miBrowseNarudzbe.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseNarudzbe.Size = new System.Drawing.Size(152, 22);
             this.miBrowseNarudzbe.Text = "Narudžbe";
             this.miBrowseNarudzbe.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseNarudzbe_MouseUp);
             // 
             // miBrowseRacuni
             // 
             this.miBrowseRacuni.Name = "miBrowseRacuni";
-            this.miBrowseRacuni.Size = new System.Drawing.Size(125, 22);
+            this.miBrowseRacuni.Size = new System.Drawing.Size(152, 22);
             this.miBrowseRacuni.Text = "Računi";
             this.miBrowseRacuni.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseRacuni_MouseUp);
             // 
@@ -158,7 +158,7 @@
             // miHzzoProvjeri
             // 
             this.miHzzoProvjeri.Name = "miHzzoProvjeri";
-            this.miHzzoProvjeri.Size = new System.Drawing.Size(152, 22);
+            this.miHzzoProvjeri.Size = new System.Drawing.Size(114, 22);
             this.miHzzoProvjeri.Text = "Provjeri";
             this.miHzzoProvjeri.Click += new System.EventHandler(this.miHzzoProvjeri_Click);
             // 

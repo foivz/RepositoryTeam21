@@ -98,5 +98,7 @@ namespace Appoteka_v2._0
             report.WindowState = FormWindowState.Maximized;
             report.Show();
         }
+
+        
     }
 }
