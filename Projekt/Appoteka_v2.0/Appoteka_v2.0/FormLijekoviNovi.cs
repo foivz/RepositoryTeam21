@@ -78,6 +78,9 @@ namespace Appoteka_v2._0
                         db.SaveChanges();
                         MessageBox.Show("Uspješno ste dodali novi lijek", "Ispravan unos");
                     }
+
+                    
+
                 }
                 else
                 {

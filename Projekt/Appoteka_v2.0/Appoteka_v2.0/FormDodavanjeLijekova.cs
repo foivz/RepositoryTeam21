@@ -13,12 +13,13 @@ namespace Appoteka_v2._0
     public partial class FormDodavanjeLijekova : Form
     {
 
-        
 
+        private static BindingList<lijekovi> prijenosLijeka = new BindingList<lijekovi>();
 
         public FormDodavanjeLijekova()
         {
             InitializeComponent();
+            prijenosLijeka.Clear();
         }
 
         private void PrikaziLijekove()
@@ -31,16 +32,19 @@ namespace Appoteka_v2._0
             lijekoviBindingSource4.DataSource = listaLijekova;
         }
 
+        
+        
+        
+
         private void FormDodavanjeLijekova_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'appotekaDBDataSet2.lijekovi_has_racun' table. You can move, or remove it, as needed.
             this.lijekovi_has_racunTableAdapter.Fill(this.appotekaDBDataSet2.lijekovi_has_racun);
 
             PrikaziLijekove();
-
+            
         }
         
-        private static BindingList<lijekovi> prijenosLijeka = new BindingList<lijekovi>();
 
         private void btnDodajLijek_Click(object sender, EventArgs e)
         {
@@ -49,12 +53,14 @@ namespace Appoteka_v2._0
             prijenosLijeka.Add(selektiraniLijek);
             lijekoviBindingSource7.DataSource = prijenosLijeka;
             
+            
         }
 
         private void btnZavrsiDodajLijek_Click(object sender, EventArgs e)
         {
             
             FormRacuniNovi.lijekoviRacun = prijenosLijeka;
+            
             this.Close();
         }
     }

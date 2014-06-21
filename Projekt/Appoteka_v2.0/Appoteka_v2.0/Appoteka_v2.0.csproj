@@ -205,6 +205,11 @@
     <Compile Include="kategorijeLijekova.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
+    <Compile Include="kriticneZalihe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ladice.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
@@ -291,6 +296,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLijekovi.resx">
       <DependentUpon>FormLijekovi.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLijekoviNovi.resx">
       <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
@@ -386,6 +392,17 @@
     </None>
     <None Include="HzzoDBDataSet.xss">
       <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kriticneZalihe.xsc">
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </None>
+    <None Include="kriticneZalihe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kriticneZalihe.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kriticneZalihe.xss">
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
     </None>
     <None Include="ModelAppoteka.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

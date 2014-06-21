@@ -36,25 +36,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 40);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(168, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 13);
+            this.label1.Size = new System.Drawing.Size(184, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Zdrastvena iskaznica";
             // 
             // textZdrastvena
             // 
-            this.textZdrastvena.Location = new System.Drawing.Point(206, 37);
+            this.textZdrastvena.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textZdrastvena.Location = new System.Drawing.Point(402, 113);
             this.textZdrastvena.Name = "textZdrastvena";
-            this.textZdrastvena.Size = new System.Drawing.Size(152, 20);
+            this.textZdrastvena.Size = new System.Drawing.Size(231, 29);
             this.textZdrastvena.TabIndex = 1;
             this.textZdrastvena.TextChanged += new System.EventHandler(this.textSerijskiBroj_TextChanged);
             // 
             // btnFormHzzoProvjeri
             // 
-            this.btnFormHzzoProvjeri.Location = new System.Drawing.Point(222, 85);
+            this.btnFormHzzoProvjeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnFormHzzoProvjeri.Location = new System.Drawing.Point(452, 169);
             this.btnFormHzzoProvjeri.Name = "btnFormHzzoProvjeri";
-            this.btnFormHzzoProvjeri.Size = new System.Drawing.Size(109, 23);
+            this.btnFormHzzoProvjeri.Size = new System.Drawing.Size(130, 46);
             this.btnFormHzzoProvjeri.TabIndex = 2;
             this.btnFormHzzoProvjeri.Text = "Provjeri";
             this.btnFormHzzoProvjeri.UseVisualStyleBackColor = true;
@@ -64,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 285);
+            this.ClientSize = new System.Drawing.Size(877, 346);
             this.Controls.Add(this.btnFormHzzoProvjeri);
             this.Controls.Add(this.textZdrastvena);
             this.Controls.Add(this.label1);
