@@ -34,7 +34,7 @@
             // txtKlasificiraj
             // 
             this.txtKlasificiraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtKlasificiraj.Location = new System.Drawing.Point(466, 153);
+            this.txtKlasificiraj.Location = new System.Drawing.Point(436, 156);
             this.txtKlasificiraj.Name = "txtKlasificiraj";
             this.txtKlasificiraj.Size = new System.Drawing.Size(92, 38);
             this.txtKlasificiraj.TabIndex = 0;

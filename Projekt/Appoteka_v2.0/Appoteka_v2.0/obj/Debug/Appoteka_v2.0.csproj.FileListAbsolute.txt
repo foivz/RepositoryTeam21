@@ -71,3 +71,39 @@ C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormABC.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeKategorija.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacunPrikazi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Report.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml

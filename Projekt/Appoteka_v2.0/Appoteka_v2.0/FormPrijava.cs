@@ -16,6 +16,7 @@ namespace Appoteka_v2._0
         public FormPrijava()
         {
             InitializeComponent();
+            textPrijavaLozinka.PasswordChar = '*';
         }
 
         private void provjeriZaposlenika()
