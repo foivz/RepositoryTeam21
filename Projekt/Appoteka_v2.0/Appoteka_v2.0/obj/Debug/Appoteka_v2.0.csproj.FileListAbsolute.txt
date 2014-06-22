@@ -33,3 +33,5 @@ C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Raverus.FiskalizacijaDEV.dll
+C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache

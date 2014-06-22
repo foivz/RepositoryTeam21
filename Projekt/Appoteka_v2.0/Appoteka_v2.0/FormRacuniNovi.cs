@@ -58,14 +58,66 @@ namespace Appoteka_v2._0
             Graphics graphic = e.Graphics;
 
             Font font = new Font("Courier New", 12);
+            Font font2 = new Font("Courier New", 12, FontStyle.Underline | FontStyle.Bold);
+            Font font3 = new Font("Courier New", 12, FontStyle.Underline);
 
+            SolidBrush brush = new SolidBrush(Color.Black);
             float fontHeight = font.GetHeight();
 
             int startX = 10;
             int startY = 10;
-            int offset = 40;
+            int offset = 270;
 
-            graphic.DrawString("Racun ljekarna", new Font("Courier New", 18), new SolidBrush(Color.Black), startX, startY);
+            graphic.DrawString("Appoteka j.d.o.o", new Font("Courier New", 18,FontStyle.Bold), new SolidBrush(Color.Black), startX, startY);
+            graphic.DrawString("42000 VARAŽDIN, Ludbreška 3 \nOIB: 22383729384 vl. Gazda Šef", font, new SolidBrush(Color.Black),startX, startY + 30);
+
+            string datum = "Datum: "+DateTime.Now.ToString("dd.MM.yyyy").PadRight(25);
+            string vrijeme ="Vrijeme: "+DateTime.Now.ToString("hh:mm");
+            string datumVrijeme = datum + vrijeme;
+            graphic.DrawString(datumVrijeme, font, new SolidBrush(Color.Black),startX,startY +100);
+            string izdao = "Račun izdao: " + comboBox1.Text;
+            graphic.DrawString(izdao, font, brush, startX, startY + 130);
+            graphic.DrawString("RAČUN broj: 33/2 ",new Font("Courier New",12,FontStyle.Bold),brush,startX,startY +160);
+
+            string headNaziv = "Naziv".PadRight(15);
+            string headKolicina = "Kolicina".PadRight(10);
+            string headDopunsko = "Dopunsko".PadRight(15);
+            string headIznos = "Iznos__".PadRight(45);
+            string glavnaLinija = headNaziv + headKolicina + headDopunsko + headIznos;
+
+            graphic.DrawString(glavnaLinija, font2, brush, startX, startY + 230);
+
+
+            foreach (DataGridViewRow x in dataGridView1.Rows)
+            {
+                if (x.Cells[0].Value != null)
+                {
+                    string naziv = x.Cells[1].Value.ToString().PadRight(15);
+                    string kolicina = x.Cells[4].Value.ToString().PadRight(10);
+                    string dopunsko = string.Format("{0}%",x.Cells[3].Value.ToString()).PadRight(15);
+                    string iznos = string.Format("{0} kn",x.Cells[5].Value.ToString()).PadRight(45);
+                    string linija = naziv + kolicina + dopunsko + iznos;
+
+                    graphic.DrawString(linija, font, new SolidBrush(Color.Black), startX, startY + offset);
+
+                    offset = offset + (int)fontHeight + 5;
+
+                }
+
+              
+            }
+            offset = offset + 20;
+
+            graphic.DrawString("Total".PadRight(40) + string.Format("{0} kn", textRacuniIznos.Text), font, new SolidBrush(Color.Black), startX, startY + offset);
+            
+            float PDV = float.Parse(textRacuniIznos.Text)*25/100;
+            string PDVispis = PDV.ToString();
+            float UKUPNO = float.Parse(textRacuniIznos.Text) + PDV;
+            string UKUPNOispis = UKUPNO.ToString();
+
+            graphic.DrawString("PDV".PadRight(40) + string.Format("{0} kn", PDVispis), font3, brush, startX, startY + offset + 20);
+            graphic.DrawString("UKUPNO za platiti:".PadRight(32) + string.Format("{0} kn", UKUPNOispis), new Font("Courier New", 14, FontStyle.Bold), brush, startX, startY + offset + 50);
+
 
         }
 
@@ -139,8 +191,7 @@ namespace Appoteka_v2._0
                 if (racunZaIzmjenu == null)
                 {
                     
-                     MessageBox.Show("Selected Item Text: " +comboBox1.SelectedValue.ToString()+ "\n" +
-                    "Index: " + comboBox1.SelectedIndex.ToString());
+                     
                     racun Racun = new racun
                     {
                         iznos = Math.Round(Convert.ToSingle(textRacuniIznos.Text), 2),
@@ -177,6 +228,8 @@ namespace Appoteka_v2._0
 
                     db.SaveChanges();
                     MessageBox.Show("Uspješno ste dodali novi račun", "Ispravan unos");
+
+                    PrintanjeRacuna();
                 }
                 else
                 {

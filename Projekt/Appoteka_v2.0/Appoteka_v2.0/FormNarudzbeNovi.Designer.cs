@@ -48,6 +48,7 @@
             this.lijekoviBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.lijekoviBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.textNarudzbeIznos = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljaciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).BeginInit();
@@ -55,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 97);
+            this.label3.Location = new System.Drawing.Point(28, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
@@ -78,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 144);
+            this.label4.Location = new System.Drawing.Point(28, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 3;
@@ -93,7 +95,7 @@
             // 
             // btnNarudzbeNoviSpremi
             // 
-            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(31, 225);
+            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(50, 361);
             this.btnNarudzbeNoviSpremi.Name = "btnNarudzbeNoviSpremi";
             this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(75, 23);
             this.btnNarudzbeNoviSpremi.TabIndex = 6;
@@ -103,7 +105,7 @@
             // 
             // btnNarudzbeNoviIzlaz
             // 
-            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(176, 225);
+            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(195, 361);
             this.btnNarudzbeNoviIzlaz.Name = "btnNarudzbeNoviIzlaz";
             this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(75, 23);
             this.btnNarudzbeNoviIzlaz.TabIndex = 7;
@@ -116,10 +118,11 @@
             this.comboBoxDobavljac.DataSource = this.dobavljaciBindingSource;
             this.comboBoxDobavljac.DisplayMember = "naziv";
             this.comboBoxDobavljac.FormattingEnabled = true;
-            this.comboBoxDobavljac.Location = new System.Drawing.Point(113, 94);
+            this.comboBoxDobavljac.Location = new System.Drawing.Point(113, 79);
             this.comboBoxDobavljac.Name = "comboBoxDobavljac";
             this.comboBoxDobavljac.Size = new System.Drawing.Size(138, 21);
             this.comboBoxDobavljac.TabIndex = 9;
+            this.comboBoxDobavljac.ValueMember = "IdDobavljac";
             // 
             // dobavljaciBindingSource
             // 
@@ -136,10 +139,11 @@
             this.comboBoxZaposlenik.DataSource = this.zaposleniciBindingSource;
             this.comboBoxZaposlenik.DisplayMember = "prezime";
             this.comboBoxZaposlenik.FormattingEnabled = true;
-            this.comboBoxZaposlenik.Location = new System.Drawing.Point(113, 144);
+            this.comboBoxZaposlenik.Location = new System.Drawing.Point(113, 129);
             this.comboBoxZaposlenik.Name = "comboBoxZaposlenik";
             this.comboBoxZaposlenik.Size = new System.Drawing.Size(138, 21);
             this.comboBoxZaposlenik.TabIndex = 10;
+            this.comboBoxZaposlenik.ValueMember = "OIB";
             // 
             // zaposleniciBindingSource
             // 
@@ -180,16 +184,25 @@
             // 
             // textNarudzbeIznos
             // 
-            this.textNarudzbeIznos.Location = new System.Drawing.Point(112, 187);
+            this.textNarudzbeIznos.Location = new System.Drawing.Point(536, 41);
             this.textNarudzbeIznos.Name = "textNarudzbeIznos";
             this.textNarudzbeIznos.Size = new System.Drawing.Size(139, 20);
             this.textNarudzbeIznos.TabIndex = 11;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(31, 178);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(712, 150);
+            this.dataGridView1.TabIndex = 12;
             // 
             // FormNarudzbeNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 274);
+            this.ClientSize = new System.Drawing.Size(779, 436);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textNarudzbeIznos);
             this.Controls.Add(this.comboBoxZaposlenik);
             this.Controls.Add(this.comboBoxDobavljac);
@@ -209,6 +222,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +249,6 @@
         private System.Windows.Forms.BindingSource lijekoviBindingSource2;
         private System.Windows.Forms.BindingSource lijekoviBindingSource3;
         private System.Windows.Forms.TextBox textNarudzbeIznos;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

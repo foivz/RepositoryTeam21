@@ -38,7 +38,9 @@ namespace Appoteka_v2._0
                    else
                    {
                        FormAppoteka NovaFormaAppoteka = new FormAppoteka();
-                       NovaFormaAppoteka.ShowDialog();
+                       NovaFormaAppoteka.Show();
+                       this.Hide();
+                       
                       
                    }
 

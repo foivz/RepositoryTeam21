@@ -61,7 +61,7 @@
             this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazivDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cijenaProdajna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolicinaPrijenos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource1)).BeginInit();
@@ -240,11 +240,11 @@
             this.serijskiBrojDataGridViewTextBoxColumn1,
             this.nazivDataGridViewTextBoxColumn1,
             this.cijenaProdajna,
-            this.kolicinaPrijenos});
+            this.kolicina});
             this.dataGridView2.DataSource = this.lijekoviBindingSource7;
-            this.dataGridView2.Location = new System.Drawing.Point(401, 208);
+            this.dataGridView2.Location = new System.Drawing.Point(369, 208);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(412, 143);
+            this.dataGridView2.Size = new System.Drawing.Size(444, 143);
             this.dataGridView2.TabIndex = 4;
             // 
             // lijekoviBindingSource7
@@ -280,10 +280,11 @@
             this.cijenaProdajna.HeaderText = "Prodajna cijena";
             this.cijenaProdajna.Name = "cijenaProdajna";
             // 
-            // kolicinaPrijenos
+            // kolicina
             // 
-            this.kolicinaPrijenos.HeaderText = "Količina";
-            this.kolicinaPrijenos.Name = "kolicinaPrijenos";
+            this.kolicina.DataPropertyName = "kolicina";
+            this.kolicina.HeaderText = "Količina";
+            this.kolicina.Name = "kolicina";
             // 
             // FormDodavanjeLijekova
             // 
@@ -346,10 +347,10 @@
         private System.Windows.Forms.BindingSource lijekoviBindingSource6;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource lijekoviBindingSource7;
+        private System.Windows.Forms.Button btnZavrsiDodajLijek;
         private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cijenaProdajna;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kolicinaPrijenos;
-        private System.Windows.Forms.Button btnZavrsiDodajLijek;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kolicina;
     }
 }

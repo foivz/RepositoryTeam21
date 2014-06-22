@@ -52,9 +52,10 @@ namespace Appoteka_v2._0
             racun selektiraniRacun = racunBindingSource.Current as racun;
             if (selektiraniRacun != null)
             {
-                FormRacuniNovi RacuniNoviForma = new FormRacuniNovi(selektiraniRacun);
-                RacuniNoviForma.ShowDialog();
+                FormRacunPrikazi pr = new FormRacunPrikazi(selektiraniRacun);
+                pr.ShowDialog();
                 PrikaziRacune();
+
             }
         }
 
