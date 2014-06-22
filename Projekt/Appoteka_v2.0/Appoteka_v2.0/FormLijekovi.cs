@@ -117,5 +117,28 @@ namespace Appoteka_v2._0
 
         }
 
+        private void btnTrazi_Click(object sender, EventArgs e)
+        {
+            string searchValue = txtTrazi.Text.ToLower();
+            try
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    var red = row.Cells[0].Value.ToString().ToLower();
+                    if (red.Equals(searchValue))
+                    {
+                        row.Selected = true;
+                        PrikaziKategorije();
+                        break;
+                    }
+                }
+            }
+
+            catch
+            {
+                MessageBox.Show("Vrijednost ne postoji!", "Greška!");
+            }
+        }
+
     }
 }

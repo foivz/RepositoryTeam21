@@ -30,6 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serijskiBrojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proizvodacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rokTrajanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijenaKupovnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijenaProdajnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dopunskoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lijekoviBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appotekaDBDataSet = new Appoteka_v2._0.appotekaDBDataSet();
             this.lijekoviTableAdapter = new Appoteka_v2._0.appotekaDBDataSetTableAdapters.lijekoviTableAdapter();
@@ -44,25 +52,20 @@
             this.lijekovihaskategorijeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appotekaDBDataSet2 = new Appoteka_v2._0.appotekaDBDataSet2();
             this.lijekovi_has_kategorijeTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.lijekovi_has_kategorijeTableAdapter();
-            this.dataGridLijekoviLadice = new System.Windows.Forms.DataGridView();
             this.kategorijeLijekovaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kategorijeLijekovaTableAdapter1 = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.kategorijeLijekovaTableAdapter();
             this.dgvKriticneZalihe = new System.Windows.Forms.DataGridView();
-            this.lblKriticneZalihe = new System.Windows.Forms.Label();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serijskiBrojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proizvodacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rokTrajanjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaKupovnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijenaProdajnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dopunskoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serijskiBrojDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazivDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kolicinaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lijekoviBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kriticneZalihe = new Appoteka_v2._0.kriticneZalihe();
+            this.lblKriticneZalihe = new System.Windows.Forms.Label();
             this.lijekoviTableAdapter1 = new Appoteka_v2._0.kriticneZaliheTableAdapters.lijekoviTableAdapter();
+            this.grbTrazilica = new System.Windows.Forms.GroupBox();
+            this.btnTrazi = new System.Windows.Forms.Button();
+            this.txtTrazi = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet)).BeginInit();
@@ -71,11 +74,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLijekoviKategorije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekovihaskategorijeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridLijekoviLadice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKriticneZalihe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kriticneZalihe)).BeginInit();
+            this.grbTrazilica.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -92,150 +95,13 @@
             this.kolicinaDataGridViewTextBoxColumn,
             this.dopunskoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lijekoviBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 57);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(938, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // lijekoviBindingSource
-            // 
-            this.lijekoviBindingSource.DataMember = "lijekovi";
-            this.lijekoviBindingSource.DataSource = this.appotekaDBDataSet;
-            // 
-            // appotekaDBDataSet
-            // 
-            this.appotekaDBDataSet.DataSetName = "appotekaDBDataSet";
-            this.appotekaDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lijekoviTableAdapter
-            // 
-            this.lijekoviTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnLijekoviNovi
-            // 
-            this.btnLijekoviNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLijekoviNovi.Location = new System.Drawing.Point(167, 295);
-            this.btnLijekoviNovi.Name = "btnLijekoviNovi";
-            this.btnLijekoviNovi.Size = new System.Drawing.Size(75, 32);
-            this.btnLijekoviNovi.TabIndex = 1;
-            this.btnLijekoviNovi.Text = "Novi";
-            this.btnLijekoviNovi.UseVisualStyleBackColor = true;
-            this.btnLijekoviNovi.Click += new System.EventHandler(this.btnLijekoviNovi_Click);
-            // 
-            // btnLijekoviNatrag
-            // 
-            this.btnLijekoviNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLijekoviNatrag.Location = new System.Drawing.Point(22, 295);
-            this.btnLijekoviNatrag.Name = "btnLijekoviNatrag";
-            this.btnLijekoviNatrag.Size = new System.Drawing.Size(75, 32);
-            this.btnLijekoviNatrag.TabIndex = 2;
-            this.btnLijekoviNatrag.Text = "Natrag";
-            this.btnLijekoviNatrag.UseVisualStyleBackColor = true;
-            this.btnLijekoviNatrag.Click += new System.EventHandler(this.btnLijekoviNatrag_Click);
-            // 
-            // btnLijekoviIzmjeni
-            // 
-            this.btnLijekoviIzmjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLijekoviIzmjeni.Location = new System.Drawing.Point(274, 295);
-            this.btnLijekoviIzmjeni.Name = "btnLijekoviIzmjeni";
-            this.btnLijekoviIzmjeni.Size = new System.Drawing.Size(75, 32);
-            this.btnLijekoviIzmjeni.TabIndex = 3;
-            this.btnLijekoviIzmjeni.Text = "Izmjeni";
-            this.btnLijekoviIzmjeni.UseVisualStyleBackColor = true;
-            this.btnLijekoviIzmjeni.Click += new System.EventHandler(this.btnLijekoviIzmjeni_Click);
-            // 
-            // btnLijekIzbrisi
-            // 
-            this.btnLijekIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnLijekIzbrisi.Location = new System.Drawing.Point(378, 295);
-            this.btnLijekIzbrisi.Name = "btnLijekIzbrisi";
-            this.btnLijekIzbrisi.Size = new System.Drawing.Size(75, 32);
-            this.btnLijekIzbrisi.TabIndex = 4;
-            this.btnLijekIzbrisi.Text = "Izbriši";
-            this.btnLijekIzbrisi.UseVisualStyleBackColor = true;
-            this.btnLijekIzbrisi.Click += new System.EventHandler(this.btnLijekIzbrisi_Click);
-            // 
-            // appotekaDBDataSet1
-            // 
-            this.appotekaDBDataSet1.DataSetName = "appotekaDBDataSet1";
-            this.appotekaDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kategorijeLijekovaBindingSource
-            // 
-            this.kategorijeLijekovaBindingSource.DataMember = "kategorijeLijekova";
-            this.kategorijeLijekovaBindingSource.DataSource = this.appotekaDBDataSet1;
-            // 
-            // kategorijeLijekovaTableAdapter
-            // 
-            this.kategorijeLijekovaTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridLijekoviKategorije
-            // 
-            this.dataGridLijekoviKategorije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLijekoviKategorije.Location = new System.Drawing.Point(22, 184);
-            this.dataGridLijekoviKategorije.Name = "dataGridLijekoviKategorije";
-            this.dataGridLijekoviKategorije.Size = new System.Drawing.Size(348, 93);
-            this.dataGridLijekoviKategorije.TabIndex = 5;
-            this.dataGridLijekoviKategorije.SelectionChanged += new System.EventHandler(this.dataGridLijekoviKategorije_SelectionChanged);
-            // 
-            // lijekovihaskategorijeBindingSource
-            // 
-            this.lijekovihaskategorijeBindingSource.DataMember = "lijekovi_has_kategorije";
-            this.lijekovihaskategorijeBindingSource.DataSource = this.appotekaDBDataSet2;
-            // 
-            // appotekaDBDataSet2
-            // 
-            this.appotekaDBDataSet2.DataSetName = "appotekaDBDataSet2";
-            this.appotekaDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lijekovi_has_kategorijeTableAdapter
-            // 
-            this.lijekovi_has_kategorijeTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridLijekoviLadice
-            // 
-            this.dataGridLijekoviLadice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLijekoviLadice.Location = new System.Drawing.Point(376, 184);
-            this.dataGridLijekoviLadice.Name = "dataGridLijekoviLadice";
-            this.dataGridLijekoviLadice.Size = new System.Drawing.Size(77, 93);
-            this.dataGridLijekoviLadice.TabIndex = 6;
-            // 
-            // kategorijeLijekovaBindingSource1
-            // 
-            this.kategorijeLijekovaBindingSource1.DataMember = "kategorijeLijekova";
-            this.kategorijeLijekovaBindingSource1.DataSource = this.appotekaDBDataSet2;
-            // 
-            // kategorijeLijekovaTableAdapter1
-            // 
-            this.kategorijeLijekovaTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dgvKriticneZalihe
-            // 
-            this.dgvKriticneZalihe.AutoGenerateColumns = false;
-            this.dgvKriticneZalihe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKriticneZalihe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.serijskiBrojDataGridViewTextBoxColumn1,
-            this.nazivDataGridViewTextBoxColumn1,
-            this.kolicinaDataGridViewTextBoxColumn1});
-            this.dgvKriticneZalihe.DataSource = this.lijekoviBindingSource1;
-            this.dgvKriticneZalihe.Location = new System.Drawing.Point(568, 209);
-            this.dgvKriticneZalihe.Name = "dgvKriticneZalihe";
-            this.dgvKriticneZalihe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKriticneZalihe.Size = new System.Drawing.Size(392, 118);
-            this.dgvKriticneZalihe.TabIndex = 7;
-            // 
-            // lblKriticneZalihe
-            // 
-            this.lblKriticneZalihe.AutoSize = true;
-            this.lblKriticneZalihe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblKriticneZalihe.Location = new System.Drawing.Point(568, 184);
-            this.lblKriticneZalihe.Name = "lblKriticneZalihe";
-            this.lblKriticneZalihe.Size = new System.Drawing.Size(121, 20);
-            this.lblKriticneZalihe.TabIndex = 9;
-            this.lblKriticneZalihe.Text = "Kritične zalihe";
             // 
             // nazivDataGridViewTextBoxColumn
             // 
@@ -285,6 +151,125 @@
             this.dopunskoDataGridViewTextBoxColumn.HeaderText = "Dopunsko %";
             this.dopunskoDataGridViewTextBoxColumn.Name = "dopunskoDataGridViewTextBoxColumn";
             // 
+            // lijekoviBindingSource
+            // 
+            this.lijekoviBindingSource.DataMember = "lijekovi";
+            this.lijekoviBindingSource.DataSource = this.appotekaDBDataSet;
+            // 
+            // appotekaDBDataSet
+            // 
+            this.appotekaDBDataSet.DataSetName = "appotekaDBDataSet";
+            this.appotekaDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lijekoviTableAdapter
+            // 
+            this.lijekoviTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnLijekoviNovi
+            // 
+            this.btnLijekoviNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekoviNovi.Location = new System.Drawing.Point(22, 11);
+            this.btnLijekoviNovi.Name = "btnLijekoviNovi";
+            this.btnLijekoviNovi.Size = new System.Drawing.Size(75, 32);
+            this.btnLijekoviNovi.TabIndex = 1;
+            this.btnLijekoviNovi.Text = "Novi";
+            this.btnLijekoviNovi.UseVisualStyleBackColor = true;
+            this.btnLijekoviNovi.Click += new System.EventHandler(this.btnLijekoviNovi_Click);
+            // 
+            // btnLijekoviNatrag
+            // 
+            this.btnLijekoviNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekoviNatrag.Location = new System.Drawing.Point(12, 329);
+            this.btnLijekoviNatrag.Name = "btnLijekoviNatrag";
+            this.btnLijekoviNatrag.Size = new System.Drawing.Size(75, 32);
+            this.btnLijekoviNatrag.TabIndex = 2;
+            this.btnLijekoviNatrag.Text = "Natrag";
+            this.btnLijekoviNatrag.UseVisualStyleBackColor = true;
+            this.btnLijekoviNatrag.Click += new System.EventHandler(this.btnLijekoviNatrag_Click);
+            // 
+            // btnLijekoviIzmjeni
+            // 
+            this.btnLijekoviIzmjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekoviIzmjeni.Location = new System.Drawing.Point(135, 11);
+            this.btnLijekoviIzmjeni.Name = "btnLijekoviIzmjeni";
+            this.btnLijekoviIzmjeni.Size = new System.Drawing.Size(75, 32);
+            this.btnLijekoviIzmjeni.TabIndex = 3;
+            this.btnLijekoviIzmjeni.Text = "Izmjeni";
+            this.btnLijekoviIzmjeni.UseVisualStyleBackColor = true;
+            this.btnLijekoviIzmjeni.Click += new System.EventHandler(this.btnLijekoviIzmjeni_Click);
+            // 
+            // btnLijekIzbrisi
+            // 
+            this.btnLijekIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekIzbrisi.Location = new System.Drawing.Point(247, 11);
+            this.btnLijekIzbrisi.Name = "btnLijekIzbrisi";
+            this.btnLijekIzbrisi.Size = new System.Drawing.Size(75, 32);
+            this.btnLijekIzbrisi.TabIndex = 4;
+            this.btnLijekIzbrisi.Text = "Izbriši";
+            this.btnLijekIzbrisi.UseVisualStyleBackColor = true;
+            this.btnLijekIzbrisi.Click += new System.EventHandler(this.btnLijekIzbrisi_Click);
+            // 
+            // appotekaDBDataSet1
+            // 
+            this.appotekaDBDataSet1.DataSetName = "appotekaDBDataSet1";
+            this.appotekaDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kategorijeLijekovaBindingSource
+            // 
+            this.kategorijeLijekovaBindingSource.DataMember = "kategorijeLijekova";
+            this.kategorijeLijekovaBindingSource.DataSource = this.appotekaDBDataSet1;
+            // 
+            // kategorijeLijekovaTableAdapter
+            // 
+            this.kategorijeLijekovaTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridLijekoviKategorije
+            // 
+            this.dataGridLijekoviKategorije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridLijekoviKategorije.Location = new System.Drawing.Point(269, 243);
+            this.dataGridLijekoviKategorije.Name = "dataGridLijekoviKategorije";
+            this.dataGridLijekoviKategorije.Size = new System.Drawing.Size(236, 118);
+            this.dataGridLijekoviKategorije.TabIndex = 5;
+            this.dataGridLijekoviKategorije.SelectionChanged += new System.EventHandler(this.dataGridLijekoviKategorije_SelectionChanged);
+            // 
+            // lijekovihaskategorijeBindingSource
+            // 
+            this.lijekovihaskategorijeBindingSource.DataMember = "lijekovi_has_kategorije";
+            this.lijekovihaskategorijeBindingSource.DataSource = this.appotekaDBDataSet2;
+            // 
+            // appotekaDBDataSet2
+            // 
+            this.appotekaDBDataSet2.DataSetName = "appotekaDBDataSet2";
+            this.appotekaDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lijekovi_has_kategorijeTableAdapter
+            // 
+            this.lijekovi_has_kategorijeTableAdapter.ClearBeforeFill = true;
+            // 
+            // kategorijeLijekovaBindingSource1
+            // 
+            this.kategorijeLijekovaBindingSource1.DataMember = "kategorijeLijekova";
+            this.kategorijeLijekovaBindingSource1.DataSource = this.appotekaDBDataSet2;
+            // 
+            // kategorijeLijekovaTableAdapter1
+            // 
+            this.kategorijeLijekovaTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dgvKriticneZalihe
+            // 
+            this.dgvKriticneZalihe.AutoGenerateColumns = false;
+            this.dgvKriticneZalihe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKriticneZalihe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.serijskiBrojDataGridViewTextBoxColumn1,
+            this.nazivDataGridViewTextBoxColumn1,
+            this.kolicinaDataGridViewTextBoxColumn1});
+            this.dgvKriticneZalihe.DataSource = this.lijekoviBindingSource1;
+            this.dgvKriticneZalihe.Location = new System.Drawing.Point(568, 243);
+            this.dgvKriticneZalihe.Name = "dgvKriticneZalihe";
+            this.dgvKriticneZalihe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKriticneZalihe.Size = new System.Drawing.Size(392, 118);
+            this.dgvKriticneZalihe.TabIndex = 7;
+            // 
             // serijskiBrojDataGridViewTextBoxColumn1
             // 
             this.serijskiBrojDataGridViewTextBoxColumn1.DataPropertyName = "serijskiBroj";
@@ -313,18 +298,67 @@
             this.kriticneZalihe.DataSetName = "kriticneZalihe";
             this.kriticneZalihe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // lblKriticneZalihe
+            // 
+            this.lblKriticneZalihe.AutoSize = true;
+            this.lblKriticneZalihe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblKriticneZalihe.Location = new System.Drawing.Point(568, 218);
+            this.lblKriticneZalihe.Name = "lblKriticneZalihe";
+            this.lblKriticneZalihe.Size = new System.Drawing.Size(121, 20);
+            this.lblKriticneZalihe.TabIndex = 9;
+            this.lblKriticneZalihe.Text = "Kritične zalihe";
+            // 
             // lijekoviTableAdapter1
             // 
             this.lijekoviTableAdapter1.ClearBeforeFill = true;
+            // 
+            // grbTrazilica
+            // 
+            this.grbTrazilica.Controls.Add(this.btnTrazi);
+            this.grbTrazilica.Controls.Add(this.txtTrazi);
+            this.grbTrazilica.Location = new System.Drawing.Point(583, 0);
+            this.grbTrazilica.Name = "grbTrazilica";
+            this.grbTrazilica.Size = new System.Drawing.Size(377, 50);
+            this.grbTrazilica.TabIndex = 12;
+            this.grbTrazilica.TabStop = false;
+            this.grbTrazilica.Text = "Tražilica";
+            // 
+            // btnTrazi
+            // 
+            this.btnTrazi.Location = new System.Drawing.Point(292, 17);
+            this.btnTrazi.Name = "btnTrazi";
+            this.btnTrazi.Size = new System.Drawing.Size(75, 23);
+            this.btnTrazi.TabIndex = 1;
+            this.btnTrazi.Text = "Traži";
+            this.btnTrazi.UseVisualStyleBackColor = true;
+            this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
+            // 
+            // txtTrazi
+            // 
+            this.txtTrazi.Location = new System.Drawing.Point(21, 19);
+            this.txtTrazi.Name = "txtTrazi";
+            this.txtTrazi.Size = new System.Drawing.Size(243, 20);
+            this.txtTrazi.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(265, 218);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Kategorije selektiranog";
             // 
             // FormLijekovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 373);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.grbTrazilica);
             this.Controls.Add(this.lblKriticneZalihe);
             this.Controls.Add(this.dgvKriticneZalihe);
-            this.Controls.Add(this.dataGridLijekoviLadice);
             this.Controls.Add(this.dataGridLijekoviKategorije);
             this.Controls.Add(this.btnLijekIzbrisi);
             this.Controls.Add(this.btnLijekoviIzmjeni);
@@ -343,11 +377,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLijekoviKategorije)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekovihaskategorijeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridLijekoviLadice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKriticneZalihe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kriticneZalihe)).EndInit();
+            this.grbTrazilica.ResumeLayout(false);
+            this.grbTrazilica.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,7 +405,6 @@
         private appotekaDBDataSet2 appotekaDBDataSet2;
         private System.Windows.Forms.BindingSource lijekovihaskategorijeBindingSource;
         private appotekaDBDataSet2TableAdapters.lijekovi_has_kategorijeTableAdapter lijekovi_has_kategorijeTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridLijekoviLadice;
         private System.Windows.Forms.BindingSource kategorijeLijekovaBindingSource1;
         private appotekaDBDataSet2TableAdapters.kategorijeLijekovaTableAdapter kategorijeLijekovaTableAdapter1;
         private System.Windows.Forms.DataGridView dgvKriticneZalihe;
@@ -389,6 +423,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolicinaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.GroupBox grbTrazilica;
+        private System.Windows.Forms.Button btnTrazi;
+        private System.Windows.Forms.TextBox txtTrazi;
+        private System.Windows.Forms.Label label1;
     }
 }
 
