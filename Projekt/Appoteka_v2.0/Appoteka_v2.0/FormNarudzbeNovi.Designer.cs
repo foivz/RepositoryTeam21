@@ -184,7 +184,7 @@
             // 
             // textNarudzbeIznos
             // 
-            this.textNarudzbeIznos.Location = new System.Drawing.Point(536, 41);
+            this.textNarudzbeIznos.Location = new System.Drawing.Point(415, 129);
             this.textNarudzbeIznos.Name = "textNarudzbeIznos";
             this.textNarudzbeIznos.Size = new System.Drawing.Size(139, 20);
             this.textNarudzbeIznos.TabIndex = 11;
