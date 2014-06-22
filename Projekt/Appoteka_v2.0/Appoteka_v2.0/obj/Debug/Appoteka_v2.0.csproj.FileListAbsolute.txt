@@ -107,3 +107,7 @@ C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appot
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.manifest
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.application
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe.manifest
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.application
