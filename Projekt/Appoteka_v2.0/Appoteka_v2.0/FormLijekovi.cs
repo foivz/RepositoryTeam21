@@ -120,6 +120,7 @@ namespace Appoteka_v2._0
         private void btnTrazi_Click(object sender, EventArgs e)
         {
             string searchValue = txtTrazi.Text.ToLower();
+            int trenutni = 0;
             try
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -128,9 +129,10 @@ namespace Appoteka_v2._0
                     if (red.Equals(searchValue))
                     {
                         row.Selected = true;
-                        PrikaziKategorije();
+                        dataGridView1.CurrentCell = dataGridView1.Rows[trenutni].Cells[0];
                         break;
                     }
+                    trenutni++;
                 }
             }
 
@@ -138,7 +140,9 @@ namespace Appoteka_v2._0
             {
                 MessageBox.Show("Vrijednost ne postoji!", "Greška!");
             }
+            PrikaziKategorije();
         }
 
     }
 }
+    
