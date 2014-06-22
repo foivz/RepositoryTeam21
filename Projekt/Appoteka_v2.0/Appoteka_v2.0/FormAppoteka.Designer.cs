@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBCKlasifikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.managementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miBrowseLijekovi = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@
             this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBCKlasifikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,13 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // aBCKlasifikacijaToolStripMenuItem
+            // 
+            this.aBCKlasifikacijaToolStripMenuItem.Name = "aBCKlasifikacijaToolStripMenuItem";
+            this.aBCKlasifikacijaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aBCKlasifikacijaToolStripMenuItem.Text = "ABC klasifikacija";
+            this.aBCKlasifikacijaToolStripMenuItem.Click += new System.EventHandler(this.aBCKlasifikacijaToolStripMenuItem_Click);
             // 
             // miFileExit
             // 
@@ -179,17 +186,11 @@
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
             // 
-            // aBCKlasifikacijaToolStripMenuItem
-            // 
-            this.aBCKlasifikacijaToolStripMenuItem.Name = "aBCKlasifikacijaToolStripMenuItem";
-            this.aBCKlasifikacijaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.aBCKlasifikacijaToolStripMenuItem.Text = "ABC klasifikacija";
-            this.aBCKlasifikacijaToolStripMenuItem.Click += new System.EventHandler(this.aBCKlasifikacijaToolStripMenuItem_Click);
-            // 
             // FormAppoteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1017, 415);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

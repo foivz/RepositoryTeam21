@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.oIBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.korImeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lozinkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zaposleniciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appotekaDBDataSet2 = new Appoteka_v2._0.appotekaDBDataSet2();
             this.zaposleniciTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.zaposleniciTableAdapter();
@@ -50,18 +50,22 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.oIBDataGridViewTextBoxColumn,
-            this.prezimeDataGridViewTextBoxColumn,
             this.imeDataGridViewTextBoxColumn,
+            this.prezimeDataGridViewTextBoxColumn,
+            this.adresaDataGridViewTextBoxColumn,
             this.korImeDataGridViewTextBoxColumn,
-            this.lozinkaDataGridViewTextBoxColumn,
-            this.adresaDataGridViewTextBoxColumn});
+            this.lozinkaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.zaposleniciBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(22, 28);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(685, 190);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -70,36 +74,42 @@
             this.oIBDataGridViewTextBoxColumn.DataPropertyName = "OIB";
             this.oIBDataGridViewTextBoxColumn.HeaderText = "OIB";
             this.oIBDataGridViewTextBoxColumn.Name = "oIBDataGridViewTextBoxColumn";
-            // 
-            // prezimeDataGridViewTextBoxColumn
-            // 
-            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
-            this.prezimeDataGridViewTextBoxColumn.HeaderText = "prezime";
-            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.oIBDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // imeDataGridViewTextBoxColumn
             // 
             this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
-            this.imeDataGridViewTextBoxColumn.HeaderText = "ime";
+            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
             this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // korImeDataGridViewTextBoxColumn
+            // prezimeDataGridViewTextBoxColumn
             // 
-            this.korImeDataGridViewTextBoxColumn.DataPropertyName = "korIme";
-            this.korImeDataGridViewTextBoxColumn.HeaderText = "korIme";
-            this.korImeDataGridViewTextBoxColumn.Name = "korImeDataGridViewTextBoxColumn";
-            // 
-            // lozinkaDataGridViewTextBoxColumn
-            // 
-            this.lozinkaDataGridViewTextBoxColumn.DataPropertyName = "lozinka";
-            this.lozinkaDataGridViewTextBoxColumn.HeaderText = "lozinka";
-            this.lozinkaDataGridViewTextBoxColumn.Name = "lozinkaDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
+            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // adresaDataGridViewTextBoxColumn
             // 
             this.adresaDataGridViewTextBoxColumn.DataPropertyName = "adresa";
-            this.adresaDataGridViewTextBoxColumn.HeaderText = "adresa";
+            this.adresaDataGridViewTextBoxColumn.HeaderText = "Adresa";
             this.adresaDataGridViewTextBoxColumn.Name = "adresaDataGridViewTextBoxColumn";
+            this.adresaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // korImeDataGridViewTextBoxColumn
+            // 
+            this.korImeDataGridViewTextBoxColumn.DataPropertyName = "korIme";
+            this.korImeDataGridViewTextBoxColumn.HeaderText = "Korisničko ime";
+            this.korImeDataGridViewTextBoxColumn.Name = "korImeDataGridViewTextBoxColumn";
+            this.korImeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lozinkaDataGridViewTextBoxColumn
+            // 
+            this.lozinkaDataGridViewTextBoxColumn.DataPropertyName = "lozinka";
+            this.lozinkaDataGridViewTextBoxColumn.HeaderText = "Lozinka";
+            this.lozinkaDataGridViewTextBoxColumn.Name = "lozinkaDataGridViewTextBoxColumn";
+            this.lozinkaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // zaposleniciBindingSource
             // 
@@ -117,9 +127,10 @@
             // 
             // btnZaposleniciNatrag
             // 
-            this.btnZaposleniciNatrag.Location = new System.Drawing.Point(22, 251);
+            this.btnZaposleniciNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZaposleniciNatrag.Location = new System.Drawing.Point(22, 239);
             this.btnZaposleniciNatrag.Name = "btnZaposleniciNatrag";
-            this.btnZaposleniciNatrag.Size = new System.Drawing.Size(75, 23);
+            this.btnZaposleniciNatrag.Size = new System.Drawing.Size(102, 35);
             this.btnZaposleniciNatrag.TabIndex = 1;
             this.btnZaposleniciNatrag.Text = "Natrag";
             this.btnZaposleniciNatrag.UseVisualStyleBackColor = true;
@@ -127,9 +138,10 @@
             // 
             // btnZaposleniciNovi
             // 
-            this.btnZaposleniciNovi.Location = new System.Drawing.Point(228, 251);
+            this.btnZaposleniciNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZaposleniciNovi.Location = new System.Drawing.Point(320, 224);
             this.btnZaposleniciNovi.Name = "btnZaposleniciNovi";
-            this.btnZaposleniciNovi.Size = new System.Drawing.Size(75, 23);
+            this.btnZaposleniciNovi.Size = new System.Drawing.Size(102, 35);
             this.btnZaposleniciNovi.TabIndex = 2;
             this.btnZaposleniciNovi.Text = "Novi";
             this.btnZaposleniciNovi.UseVisualStyleBackColor = true;
@@ -137,9 +149,10 @@
             // 
             // btnZaposleniciIzmijeni
             // 
-            this.btnZaposleniciIzmijeni.Location = new System.Drawing.Point(448, 250);
+            this.btnZaposleniciIzmijeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZaposleniciIzmijeni.Location = new System.Drawing.Point(462, 224);
             this.btnZaposleniciIzmijeni.Name = "btnZaposleniciIzmijeni";
-            this.btnZaposleniciIzmijeni.Size = new System.Drawing.Size(75, 23);
+            this.btnZaposleniciIzmijeni.Size = new System.Drawing.Size(102, 35);
             this.btnZaposleniciIzmijeni.TabIndex = 3;
             this.btnZaposleniciIzmijeni.Text = "Izmijeni";
             this.btnZaposleniciIzmijeni.UseVisualStyleBackColor = true;
@@ -147,9 +160,10 @@
             // 
             // btnZaposleniciIzbrisi
             // 
-            this.btnZaposleniciIzbrisi.Location = new System.Drawing.Point(631, 250);
+            this.btnZaposleniciIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZaposleniciIzbrisi.Location = new System.Drawing.Point(604, 224);
             this.btnZaposleniciIzbrisi.Name = "btnZaposleniciIzbrisi";
-            this.btnZaposleniciIzbrisi.Size = new System.Drawing.Size(75, 23);
+            this.btnZaposleniciIzbrisi.Size = new System.Drawing.Size(102, 35);
             this.btnZaposleniciIzbrisi.TabIndex = 4;
             this.btnZaposleniciIzbrisi.Text = "Izbriši";
             this.btnZaposleniciIzbrisi.UseVisualStyleBackColor = true;
@@ -159,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 301);
+            this.ClientSize = new System.Drawing.Size(733, 294);
             this.Controls.Add(this.btnZaposleniciIzbrisi);
             this.Controls.Add(this.btnZaposleniciIzmijeni);
             this.Controls.Add(this.btnZaposleniciNovi);
@@ -181,15 +195,15 @@
         private appotekaDBDataSet2 appotekaDBDataSet2;
         private System.Windows.Forms.BindingSource zaposleniciBindingSource;
         private appotekaDBDataSet2TableAdapters.zaposleniciTableAdapter zaposleniciTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn korImeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lozinkaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adresaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnZaposleniciNatrag;
         private System.Windows.Forms.Button btnZaposleniciNovi;
         private System.Windows.Forms.Button btnZaposleniciIzmijeni;
         private System.Windows.Forms.Button btnZaposleniciIzbrisi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn korImeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lozinkaDataGridViewTextBoxColumn;
     }
 }

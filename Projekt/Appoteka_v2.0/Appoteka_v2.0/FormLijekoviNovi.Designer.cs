@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnLijekoviNoviSpremi = new System.Windows.Forms.Button();
             this.btnLijekoviNoviIzlaz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,11 +54,12 @@
             this.kategorijeLijekovaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kategorijeLijekovaTableAdapter = new Appoteka_v2._0.appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajKategoriju = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnIzbrisiKategoriju = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,148 +67,158 @@
             // 
             // btnLijekoviNoviSpremi
             // 
-            this.btnLijekoviNoviSpremi.Location = new System.Drawing.Point(49, 324);
+            this.btnLijekoviNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekoviNoviSpremi.Location = new System.Drawing.Point(447, 321);
             this.btnLijekoviNoviSpremi.Name = "btnLijekoviNoviSpremi";
-            this.btnLijekoviNoviSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnLijekoviNoviSpremi.Size = new System.Drawing.Size(87, 37);
             this.btnLijekoviNoviSpremi.TabIndex = 0;
-            this.btnLijekoviNoviSpremi.Text = "Spremi";
+            this.btnLijekoviNoviSpremi.Text = "Završi";
             this.btnLijekoviNoviSpremi.UseVisualStyleBackColor = true;
             this.btnLijekoviNoviSpremi.Click += new System.EventHandler(this.btnLijekoviNoviSpremi_Click);
             // 
             // btnLijekoviNoviIzlaz
             // 
-            this.btnLijekoviNoviIzlaz.Location = new System.Drawing.Point(184, 324);
+            this.btnLijekoviNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLijekoviNoviIzlaz.Location = new System.Drawing.Point(29, 321);
             this.btnLijekoviNoviIzlaz.Name = "btnLijekoviNoviIzlaz";
-            this.btnLijekoviNoviIzlaz.Size = new System.Drawing.Size(75, 23);
+            this.btnLijekoviNoviIzlaz.Size = new System.Drawing.Size(84, 37);
             this.btnLijekoviNoviIzlaz.TabIndex = 1;
-            this.btnLijekoviNoviIzlaz.Text = "Izlaz";
+            this.btnLijekoviNoviIzlaz.Text = "Odustani";
             this.btnLijekoviNoviIzlaz.UseVisualStyleBackColor = true;
             this.btnLijekoviNoviIzlaz.Click += new System.EventHandler(this.btnLijekoviNoviIzlaz_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 29);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(26, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Serijski broj";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 61);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(26, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Naziv";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 97);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(26, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Proizvođač";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 136);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(276, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.Size = new System.Drawing.Size(101, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Cijena kupovna";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 170);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(276, 94);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.Size = new System.Drawing.Size(103, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Cijena prodajna";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(289, 29);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(276, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(80, 16);
             this.label6.TabIndex = 7;
             this.label6.Text = "Rok trajanja";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(289, 61);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(26, 125);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.Size = new System.Drawing.Size(55, 16);
             this.label7.TabIndex = 8;
             this.label7.Text = "Količina";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(289, 97);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(276, 125);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.Size = new System.Drawing.Size(93, 16);
             this.label8.TabIndex = 9;
             this.label8.Text = "Dopunsko (%)";
             // 
             // textSerijskiBroj
             // 
-            this.textSerijskiBroj.Location = new System.Drawing.Point(133, 26);
+            this.textSerijskiBroj.Location = new System.Drawing.Point(110, 28);
             this.textSerijskiBroj.Name = "textSerijskiBroj";
-            this.textSerijskiBroj.Size = new System.Drawing.Size(126, 20);
+            this.textSerijskiBroj.Size = new System.Drawing.Size(138, 20);
             this.textSerijskiBroj.TabIndex = 12;
             // 
             // textNaziv
             // 
-            this.textNaziv.Location = new System.Drawing.Point(133, 58);
+            this.textNaziv.Location = new System.Drawing.Point(110, 59);
             this.textNaziv.Name = "textNaziv";
-            this.textNaziv.Size = new System.Drawing.Size(126, 20);
+            this.textNaziv.Size = new System.Drawing.Size(138, 20);
             this.textNaziv.TabIndex = 13;
             // 
             // textProizvodac
             // 
-            this.textProizvodac.Location = new System.Drawing.Point(133, 94);
+            this.textProizvodac.Location = new System.Drawing.Point(110, 92);
             this.textProizvodac.Name = "textProizvodac";
-            this.textProizvodac.Size = new System.Drawing.Size(126, 20);
+            this.textProizvodac.Size = new System.Drawing.Size(138, 20);
             this.textProizvodac.TabIndex = 14;
             // 
             // textCijenaKupovna
             // 
-            this.textCijenaKupovna.Location = new System.Drawing.Point(133, 133);
+            this.textCijenaKupovna.Location = new System.Drawing.Point(396, 59);
             this.textCijenaKupovna.Name = "textCijenaKupovna";
             this.textCijenaKupovna.Size = new System.Drawing.Size(126, 20);
             this.textCijenaKupovna.TabIndex = 15;
             // 
             // textCijenaProdajna
             // 
-            this.textCijenaProdajna.Location = new System.Drawing.Point(133, 167);
+            this.textCijenaProdajna.Location = new System.Drawing.Point(396, 93);
             this.textCijenaProdajna.Name = "textCijenaProdajna";
             this.textCijenaProdajna.Size = new System.Drawing.Size(126, 20);
             this.textCijenaProdajna.TabIndex = 16;
             // 
             // textDopunsko
             // 
-            this.textDopunsko.Location = new System.Drawing.Point(373, 94);
+            this.textDopunsko.Location = new System.Drawing.Point(396, 124);
             this.textDopunsko.Name = "textDopunsko";
             this.textDopunsko.Size = new System.Drawing.Size(126, 20);
             this.textDopunsko.TabIndex = 18;
             // 
             // textKolicina
             // 
-            this.textKolicina.Location = new System.Drawing.Point(373, 58);
+            this.textKolicina.Location = new System.Drawing.Point(110, 123);
             this.textKolicina.Name = "textKolicina";
-            this.textKolicina.Size = new System.Drawing.Size(126, 20);
+            this.textKolicina.Size = new System.Drawing.Size(138, 20);
             this.textKolicina.TabIndex = 17;
             // 
             // dateRokTrajanja
             // 
-            this.dateRokTrajanja.Location = new System.Drawing.Point(373, 26);
+            this.dateRokTrajanja.Location = new System.Drawing.Point(396, 26);
             this.dateRokTrajanja.Name = "dateRokTrajanja";
             this.dateRokTrajanja.Size = new System.Drawing.Size(126, 20);
             this.dateRokTrajanja.TabIndex = 21;
@@ -228,76 +239,52 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nazivDataGridViewTextBoxColumn,
             this.Column1});
             this.dataGridView1.DataSource = this.kategorijeLijekovaBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.Location = new System.Drawing.Point(295, 203);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(29, 186);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Size = new System.Drawing.Size(181, 100);
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(219, 100);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnDodajKategoriju
-            // 
-            this.btnDodajKategoriju.Location = new System.Drawing.Point(373, 160);
-            this.btnDodajKategoriju.Name = "btnDodajKategoriju";
-            this.btnDodajKategoriju.Size = new System.Drawing.Size(75, 23);
-            this.btnDodajKategoriju.TabIndex = 23;
-            this.btnDodajKategoriju.Text = "Dodaj";
-            this.btnDodajKategoriju.UseVisualStyleBackColor = true;
-            this.btnDodajKategoriju.Click += new System.EventHandler(this.btnDodajKategoriju_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(292, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Kategorije";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(424, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Osvježi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nazivDataGridViewTextBoxColumn
             // 
             this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
             this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            this.nazivDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Column1
             // 
@@ -307,11 +294,55 @@
             this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
+            // btnDodajKategoriju
+            // 
+            this.btnDodajKategoriju.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajKategoriju.Location = new System.Drawing.Point(304, 186);
+            this.btnDodajKategoriju.Name = "btnDodajKategoriju";
+            this.btnDodajKategoriju.Size = new System.Drawing.Size(75, 46);
+            this.btnDodajKategoriju.TabIndex = 23;
+            this.btnDodajKategoriju.Text = "Dodaj kategoriju";
+            this.btnDodajKategoriju.UseVisualStyleBackColor = true;
+            this.btnDodajKategoriju.Click += new System.EventHandler(this.btnDodajKategoriju_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(28, 155);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 18);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Kategorije";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(338, 321);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 37);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Osvježi";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnIzbrisiKategoriju
+            // 
+            this.btnIzbrisiKategoriju.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIzbrisiKategoriju.Location = new System.Drawing.Point(304, 240);
+            this.btnIzbrisiKategoriju.Name = "btnIzbrisiKategoriju";
+            this.btnIzbrisiKategoriju.Size = new System.Drawing.Size(75, 46);
+            this.btnIzbrisiKategoriju.TabIndex = 26;
+            this.btnIzbrisiKategoriju.Text = "Izbriši kategoriju";
+            this.btnIzbrisiKategoriju.UseVisualStyleBackColor = true;
+            this.btnIzbrisiKategoriju.Click += new System.EventHandler(this.btnIzbrisiKategoriju_Click);
+            // 
             // FormLijekoviNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 370);
+            this.Controls.Add(this.btnIzbrisiKategoriju);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnDodajKategoriju);
@@ -375,5 +406,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button btnIzbrisiKategoriju;
     }
 }

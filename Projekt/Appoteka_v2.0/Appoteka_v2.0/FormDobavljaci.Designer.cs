@@ -50,6 +50,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDobavljacDataGridViewTextBoxColumn,
@@ -58,22 +59,23 @@
             this.iBANDataGridViewTextBoxColumn,
             this.adresaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dobavljaciBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(22, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(617, 169);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 169);
             this.dataGridView1.TabIndex = 0;
             // 
             // idDobavljacDataGridViewTextBoxColumn
             // 
             this.idDobavljacDataGridViewTextBoxColumn.DataPropertyName = "IdDobavljac";
-            this.idDobavljacDataGridViewTextBoxColumn.HeaderText = "IdDobavljac";
+            this.idDobavljacDataGridViewTextBoxColumn.HeaderText = "ID dobavljač";
             this.idDobavljacDataGridViewTextBoxColumn.Name = "idDobavljacDataGridViewTextBoxColumn";
             this.idDobavljacDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nazivDataGridViewTextBoxColumn
             // 
             this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
             this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
             // 
             // oIBDataGridViewTextBoxColumn
@@ -91,7 +93,7 @@
             // adresaDataGridViewTextBoxColumn
             // 
             this.adresaDataGridViewTextBoxColumn.DataPropertyName = "adresa";
-            this.adresaDataGridViewTextBoxColumn.HeaderText = "adresa";
+            this.adresaDataGridViewTextBoxColumn.HeaderText = "Adresa";
             this.adresaDataGridViewTextBoxColumn.Name = "adresaDataGridViewTextBoxColumn";
             // 
             // dobavljaciBindingSource
@@ -110,9 +112,10 @@
             // 
             // btnDobavljaciNatrag
             // 
-            this.btnDobavljaciNatrag.Location = new System.Drawing.Point(22, 226);
+            this.btnDobavljaciNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciNatrag.Location = new System.Drawing.Point(22, 216);
             this.btnDobavljaciNatrag.Name = "btnDobavljaciNatrag";
-            this.btnDobavljaciNatrag.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciNatrag.Size = new System.Drawing.Size(85, 33);
             this.btnDobavljaciNatrag.TabIndex = 1;
             this.btnDobavljaciNatrag.Text = "Natrag";
             this.btnDobavljaciNatrag.UseVisualStyleBackColor = true;
@@ -120,9 +123,10 @@
             // 
             // btnDobavljaciNovi
             // 
-            this.btnDobavljaciNovi.Location = new System.Drawing.Point(175, 226);
+            this.btnDobavljaciNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciNovi.Location = new System.Drawing.Point(237, 216);
             this.btnDobavljaciNovi.Name = "btnDobavljaciNovi";
-            this.btnDobavljaciNovi.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciNovi.Size = new System.Drawing.Size(85, 33);
             this.btnDobavljaciNovi.TabIndex = 2;
             this.btnDobavljaciNovi.Text = "Novi";
             this.btnDobavljaciNovi.UseVisualStyleBackColor = true;
@@ -130,9 +134,10 @@
             // 
             // btnDobavljaciIzmijeni
             // 
-            this.btnDobavljaciIzmijeni.Location = new System.Drawing.Point(385, 225);
+            this.btnDobavljaciIzmijeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciIzmijeni.Location = new System.Drawing.Point(359, 216);
             this.btnDobavljaciIzmijeni.Name = "btnDobavljaciIzmijeni";
-            this.btnDobavljaciIzmijeni.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciIzmijeni.Size = new System.Drawing.Size(85, 33);
             this.btnDobavljaciIzmijeni.TabIndex = 3;
             this.btnDobavljaciIzmijeni.Text = "Izmijeni";
             this.btnDobavljaciIzmijeni.UseVisualStyleBackColor = true;
@@ -140,9 +145,10 @@
             // 
             // btnDobavljaciIzbrisi
             // 
-            this.btnDobavljaciIzbrisi.Location = new System.Drawing.Point(546, 225);
+            this.btnDobavljaciIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciIzbrisi.Location = new System.Drawing.Point(483, 216);
             this.btnDobavljaciIzbrisi.Name = "btnDobavljaciIzbrisi";
-            this.btnDobavljaciIzbrisi.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciIzbrisi.Size = new System.Drawing.Size(85, 33);
             this.btnDobavljaciIzbrisi.TabIndex = 4;
             this.btnDobavljaciIzbrisi.Text = "Izbriši";
             this.btnDobavljaciIzbrisi.UseVisualStyleBackColor = true;
@@ -152,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 287);
+            this.ClientSize = new System.Drawing.Size(598, 287);
             this.Controls.Add(this.btnDobavljaciIzbrisi);
             this.Controls.Add(this.btnDobavljaciIzmijeni);
             this.Controls.Add(this.btnDobavljaciNovi);
@@ -174,14 +180,14 @@
         private appotekaDBDataSet2 appotekaDBDataSet2;
         private System.Windows.Forms.BindingSource dobavljaciBindingSource;
         private appotekaDBDataSet2TableAdapters.dobavljaciTableAdapter dobavljaciTableAdapter;
+        private System.Windows.Forms.Button btnDobavljaciNatrag;
+        private System.Windows.Forms.Button btnDobavljaciNovi;
+        private System.Windows.Forms.Button btnDobavljaciIzmijeni;
+        private System.Windows.Forms.Button btnDobavljaciIzbrisi;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDobavljacDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iBANDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adresaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnDobavljaciNatrag;
-        private System.Windows.Forms.Button btnDobavljaciNovi;
-        private System.Windows.Forms.Button btnDobavljaciIzmijeni;
-        private System.Windows.Forms.Button btnDobavljaciIzbrisi;
     }
 }

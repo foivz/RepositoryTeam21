@@ -66,5 +66,10 @@ namespace Appoteka_v2._0
             this.Close();
             
         }
+
+        private void btnOdustani_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

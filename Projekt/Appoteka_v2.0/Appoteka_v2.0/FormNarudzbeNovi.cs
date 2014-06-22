@@ -40,10 +40,13 @@ namespace Appoteka_v2._0
                 printDocument.Print();
             }
 
+            
         }
 
         void printDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
+
+            
             Graphics graphic = e.Graphics;
 
             Font font = new Font("Times New Roman", 12);
@@ -55,39 +58,57 @@ namespace Appoteka_v2._0
 
             int startX = 10;
             int startY = 10;
-            int offset = 270;
+            int offset = 270 + +70;
 
             graphic.DrawString("Appoteka j.d.o.o", new Font("Times New Roman", 18,FontStyle.Bold), new SolidBrush(Color.Black), startX, startY);
             graphic.DrawString("42000 VARAŽDIN, Ludbreška 3 \nOIB: 22383729384 vl. Gazda Šef", font, new SolidBrush(Color.Black),startX, startY + 30);
 
+
+            using (var db = new appotekaDBEntities())
+            {
+                int id = int.Parse(comboBoxDobavljac.SelectedValue.ToString());
+                var dobavljac = (from d in db.dobavljaci where d.IdDobavljac == id select d).SingleOrDefault();
+
+                string dobavljacNaziv = dobavljac.naziv;
+                string OIB = dobavljac.OIB;
+                string IBAN = dobavljac.IBAN;
+                string adresa = dobavljac.adresa;
+                string ispisDobavljac = adresa + "\nOIB: " + OIB + "\nIBAN: " + IBAN;
+                graphic.DrawString(dobavljacNaziv, new Font("Times New Roman", 16, FontStyle.Bold), new SolidBrush(Color.Black), startX + 600, startY +80 );
+                graphic.DrawString(ispisDobavljac, font, new SolidBrush(Color.Black), startX + 600, startY + 110);
+
+            }
+
             string datum = "Datum: "+DateTime.Now.ToString("dd.MM.yyyy").PadRight(25);
             string vrijeme ="Vrijeme: "+DateTime.Now.ToString("hh:mm");
             string datumVrijeme = datum + vrijeme;
-            graphic.DrawString(datumVrijeme, font, new SolidBrush(Color.Black),startX,startY +100);
-            string izdao = "Račun izdao: " + comboBoxZaposlenik.Text;
-            graphic.DrawString(izdao, font, brush, startX, startY + 130);
-            graphic.DrawString("RAČUN broj: 33/2 ",new Font("Times New Roman",12,FontStyle.Bold),brush,startX,startY +160);
+            graphic.DrawString(datumVrijeme, font, new SolidBrush(Color.Black),startX,startY +100 + 70);
+            string izdao = "Narudžbu izdao: " + comboBoxZaposlenik.Text;
+            graphic.DrawString(izdao, font, brush, startX, startY + 130 + +70);
+            graphic.DrawString("NARUDŽBA broj: 33/2 ", new Font("Times New Roman", 12, FontStyle.Bold), brush, startX, startY + 160 + +70);
 
-            string headNaziv = "Naziv".PadRight(15);
-            string headKolicina = "Količina".PadRight(15);
-            string headSerijski = "Serijski broj".PadRight(15);
+            string headSerijski = "Serijski broj".PadRight(25);
+            string headNaziv = "Naziv".PadRight(22);
             string headProizvodac = "Proizvođač".PadRight(15);
+            string headCijena = "Kupovna cijena".PadRight(25);
+            string headKolicina = "Količina".PadRight(15);
             string headIznos = "Iznos__".PadRight(45);
-            string glavnaLinija = headSerijski +headNaziv + headSerijski + headKolicina + headIznos;
+            string glavnaLinija = headSerijski +headNaziv + headProizvodac + headCijena + headKolicina + headIznos;
 
-            graphic.DrawString(glavnaLinija, font2, brush, startX, startY + 230);
+            graphic.DrawString(glavnaLinija, font2, brush, startX, startY + 230 + +70);
 
 
-            foreach (DataGridViewRow x in dataGridView1.Rows)
+            foreach (DataGridViewRow x in dataGridView2.Rows)
             {
                 if (x.Cells[0].Value != null)
                 {
-                    string naziv = x.Cells[1].Value.ToString().PadRight(15);
+                    string serijski = string.Format("{0}", x.Cells[0].Value.ToString()).PadRight(25);
+                    string naziv = x.Cells[1].Value.ToString().PadRight(22);
+                    string proizvodac = x.Cells[2].Value.ToString().PadRight(30);
+                    string cijena = x.Cells[3].Value.ToString().PadRight(25);
                     string kolicina = x.Cells[4].Value.ToString().PadRight(15);
-                    string serijski = string.Format("{0}%",x.Cells[3].Value.ToString()).PadRight(15);
-                    string proizvodac = x.Cells[0].Value.ToString().PadRight(15);
                     string iznos = string.Format("{0} kn",x.Cells[5].Value.ToString()).PadRight(45);
-                    string linija = serijski + naziv + proizvodac + kolicina + iznos;
+                    string linija = serijski + naziv + proizvodac + cijena + kolicina + iznos;
 
                     graphic.DrawString(linija, font, new SolidBrush(Color.Black), startX, startY + offset);
 
@@ -99,15 +120,13 @@ namespace Appoteka_v2._0
             }
             offset = offset + 20;
 
-            graphic.DrawString("Total".PadRight(40) + string.Format("{0} kn", textNarudzbeIznos.Text), font, new SolidBrush(Color.Black), startX, startY + offset);
             
             float PDV = float.Parse(textNarudzbeIznos.Text)*25/100;
             string PDVispis = PDV.ToString();
             float UKUPNO = float.Parse(textNarudzbeIznos.Text) + PDV;
-            string UKUPNOispis = UKUPNO.ToString();
+            string UKUPNOispis = textNarudzbeIznos.Text;
 
-            graphic.DrawString("PDV".PadRight(40) + string.Format("{0} kn", PDVispis), font3, brush, startX, startY + offset + 20);
-            graphic.DrawString("UKUPNO za platiti:".PadRight(32) + string.Format("{0} kn", UKUPNOispis), new Font("Courier New", 14, FontStyle.Bold), brush, startX, startY + offset + 50);
+            graphic.DrawString("UKUPNO: ".PadRight(32) + string.Format("{0} kn", UKUPNOispis), new Font("Times New Roman", 14, FontStyle.Bold), brush, startX, startY + offset + 50);
 
 
         
@@ -150,7 +169,7 @@ namespace Appoteka_v2._0
                     };
                     db.narudzbe.Add(Narudzba);
 
-                    foreach (DataGridViewRow x in dataGridView1.Rows)
+                    foreach (DataGridViewRow x in dataGridView2.Rows)
                     {
                         if (x.Cells[0].Value != null)
                         {
@@ -210,7 +229,7 @@ namespace Appoteka_v2._0
             float suma = 0;
 
 
-            foreach (DataGridViewRow x in dataGridView1.Rows)
+            foreach (DataGridViewRow x in dataGridView2.Rows)
             {
                 if (x.Cells[0].Value != null)
                 {
