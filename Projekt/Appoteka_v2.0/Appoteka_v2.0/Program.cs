@@ -16,7 +16,7 @@ namespace Appoteka_v2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAppoteka());
+            Application.Run(new FormPrijava());
         }
     }
 }

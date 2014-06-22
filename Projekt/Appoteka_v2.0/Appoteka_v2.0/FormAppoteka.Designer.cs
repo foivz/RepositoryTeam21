@@ -44,6 +44,7 @@
             this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBCKlasifikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBCKlasifikacijaToolStripMenuItem,
             this.miFileExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -72,7 +74,7 @@
             // miFileExit
             // 
             this.miFileExit.Name = "miFileExit";
-            this.miFileExit.Size = new System.Drawing.Size(92, 22);
+            this.miFileExit.Size = new System.Drawing.Size(160, 22);
             this.miFileExit.Text = "Exit";
             this.miFileExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miFileExit_MouseUp);
             // 
@@ -158,7 +160,7 @@
             // miHzzoProvjeri
             // 
             this.miHzzoProvjeri.Name = "miHzzoProvjeri";
-            this.miHzzoProvjeri.Size = new System.Drawing.Size(152, 22);
+            this.miHzzoProvjeri.Size = new System.Drawing.Size(114, 22);
             this.miHzzoProvjeri.Text = "Provjeri";
             this.miHzzoProvjeri.Click += new System.EventHandler(this.miHzzoProvjeri_Click);
             // 
@@ -176,6 +178,13 @@
             this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
+            // 
+            // aBCKlasifikacijaToolStripMenuItem
+            // 
+            this.aBCKlasifikacijaToolStripMenuItem.Name = "aBCKlasifikacijaToolStripMenuItem";
+            this.aBCKlasifikacijaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aBCKlasifikacijaToolStripMenuItem.Text = "ABC klasifikacija";
+            this.aBCKlasifikacijaToolStripMenuItem.Click += new System.EventHandler(this.aBCKlasifikacijaToolStripMenuItem_Click);
             // 
             // FormAppoteka
             // 
@@ -214,5 +223,6 @@
         private System.Windows.Forms.ToolStripMenuItem miHzzoProvjeri;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lijekoviToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBCKlasifikacijaToolStripMenuItem;
     }
 }

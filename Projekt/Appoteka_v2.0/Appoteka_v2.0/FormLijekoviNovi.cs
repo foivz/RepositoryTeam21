@@ -12,6 +12,9 @@ namespace Appoteka_v2._0
 {
     public partial class FormLijekoviNovi : Form
     {
+        public static BindingList<kategorijeLijekova> LijekoviKategorije;
+
+
         public FormLijekoviNovi()
         {
             InitializeComponent();
@@ -46,6 +49,8 @@ namespace Appoteka_v2._0
                 textDopunsko.Text = LijekZaIzmjenu.dopunsko.ToString();
             }
 
+
+
         }
 
         
@@ -74,10 +79,27 @@ namespace Appoteka_v2._0
                     }
                     else
                     {
+                        
+                        foreach (DataGridViewRow x in dataGridView1.Rows)
+                        {
+                            if (x.Cells[1].Value != null)
+                            {
+                                int k = int.Parse(x.Cells[1].Value.ToString());
+                                var kategorija = ( from kl in db.kategorijeLijekova 
+                                                   where kl.IdKategorije == k select kl).SingleOrDefault();
+
+                                Lijek.kategorijeLijekova.Add(kategorija);
+
+                            }
+                        }
+
+                        
                         db.lijekovi.Add(Lijek);
-                        db.SaveChanges();
+                            db.SaveChanges();
                         MessageBox.Show("Uspješno ste dodali novi lijek", "Ispravan unos");
                     }
+
+
 
                     
 
@@ -106,6 +128,24 @@ namespace Appoteka_v2._0
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void btnDodajKategoriju_Click(object sender, EventArgs e)
+        {
+            FormDodavanjeKategorija FormaDodajKategorije = new FormDodavanjeKategorija();
+            FormaDodajKategorije.ShowDialog();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormLijekoviNovi_Activated(object sender, EventArgs e)
+        {
+            kategorijeLijekovaBindingSource.DataSource = LijekoviKategorije;
 
         }
        

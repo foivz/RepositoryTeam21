@@ -44,25 +44,7 @@ namespace Appoteka_v2._0
             }
 
         }
-        /*
-        private void PrikaziLadice()
-        {
-            kategorijeLijekova selektiranaKategorija = kategorijeLijekova.Current as kategorijeLijekova;
-            if (selektiranaKategorija != null)
-            {
-                using (var db = new appotekaDBEntities())
-                {
-                    var ladica = from t3 in db.ladice
-                                     from t2 in t3.kategorijeLijekova.Where(
-                  x => x.naziv == selektiranaKategorija.naziv)
-                                     select new { t3.kapacitet };
-
-                    this.dataGridLijekoviLadice.DataSource = ladica.ToList();
-                }
-            }
-
-        }
-         */
+       
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -113,7 +95,9 @@ namespace Appoteka_v2._0
                 {
                     using (var db = new appotekaDBEntities())
                     {
-                        db.lijekovi.Attach(selektiraniLijek);
+
+
+                       db.lijekovi.Attach(selektiraniLijek);
                         db.lijekovi.Remove(selektiraniLijek);
                         db.SaveChanges();
                     }
@@ -131,6 +115,29 @@ namespace Appoteka_v2._0
         private void dataGridLijekoviKategorije_SelectionChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTrazi_Click(object sender, EventArgs e)
+        {
+            string searchValue = txtTrazi.Text.ToLower();
+            try
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    var red = row.Cells[0].Value.ToString().ToLower();
+                    if (red.Equals(searchValue))
+                    {
+                        row.Selected = true;
+                        PrikaziKategorije();
+                        break;
+                    }
+                }
+            }
+
+            catch
+            {
+                MessageBox.Show("Vrijednost ne postoji!", "Greška!");
+            }
         }
 
     }
