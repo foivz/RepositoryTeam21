@@ -60,6 +60,8 @@ namespace Appoteka_v2._0
         {
             
             FormRacuniNovi.lijekoviRacun = prijenosLijeka;
+            FormNarudzbeNovi.lijekoviNarudzba = prijenosLijeka;
+
             
             this.Close();
             

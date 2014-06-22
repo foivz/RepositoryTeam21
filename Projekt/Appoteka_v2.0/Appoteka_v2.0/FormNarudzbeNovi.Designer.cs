@@ -49,6 +49,15 @@
             this.lijekoviBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.textNarudzbeIznos = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lijekoviBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnOsvjezi = new System.Windows.Forms.Button();
+            this.serijskiBrojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proizvodacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijenaKupovnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iznos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dobavljaciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zaposleniciBindingSource)).BeginInit();
@@ -57,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,17 +105,17 @@
             // 
             // btnNarudzbeNoviSpremi
             // 
-            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(50, 361);
+            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(31, 361);
             this.btnNarudzbeNoviSpremi.Name = "btnNarudzbeNoviSpremi";
             this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(75, 23);
             this.btnNarudzbeNoviSpremi.TabIndex = 6;
-            this.btnNarudzbeNoviSpremi.Text = "Spremi";
+            this.btnNarudzbeNoviSpremi.Text = "Izdaj";
             this.btnNarudzbeNoviSpremi.UseVisualStyleBackColor = true;
             this.btnNarudzbeNoviSpremi.Click += new System.EventHandler(this.btnNarudzbeNoviSpremi_Click);
             // 
             // btnNarudzbeNoviIzlaz
             // 
-            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(195, 361);
+            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(290, 361);
             this.btnNarudzbeNoviIzlaz.Name = "btnNarudzbeNoviIzlaz";
             this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(75, 23);
             this.btnNarudzbeNoviIzlaz.TabIndex = 7;
@@ -184,24 +194,94 @@
             // 
             // textNarudzbeIznos
             // 
-            this.textNarudzbeIznos.Location = new System.Drawing.Point(415, 129);
+            this.textNarudzbeIznos.Location = new System.Drawing.Point(507, 38);
             this.textNarudzbeIznos.Name = "textNarudzbeIznos";
             this.textNarudzbeIznos.Size = new System.Drawing.Size(139, 20);
             this.textNarudzbeIznos.TabIndex = 11;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.serijskiBrojDataGridViewTextBoxColumn,
+            this.nazivDataGridViewTextBoxColumn,
+            this.proizvodacDataGridViewTextBoxColumn,
+            this.cijenaKupovnaDataGridViewTextBoxColumn,
+            this.kolicina,
+            this.iznos});
+            this.dataGridView1.DataSource = this.lijekoviBindingSource4;
             this.dataGridView1.Location = new System.Drawing.Point(31, 178);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(712, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(624, 150);
             this.dataGridView1.TabIndex = 12;
+            // 
+            // lijekoviBindingSource4
+            // 
+            this.lijekoviBindingSource4.DataMember = "lijekovi";
+            this.lijekoviBindingSource4.DataSource = this.appotekaDBDataSet2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(161, 361);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Dodaj";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnOsvjezi
+            // 
+            this.btnOsvjezi.Location = new System.Drawing.Point(580, 361);
+            this.btnOsvjezi.Name = "btnOsvjezi";
+            this.btnOsvjezi.Size = new System.Drawing.Size(75, 23);
+            this.btnOsvjezi.TabIndex = 14;
+            this.btnOsvjezi.Text = "Osvježi";
+            this.btnOsvjezi.UseVisualStyleBackColor = true;
+            this.btnOsvjezi.Click += new System.EventHandler(this.btnOsvjezi_Click);
+            // 
+            // serijskiBrojDataGridViewTextBoxColumn
+            // 
+            this.serijskiBrojDataGridViewTextBoxColumn.DataPropertyName = "serijskiBroj";
+            this.serijskiBrojDataGridViewTextBoxColumn.HeaderText = "serijskiBroj";
+            this.serijskiBrojDataGridViewTextBoxColumn.Name = "serijskiBrojDataGridViewTextBoxColumn";
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            // 
+            // proizvodacDataGridViewTextBoxColumn
+            // 
+            this.proizvodacDataGridViewTextBoxColumn.DataPropertyName = "proizvodac";
+            this.proizvodacDataGridViewTextBoxColumn.HeaderText = "proizvodac";
+            this.proizvodacDataGridViewTextBoxColumn.Name = "proizvodacDataGridViewTextBoxColumn";
+            // 
+            // cijenaKupovnaDataGridViewTextBoxColumn
+            // 
+            this.cijenaKupovnaDataGridViewTextBoxColumn.DataPropertyName = "cijenaKupovna";
+            this.cijenaKupovnaDataGridViewTextBoxColumn.HeaderText = "cijenaKupovna";
+            this.cijenaKupovnaDataGridViewTextBoxColumn.Name = "cijenaKupovnaDataGridViewTextBoxColumn";
+            // 
+            // kolicina
+            // 
+            this.kolicina.HeaderText = "Količina";
+            this.kolicina.Name = "kolicina";
+            // 
+            // iznos
+            // 
+            this.iznos.HeaderText = "Iznos";
+            this.iznos.Name = "iznos";
             // 
             // FormNarudzbeNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 436);
+            this.ClientSize = new System.Drawing.Size(667, 448);
+            this.Controls.Add(this.btnOsvjezi);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textNarudzbeIznos);
             this.Controls.Add(this.comboBoxZaposlenik);
@@ -214,6 +294,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormNarudzbeNovi";
             this.Text = "Nova narudžba";
+            this.Activated += new System.EventHandler(this.FormNarudzbeNovi_Activated);
             this.Load += new System.EventHandler(this.FormNarudzbeNovi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dobavljaciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).EndInit();
@@ -223,6 +304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +332,14 @@
         private System.Windows.Forms.BindingSource lijekoviBindingSource3;
         private System.Windows.Forms.TextBox textNarudzbeIznos;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOsvjezi;
+        private System.Windows.Forms.BindingSource lijekoviBindingSource4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serijskiBrojDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proizvodacDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cijenaKupovnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kolicina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iznos;
     }
 }

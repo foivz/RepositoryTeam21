@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Appoteka_v2._0
     public partial class FormNarudzbeNovi : Form
     {
         private narudzbe narudzbaZaIzmjenu;
+        public static BindingList<lijekovi> lijekoviNarudzba;
         
         public FormNarudzbeNovi()
         {
@@ -25,6 +27,91 @@ namespace Appoteka_v2._0
             narudzbaZaIzmjenu = Narudzba;
         }
 
+        private void PrintanjeNarudzbe()
+        {
+            PrintDialog printDialog = new PrintDialog();
+            PrintDocument printDocument = new PrintDocument();
+            printDialog.Document = printDocument;
+            printDocument.PrintPage += printDocument_PrintPage;
+            DialogResult result = printDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
+
+        }
+
+        void printDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Graphics graphic = e.Graphics;
+
+            Font font = new Font("Times New Roman", 12);
+            Font font2 = new Font("Times New Roman", 12, FontStyle.Underline | FontStyle.Bold);
+            Font font3 = new Font("Times New Roman", 12, FontStyle.Underline);
+
+            SolidBrush brush = new SolidBrush(Color.Black);
+            float fontHeight = font.GetHeight();
+
+            int startX = 10;
+            int startY = 10;
+            int offset = 270;
+
+            graphic.DrawString("Appoteka j.d.o.o", new Font("Times New Roman", 18,FontStyle.Bold), new SolidBrush(Color.Black), startX, startY);
+            graphic.DrawString("42000 VARAŽDIN, Ludbreška 3 \nOIB: 22383729384 vl. Gazda Šef", font, new SolidBrush(Color.Black),startX, startY + 30);
+
+            string datum = "Datum: "+DateTime.Now.ToString("dd.MM.yyyy").PadRight(25);
+            string vrijeme ="Vrijeme: "+DateTime.Now.ToString("hh:mm");
+            string datumVrijeme = datum + vrijeme;
+            graphic.DrawString(datumVrijeme, font, new SolidBrush(Color.Black),startX,startY +100);
+            string izdao = "Račun izdao: " + comboBoxZaposlenik.Text;
+            graphic.DrawString(izdao, font, brush, startX, startY + 130);
+            graphic.DrawString("RAČUN broj: 33/2 ",new Font("Times New Roman",12,FontStyle.Bold),brush,startX,startY +160);
+
+            string headNaziv = "Naziv".PadRight(15);
+            string headKolicina = "Količina".PadRight(15);
+            string headSerijski = "Serijski broj".PadRight(15);
+            string headProizvodac = "Proizvođač".PadRight(15);
+            string headIznos = "Iznos__".PadRight(45);
+            string glavnaLinija = headSerijski +headNaziv + headSerijski + headKolicina + headIznos;
+
+            graphic.DrawString(glavnaLinija, font2, brush, startX, startY + 230);
+
+
+            foreach (DataGridViewRow x in dataGridView1.Rows)
+            {
+                if (x.Cells[0].Value != null)
+                {
+                    string naziv = x.Cells[1].Value.ToString().PadRight(15);
+                    string kolicina = x.Cells[4].Value.ToString().PadRight(15);
+                    string serijski = string.Format("{0}%",x.Cells[3].Value.ToString()).PadRight(15);
+                    string proizvodac = x.Cells[0].Value.ToString().PadRight(15);
+                    string iznos = string.Format("{0} kn",x.Cells[5].Value.ToString()).PadRight(45);
+                    string linija = serijski + naziv + proizvodac + kolicina + iznos;
+
+                    graphic.DrawString(linija, font, new SolidBrush(Color.Black), startX, startY + offset);
+
+                    offset = offset + (int)fontHeight + 5;
+
+                }
+
+              
+            }
+            offset = offset + 20;
+
+            graphic.DrawString("Total".PadRight(40) + string.Format("{0} kn", textNarudzbeIznos.Text), font, new SolidBrush(Color.Black), startX, startY + offset);
+            
+            float PDV = float.Parse(textNarudzbeIznos.Text)*25/100;
+            string PDVispis = PDV.ToString();
+            float UKUPNO = float.Parse(textNarudzbeIznos.Text) + PDV;
+            string UKUPNOispis = UKUPNO.ToString();
+
+            graphic.DrawString("PDV".PadRight(40) + string.Format("{0} kn", PDVispis), font3, brush, startX, startY + offset + 20);
+            graphic.DrawString("UKUPNO za platiti:".PadRight(32) + string.Format("{0} kn", UKUPNOispis), new Font("Courier New", 14, FontStyle.Bold), brush, startX, startY + offset + 50);
+
+
+        
+        }
 
 
         private void FormNarudzbeNovi_Load(object sender, EventArgs e)
@@ -58,10 +145,27 @@ namespace Appoteka_v2._0
                     {
                         iznos = Math.Round(Convert.ToSingle(textNarudzbeIznos.Text), 2),
                         datum = Convert.ToDateTime(dateTimeNaruzbeDatum.Text),
+                        IdDobavljac = int.Parse(comboBoxDobavljac.SelectedValue.ToString()),
+                        OIB = comboBoxZaposlenik.SelectedValue.ToString()
                     };
                     db.narudzbe.Add(Narudzba);
+
+                    foreach (DataGridViewRow x in dataGridView1.Rows)
+                    {
+                        if (x.Cells[0].Value != null)
+                        {
+                            int sb = int.Parse(x.Cells[0].Value.ToString());
+                            var lijek = (from l in db.lijekovi
+                                         where
+                                             l.serijskiBroj == sb
+                                         select l).SingleOrDefault();
+                            Narudzba.lijekovi.Add(lijek);
+                            db.SaveChanges();
+                        }
+                    }
                     db.SaveChanges();
                     MessageBox.Show("Uspješno ste dodali novu narudžbu", "Ispravan unos");
+                    PrintanjeNarudzbe();
                 }
                 else
                 {
@@ -86,6 +190,45 @@ namespace Appoteka_v2._0
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDodavanjeLijekova dodaj = new FormDodavanjeLijekova();
+            dodaj.ShowDialog();
+            
+        }
+
+        private void FormNarudzbeNovi_Activated(object sender, EventArgs e)
+        {
+            lijekoviBindingSource4.DataSource = lijekoviNarudzba;
+        }
+
+        private void btnOsvjezi_Click(object sender, EventArgs e)
+        {
+            lijekoviBindingSource.DataSource = lijekoviNarudzba;
+            float suma = 0;
+
+
+            foreach (DataGridViewRow x in dataGridView1.Rows)
+            {
+                if (x.Cells[0].Value != null)
+                {
+                    try
+                    {
+                        suma += float.Parse(x.Cells[3].Value.ToString()) *
+                                    float.Parse(x.Cells[4].Value.ToString());
+
+                        x.Cells[5].Value = float.Parse(x.Cells[3].Value.ToString()) *
+                                    float.Parse(x.Cells[4].Value.ToString());
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Niste unjeli količinu za " + x.Cells[1].Value.ToString());
+                    }
+                }
+            }
+            textNarudzbeIznos.Text = suma.ToString();
         }
 
         
