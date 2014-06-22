@@ -43,72 +43,81 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 41);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(23, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Naziv";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 80);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(23, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.Size = new System.Drawing.Size(33, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "OIB";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 117);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(23, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(41, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "IBAN";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 151);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(23, 151);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.Size = new System.Drawing.Size(54, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Adresa";
             // 
             // textDobavljaciNaziv
             // 
-            this.textDobavljaciNaziv.Location = new System.Drawing.Point(153, 41);
+            this.textDobavljaciNaziv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textDobavljaciNaziv.Location = new System.Drawing.Point(93, 41);
             this.textDobavljaciNaziv.Name = "textDobavljaciNaziv";
-            this.textDobavljaciNaziv.Size = new System.Drawing.Size(100, 20);
+            this.textDobavljaciNaziv.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciNaziv.TabIndex = 4;
             // 
             // textDobavljaciOIB
             // 
-            this.textDobavljaciOIB.Location = new System.Drawing.Point(153, 80);
+            this.textDobavljaciOIB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textDobavljaciOIB.Location = new System.Drawing.Point(93, 80);
             this.textDobavljaciOIB.Name = "textDobavljaciOIB";
-            this.textDobavljaciOIB.Size = new System.Drawing.Size(100, 20);
+            this.textDobavljaciOIB.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciOIB.TabIndex = 5;
             // 
             // textDobavljaciIBAN
             // 
-            this.textDobavljaciIBAN.Location = new System.Drawing.Point(153, 117);
+            this.textDobavljaciIBAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textDobavljaciIBAN.Location = new System.Drawing.Point(93, 117);
             this.textDobavljaciIBAN.Name = "textDobavljaciIBAN";
-            this.textDobavljaciIBAN.Size = new System.Drawing.Size(100, 20);
+            this.textDobavljaciIBAN.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciIBAN.TabIndex = 6;
             // 
             // textDobavljaciAdresa
             // 
-            this.textDobavljaciAdresa.Location = new System.Drawing.Point(153, 151);
+            this.textDobavljaciAdresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textDobavljaciAdresa.Location = new System.Drawing.Point(93, 151);
             this.textDobavljaciAdresa.Name = "textDobavljaciAdresa";
-            this.textDobavljaciAdresa.Size = new System.Drawing.Size(100, 20);
+            this.textDobavljaciAdresa.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciAdresa.TabIndex = 7;
             // 
             // btnDobavljaciNoviSpremi
             // 
-            this.btnDobavljaciNoviSpremi.Location = new System.Drawing.Point(35, 219);
+            this.btnDobavljaciNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciNoviSpremi.Location = new System.Drawing.Point(178, 212);
             this.btnDobavljaciNoviSpremi.Name = "btnDobavljaciNoviSpremi";
-            this.btnDobavljaciNoviSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciNoviSpremi.Size = new System.Drawing.Size(83, 32);
             this.btnDobavljaciNoviSpremi.TabIndex = 8;
             this.btnDobavljaciNoviSpremi.Text = "Spremi";
             this.btnDobavljaciNoviSpremi.UseVisualStyleBackColor = true;
@@ -116,11 +125,12 @@
             // 
             // btnDobavljaciNoviIzlaz
             // 
-            this.btnDobavljaciNoviIzlaz.Location = new System.Drawing.Point(177, 219);
+            this.btnDobavljaciNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDobavljaciNoviIzlaz.Location = new System.Drawing.Point(27, 212);
             this.btnDobavljaciNoviIzlaz.Name = "btnDobavljaciNoviIzlaz";
-            this.btnDobavljaciNoviIzlaz.Size = new System.Drawing.Size(75, 23);
+            this.btnDobavljaciNoviIzlaz.Size = new System.Drawing.Size(83, 32);
             this.btnDobavljaciNoviIzlaz.TabIndex = 9;
-            this.btnDobavljaciNoviIzlaz.Text = "Izlaz";
+            this.btnDobavljaciNoviIzlaz.Text = "Odustani";
             this.btnDobavljaciNoviIzlaz.UseVisualStyleBackColor = true;
             this.btnDobavljaciNoviIzlaz.Click += new System.EventHandler(this.btnDobavljaciNoviIzlaz_Click);
             // 

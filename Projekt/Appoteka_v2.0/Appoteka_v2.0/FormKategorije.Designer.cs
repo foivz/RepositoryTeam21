@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idKategorijeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kategorijeLijekovaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appotekaDBDataSet1 = new Appoteka_v2._0.appotekaDBDataSet1();
             this.kategorijeLijekovaTableAdapter = new Appoteka_v2._0.appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter();
@@ -49,6 +46,10 @@
             this.dataGridLadice = new System.Windows.Forms.DataGridView();
             this.lblLijekovi = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.idKategorijeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeLijekovaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet1)).BeginInit();
@@ -69,30 +70,11 @@
             this.nazivDataGridViewTextBoxColumn,
             this.opisDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.kategorijeLijekovaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 36);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(394, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // idKategorijeDataGridViewTextBoxColumn
-            // 
-            this.idKategorijeDataGridViewTextBoxColumn.DataPropertyName = "IdKategorije";
-            this.idKategorijeDataGridViewTextBoxColumn.HeaderText = "IdKategorije";
-            this.idKategorijeDataGridViewTextBoxColumn.Name = "idKategorijeDataGridViewTextBoxColumn";
-            this.idKategorijeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nazivDataGridViewTextBoxColumn
-            // 
-            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "naziv";
-            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
-            // 
-            // opisDataGridViewTextBoxColumn
-            // 
-            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
-            this.opisDataGridViewTextBoxColumn.HeaderText = "opis";
-            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
             // 
             // kategorijeLijekovaBindingSource
             // 
@@ -111,9 +93,9 @@
             // btnKategorijeNatrag
             // 
             this.btnKategorijeNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKategorijeNatrag.Location = new System.Drawing.Point(12, 359);
+            this.btnKategorijeNatrag.Location = new System.Drawing.Point(33, 319);
             this.btnKategorijeNatrag.Name = "btnKategorijeNatrag";
-            this.btnKategorijeNatrag.Size = new System.Drawing.Size(75, 32);
+            this.btnKategorijeNatrag.Size = new System.Drawing.Size(90, 40);
             this.btnKategorijeNatrag.TabIndex = 1;
             this.btnKategorijeNatrag.Text = "Natrag";
             this.btnKategorijeNatrag.UseVisualStyleBackColor = true;
@@ -122,7 +104,7 @@
             // btnKategorijeNovi
             // 
             this.btnKategorijeNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKategorijeNovi.Location = new System.Drawing.Point(27, 182);
+            this.btnKategorijeNovi.Location = new System.Drawing.Point(33, 192);
             this.btnKategorijeNovi.Name = "btnKategorijeNovi";
             this.btnKategorijeNovi.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeNovi.TabIndex = 2;
@@ -133,7 +115,7 @@
             // btnKategorijeIzmjeni
             // 
             this.btnKategorijeIzmjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKategorijeIzmjeni.Location = new System.Drawing.Point(151, 182);
+            this.btnKategorijeIzmjeni.Location = new System.Drawing.Point(157, 192);
             this.btnKategorijeIzmjeni.Name = "btnKategorijeIzmjeni";
             this.btnKategorijeIzmjeni.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeIzmjeni.TabIndex = 3;
@@ -144,7 +126,7 @@
             // btnKategorijeIzbrisi
             // 
             this.btnKategorijeIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKategorijeIzbrisi.Location = new System.Drawing.Point(274, 182);
+            this.btnKategorijeIzbrisi.Location = new System.Drawing.Point(280, 192);
             this.btnKategorijeIzbrisi.Name = "btnKategorijeIzbrisi";
             this.btnKategorijeIzbrisi.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeIzbrisi.TabIndex = 4;
@@ -154,9 +136,13 @@
             // 
             // dataGridKategorije
             // 
+            this.dataGridKategorije.AllowUserToAddRows = false;
+            this.dataGridKategorije.AllowUserToDeleteRows = false;
             this.dataGridKategorije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridKategorije.Location = new System.Drawing.Point(454, 36);
+            this.dataGridKategorije.MultiSelect = false;
             this.dataGridKategorije.Name = "dataGridKategorije";
+            this.dataGridKategorije.ReadOnly = true;
             this.dataGridKategorije.Size = new System.Drawing.Size(394, 169);
             this.dataGridKategorije.TabIndex = 5;
             // 
@@ -181,9 +167,13 @@
             // 
             // dataGridLadice
             // 
+            this.dataGridLadice.AllowUserToAddRows = false;
+            this.dataGridLadice.AllowUserToDeleteRows = false;
             this.dataGridLadice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLadice.Location = new System.Drawing.Point(454, 259);
+            this.dataGridLadice.Location = new System.Drawing.Point(454, 241);
+            this.dataGridLadice.MultiSelect = false;
             this.dataGridLadice.Name = "dataGridLadice";
+            this.dataGridLadice.ReadOnly = true;
             this.dataGridLadice.Size = new System.Drawing.Size(363, 118);
             this.dataGridLadice.TabIndex = 6;
             // 
@@ -201,17 +191,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(454, 224);
+            this.label1.Location = new System.Drawing.Point(454, 218);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Naziv ladice";
             // 
+            // idKategorijeDataGridViewTextBoxColumn
+            // 
+            this.idKategorijeDataGridViewTextBoxColumn.DataPropertyName = "IdKategorije";
+            this.idKategorijeDataGridViewTextBoxColumn.HeaderText = "ID kategorije";
+            this.idKategorijeDataGridViewTextBoxColumn.Name = "idKategorijeDataGridViewTextBoxColumn";
+            this.idKategorijeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            // 
+            // opisDataGridViewTextBoxColumn
+            // 
+            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
+            this.opisDataGridViewTextBoxColumn.HeaderText = "Opis";
+            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Kategorije";
+            // 
             // FormKategorije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 403);
+            this.ClientSize = new System.Drawing.Size(860, 373);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblLijekovi);
             this.Controls.Add(this.dataGridLadice);
@@ -244,9 +264,6 @@
         private appotekaDBDataSet1 appotekaDBDataSet1;
         private System.Windows.Forms.BindingSource kategorijeLijekovaBindingSource;
         private appotekaDBDataSet1TableAdapters.kategorijeLijekovaTableAdapter kategorijeLijekovaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idKategorijeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn opisDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnKategorijeNatrag;
         private System.Windows.Forms.Button btnKategorijeNovi;
         private System.Windows.Forms.Button btnKategorijeIzmjeni;
@@ -260,5 +277,9 @@
         private System.Windows.Forms.DataGridView dataGridLadice;
         private System.Windows.Forms.Label lblLijekovi;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idKategorijeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn opisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label2;
     }
 }

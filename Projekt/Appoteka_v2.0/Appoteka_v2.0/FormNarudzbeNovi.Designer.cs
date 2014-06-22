@@ -62,42 +62,46 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(28, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datum";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(28, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(70, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dobavljač";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 129);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(28, 121);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Zaposlenik";
             // 
             // dateTimeNaruzbeDatum
             // 
-            this.dateTimeNaruzbeDatum.Location = new System.Drawing.Point(112, 35);
+            this.dateTimeNaruzbeDatum.Location = new System.Drawing.Point(120, 35);
             this.dateTimeNaruzbeDatum.Name = "dateTimeNaruzbeDatum";
-            this.dateTimeNaruzbeDatum.Size = new System.Drawing.Size(139, 20);
+            this.dateTimeNaruzbeDatum.Size = new System.Drawing.Size(190, 20);
             this.dateTimeNaruzbeDatum.TabIndex = 5;
             // 
             // btnNarudzbeNoviSpremi
             // 
-            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(50, 361);
+            this.btnNarudzbeNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(668, 361);
             this.btnNarudzbeNoviSpremi.Name = "btnNarudzbeNoviSpremi";
-            this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(75, 36);
             this.btnNarudzbeNoviSpremi.TabIndex = 6;
             this.btnNarudzbeNoviSpremi.Text = "Spremi";
             this.btnNarudzbeNoviSpremi.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             // 
             // btnNarudzbeNoviIzlaz
             // 
-            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(195, 361);
+            this.btnNarudzbeNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(31, 361);
             this.btnNarudzbeNoviIzlaz.Name = "btnNarudzbeNoviIzlaz";
-            this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(75, 23);
+            this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(75, 36);
             this.btnNarudzbeNoviIzlaz.TabIndex = 7;
             this.btnNarudzbeNoviIzlaz.Text = "Izlaz";
             this.btnNarudzbeNoviIzlaz.UseVisualStyleBackColor = true;
@@ -118,9 +123,9 @@
             this.comboBoxDobavljac.DataSource = this.dobavljaciBindingSource;
             this.comboBoxDobavljac.DisplayMember = "naziv";
             this.comboBoxDobavljac.FormattingEnabled = true;
-            this.comboBoxDobavljac.Location = new System.Drawing.Point(113, 79);
+            this.comboBoxDobavljac.Location = new System.Drawing.Point(121, 79);
             this.comboBoxDobavljac.Name = "comboBoxDobavljac";
-            this.comboBoxDobavljac.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxDobavljac.Size = new System.Drawing.Size(189, 21);
             this.comboBoxDobavljac.TabIndex = 9;
             this.comboBoxDobavljac.ValueMember = "IdDobavljac";
             // 
@@ -139,9 +144,9 @@
             this.comboBoxZaposlenik.DataSource = this.zaposleniciBindingSource;
             this.comboBoxZaposlenik.DisplayMember = "prezime";
             this.comboBoxZaposlenik.FormattingEnabled = true;
-            this.comboBoxZaposlenik.Location = new System.Drawing.Point(113, 129);
+            this.comboBoxZaposlenik.Location = new System.Drawing.Point(121, 121);
             this.comboBoxZaposlenik.Name = "comboBoxZaposlenik";
-            this.comboBoxZaposlenik.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxZaposlenik.Size = new System.Drawing.Size(189, 21);
             this.comboBoxZaposlenik.TabIndex = 10;
             this.comboBoxZaposlenik.ValueMember = "OIB";
             // 
@@ -184,16 +189,19 @@
             // 
             // textNarudzbeIznos
             // 
-            this.textNarudzbeIznos.Location = new System.Drawing.Point(415, 129);
+            this.textNarudzbeIznos.Location = new System.Drawing.Point(425, 117);
             this.textNarudzbeIznos.Name = "textNarudzbeIznos";
             this.textNarudzbeIznos.Size = new System.Drawing.Size(139, 20);
             this.textNarudzbeIznos.TabIndex = 11;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(31, 178);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(712, 150);
             this.dataGridView1.TabIndex = 12;
             // 
@@ -201,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 436);
+            this.ClientSize = new System.Drawing.Size(762, 412);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textNarudzbeIznos);
             this.Controls.Add(this.comboBoxZaposlenik);

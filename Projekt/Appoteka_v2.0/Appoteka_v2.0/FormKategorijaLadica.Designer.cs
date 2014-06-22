@@ -30,12 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idLadiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapacitetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ladiceBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.ladice1 = new Appoteka_v2._0.ladice1();
             this.ladiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ladiceBS1 = new Appoteka_v2._0.ladiceBS1();
             this.ladiceTableAdapter = new Appoteka_v2._0.ladiceBS1TableAdapters.ladiceTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idLadiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapacitetDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ladiceBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.ladice2 = new Appoteka_v2._0.ladice2();
             this.ladiceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -47,10 +51,6 @@
             this.ladiceTableAdapter2 = new Appoteka_v2._0.ladice1TableAdapters.ladiceTableAdapter();
             this.ladiceTableAdapter3 = new Appoteka_v2._0.ladice2TableAdapters.ladiceTableAdapter();
             this.ladiceBS1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idLadiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapacitetDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idLadiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapacitetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladiceBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladice1)).BeginInit();
@@ -66,17 +66,36 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idLadiceDataGridViewTextBoxColumn,
             this.kapacitetDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ladiceBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(269, 12);
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.Location = new System.Drawing.Point(290, 12);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(258, 150);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idLadiceDataGridViewTextBoxColumn
+            // 
+            this.idLadiceDataGridViewTextBoxColumn.DataPropertyName = "IdLadice";
+            this.idLadiceDataGridViewTextBoxColumn.HeaderText = "ID ladice";
+            this.idLadiceDataGridViewTextBoxColumn.Name = "idLadiceDataGridViewTextBoxColumn";
+            this.idLadiceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // kapacitetDataGridViewTextBoxColumn
+            // 
+            this.kapacitetDataGridViewTextBoxColumn.DataPropertyName = "kapacitet";
+            this.kapacitetDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.kapacitetDataGridViewTextBoxColumn.Name = "kapacitetDataGridViewTextBoxColumn";
+            this.kapacitetDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ladiceBindingSource2
             // 
@@ -104,6 +123,8 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -112,9 +133,24 @@
             this.dataGridView2.DataSource = this.ladiceBindingSource3;
             this.dataGridView2.Location = new System.Drawing.Point(12, 12);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(255, 150);
             this.dataGridView2.TabIndex = 1;
+            // 
+            // idLadiceDataGridViewTextBoxColumn1
+            // 
+            this.idLadiceDataGridViewTextBoxColumn1.DataPropertyName = "IdLadice";
+            this.idLadiceDataGridViewTextBoxColumn1.HeaderText = "ID ladice";
+            this.idLadiceDataGridViewTextBoxColumn1.Name = "idLadiceDataGridViewTextBoxColumn1";
+            this.idLadiceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // kapacitetDataGridViewTextBoxColumn1
+            // 
+            this.kapacitetDataGridViewTextBoxColumn1.DataPropertyName = "kapacitet";
+            this.kapacitetDataGridViewTextBoxColumn1.HeaderText = "Naziv";
+            this.kapacitetDataGridViewTextBoxColumn1.Name = "kapacitetDataGridViewTextBoxColumn1";
+            this.kapacitetDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // ladiceBindingSource3
             // 
@@ -142,10 +178,10 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnDodaj.Location = new System.Drawing.Point(90, 168);
+            this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodaj.Location = new System.Drawing.Point(239, 168);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 27);
+            this.btnDodaj.Size = new System.Drawing.Size(82, 36);
             this.btnDodaj.TabIndex = 2;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -154,7 +190,7 @@
             // btnZavrsi
             // 
             this.btnZavrsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZavrsi.Location = new System.Drawing.Point(318, 194);
+            this.btnZavrsi.Location = new System.Drawing.Point(461, 201);
             this.btnZavrsi.Name = "btnZavrsi";
             this.btnZavrsi.Size = new System.Drawing.Size(87, 30);
             this.btnZavrsi.TabIndex = 3;
@@ -165,7 +201,7 @@
             // btnOdustani
             // 
             this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnOdustani.Location = new System.Drawing.Point(429, 194);
+            this.btnOdustani.Location = new System.Drawing.Point(12, 201);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(87, 30);
             this.btnOdustani.TabIndex = 4;
@@ -186,37 +222,11 @@
             this.ladiceBS1BindingSource.DataSource = this.ladiceBS1;
             this.ladiceBS1BindingSource.Position = 0;
             // 
-            // idLadiceDataGridViewTextBoxColumn1
-            // 
-            this.idLadiceDataGridViewTextBoxColumn1.DataPropertyName = "IdLadice";
-            this.idLadiceDataGridViewTextBoxColumn1.HeaderText = "ID ladice";
-            this.idLadiceDataGridViewTextBoxColumn1.Name = "idLadiceDataGridViewTextBoxColumn1";
-            this.idLadiceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // kapacitetDataGridViewTextBoxColumn1
-            // 
-            this.kapacitetDataGridViewTextBoxColumn1.DataPropertyName = "kapacitet";
-            this.kapacitetDataGridViewTextBoxColumn1.HeaderText = "Naziv";
-            this.kapacitetDataGridViewTextBoxColumn1.Name = "kapacitetDataGridViewTextBoxColumn1";
-            // 
-            // idLadiceDataGridViewTextBoxColumn
-            // 
-            this.idLadiceDataGridViewTextBoxColumn.DataPropertyName = "IdLadice";
-            this.idLadiceDataGridViewTextBoxColumn.HeaderText = "ID ladice";
-            this.idLadiceDataGridViewTextBoxColumn.Name = "idLadiceDataGridViewTextBoxColumn";
-            this.idLadiceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // kapacitetDataGridViewTextBoxColumn
-            // 
-            this.kapacitetDataGridViewTextBoxColumn.DataPropertyName = "kapacitet";
-            this.kapacitetDataGridViewTextBoxColumn.HeaderText = "Naziv";
-            this.kapacitetDataGridViewTextBoxColumn.Name = "kapacitetDataGridViewTextBoxColumn";
-            // 
             // FormKategorijaLadica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 236);
+            this.ClientSize = new System.Drawing.Size(560, 236);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnZavrsi);
             this.Controls.Add(this.btnDodaj);

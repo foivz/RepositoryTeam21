@@ -37,9 +37,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(91, 200);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(89, 182);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(97, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "PRIJAVA";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,33 +49,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 62);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(23, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(110, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Korisničko ime";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 120);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(23, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Lozinka";
             // 
             // textPrijavaKorime
             // 
-            this.textPrijavaKorime.Location = new System.Drawing.Point(124, 59);
+            this.textPrijavaKorime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textPrijavaKorime.Location = new System.Drawing.Point(23, 57);
             this.textPrijavaKorime.Name = "textPrijavaKorime";
-            this.textPrijavaKorime.Size = new System.Drawing.Size(100, 20);
+            this.textPrijavaKorime.Size = new System.Drawing.Size(204, 26);
             this.textPrijavaKorime.TabIndex = 3;
             // 
             // textPrijavaLozinka
             // 
-            this.textPrijavaLozinka.Location = new System.Drawing.Point(124, 113);
+            this.textPrijavaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textPrijavaLozinka.Location = new System.Drawing.Point(23, 115);
             this.textPrijavaLozinka.Name = "textPrijavaLozinka";
-            this.textPrijavaLozinka.Size = new System.Drawing.Size(100, 20);
+            this.textPrijavaLozinka.Size = new System.Drawing.Size(204, 26);
             this.textPrijavaLozinka.TabIndex = 4;
             // 
             // FormPrijava

@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(32, 20);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(32, 66);
+            this.label2.Location = new System.Drawing.Point(12, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 20);
             this.label2.TabIndex = 1;
@@ -76,23 +76,23 @@
             // 
             // textKategorijaNaziv
             // 
-            this.textKategorijaNaziv.Location = new System.Drawing.Point(101, 20);
+            this.textKategorijaNaziv.Location = new System.Drawing.Point(71, 20);
             this.textKategorijaNaziv.Name = "textKategorijaNaziv";
-            this.textKategorijaNaziv.Size = new System.Drawing.Size(147, 20);
+            this.textKategorijaNaziv.Size = new System.Drawing.Size(205, 20);
             this.textKategorijaNaziv.TabIndex = 3;
             // 
             // textKategorijaOpis
             // 
-            this.textKategorijaOpis.Location = new System.Drawing.Point(101, 48);
+            this.textKategorijaOpis.Location = new System.Drawing.Point(71, 48);
             this.textKategorijaOpis.Multiline = true;
             this.textKategorijaOpis.Name = "textKategorijaOpis";
-            this.textKategorijaOpis.Size = new System.Drawing.Size(255, 76);
+            this.textKategorijaOpis.Size = new System.Drawing.Size(297, 76);
             this.textKategorijaOpis.TabIndex = 5;
             // 
             // btnKategorijeNoviSpremi
             // 
             this.btnKategorijeNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKategorijeNoviSpremi.Location = new System.Drawing.Point(101, 279);
+            this.btnKategorijeNoviSpremi.Location = new System.Drawing.Point(293, 279);
             this.btnKategorijeNoviSpremi.Name = "btnKategorijeNoviSpremi";
             this.btnKategorijeNoviSpremi.Size = new System.Drawing.Size(75, 32);
             this.btnKategorijeNoviSpremi.TabIndex = 6;
@@ -103,7 +103,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(217, 279);
+            this.button2.Location = new System.Drawing.Point(12, 279);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 7;
@@ -113,6 +113,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -121,6 +123,7 @@
             this.dataGridView1.DataSource = this.ladiceBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 130);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(264, 143);
             this.dataGridView1.TabIndex = 8;
             // 
@@ -136,6 +139,7 @@
             this.kapacitetDataGridViewTextBoxColumn.DataPropertyName = "kapacitet";
             this.kapacitetDataGridViewTextBoxColumn.HeaderText = "Naziv";
             this.kapacitetDataGridViewTextBoxColumn.Name = "kapacitetDataGridViewTextBoxColumn";
+            this.kapacitetDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ladiceBindingSource
             // 
@@ -157,9 +161,9 @@
             this.btnDodajLadicu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnDodajLadicu.Location = new System.Drawing.Point(293, 145);
             this.btnDodajLadicu.Name = "btnDodajLadicu";
-            this.btnDodajLadicu.Size = new System.Drawing.Size(75, 23);
+            this.btnDodajLadicu.Size = new System.Drawing.Size(75, 45);
             this.btnDodajLadicu.TabIndex = 9;
-            this.btnDodajLadicu.Text = "Dodaj";
+            this.btnDodajLadicu.Text = "Dodaj ladicu";
             this.btnDodajLadicu.UseVisualStyleBackColor = true;
             this.btnDodajLadicu.Click += new System.EventHandler(this.btnDodajLadicu_Click);
             // 
@@ -180,11 +184,11 @@
             // btnIzbriši
             // 
             this.btnIzbriši.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnIzbriši.Location = new System.Drawing.Point(293, 184);
+            this.btnIzbriši.Location = new System.Drawing.Point(293, 196);
             this.btnIzbriši.Name = "btnIzbriši";
-            this.btnIzbriši.Size = new System.Drawing.Size(75, 23);
+            this.btnIzbriši.Size = new System.Drawing.Size(75, 45);
             this.btnIzbriši.TabIndex = 10;
-            this.btnIzbriši.Text = "Izbriši";
+            this.btnIzbriši.Text = "Izbriši ladicu";
             this.btnIzbriši.UseVisualStyleBackColor = true;
             this.btnIzbriši.Click += new System.EventHandler(this.btnIzbriši_Click);
             // 

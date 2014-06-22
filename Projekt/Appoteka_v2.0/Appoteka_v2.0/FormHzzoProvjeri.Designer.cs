@@ -55,7 +55,7 @@
             // btnFormHzzoProvjeri
             // 
             this.btnFormHzzoProvjeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnFormHzzoProvjeri.Location = new System.Drawing.Point(452, 169);
+            this.btnFormHzzoProvjeri.Location = new System.Drawing.Point(419, 184);
             this.btnFormHzzoProvjeri.Name = "btnFormHzzoProvjeri";
             this.btnFormHzzoProvjeri.Size = new System.Drawing.Size(130, 46);
             this.btnFormHzzoProvjeri.TabIndex = 2;

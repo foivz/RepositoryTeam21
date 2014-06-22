@@ -148,6 +148,14 @@ namespace Appoteka_v2._0
             kategorijeLijekovaBindingSource.DataSource = LijekoviKategorije;
 
         }
+
+        private void btnIzbrisiKategoriju_Click(object sender, EventArgs e)
+        {
+            kategorijeLijekova selektiranaKategorija = kategorijeLijekovaBindingSource.Current as kategorijeLijekova;
+
+            LijekoviKategorije.Remove(selektiranaKategorija);
+            kategorijeLijekovaBindingSource.DataSource = LijekoviKategorije;
+        }
        
     }
 }

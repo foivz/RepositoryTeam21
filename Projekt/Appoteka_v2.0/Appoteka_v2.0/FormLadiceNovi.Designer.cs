@@ -36,9 +36,10 @@
             // 
             // btnLadiceNoviSpremi
             // 
-            this.btnLadiceNoviSpremi.Location = new System.Drawing.Point(37, 186);
+            this.btnLadiceNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLadiceNoviSpremi.Location = new System.Drawing.Point(154, 115);
             this.btnLadiceNoviSpremi.Name = "btnLadiceNoviSpremi";
-            this.btnLadiceNoviSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnLadiceNoviSpremi.Size = new System.Drawing.Size(75, 35);
             this.btnLadiceNoviSpremi.TabIndex = 0;
             this.btnLadiceNoviSpremi.Text = "Spremi";
             this.btnLadiceNoviSpremi.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // btnLadiceNoviIzlaz
             // 
-            this.btnLadiceNoviIzlaz.Location = new System.Drawing.Point(183, 186);
+            this.btnLadiceNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLadiceNoviIzlaz.Location = new System.Drawing.Point(24, 115);
             this.btnLadiceNoviIzlaz.Name = "btnLadiceNoviIzlaz";
-            this.btnLadiceNoviIzlaz.Size = new System.Drawing.Size(75, 23);
+            this.btnLadiceNoviIzlaz.Size = new System.Drawing.Size(75, 35);
             this.btnLadiceNoviIzlaz.TabIndex = 1;
             this.btnLadiceNoviIzlaz.Text = "Izlaz";
             this.btnLadiceNoviIzlaz.UseVisualStyleBackColor = true;
@@ -57,24 +59,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 92);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(20, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Kapacitet";
+            this.label1.Text = "Naziv ladice";
             // 
             // textLadiceNoviKapacitet
             // 
-            this.textLadiceNoviKapacitet.Location = new System.Drawing.Point(158, 84);
+            this.textLadiceNoviKapacitet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textLadiceNoviKapacitet.Location = new System.Drawing.Point(24, 66);
             this.textLadiceNoviKapacitet.Name = "textLadiceNoviKapacitet";
-            this.textLadiceNoviKapacitet.Size = new System.Drawing.Size(100, 20);
+            this.textLadiceNoviKapacitet.Size = new System.Drawing.Size(205, 26);
             this.textLadiceNoviKapacitet.TabIndex = 3;
             // 
             // FormLadiceNovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(264, 188);
             this.Controls.Add(this.textLadiceNoviKapacitet);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLadiceNoviIzlaz);
