@@ -1,48 +1,17 @@
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Report.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
-<<<<<<< HEAD
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
-C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
-C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
-C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormABC.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeKategorija.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
@@ -51,6 +20,7 @@ C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
@@ -60,42 +30,5 @@ C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeKategorija.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Report.resources
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
-=======
-C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
->>>>>>> 4400ec5868842d055c66677c4994dd9b7e247cb6
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources
-C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
->>>>>>> 6e60062db3b1b1188731b0b7598cd9e9cc0cc2f0
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb

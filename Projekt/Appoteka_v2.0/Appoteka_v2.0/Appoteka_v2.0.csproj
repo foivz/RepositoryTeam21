@@ -80,6 +80,12 @@
     <Compile Include="dobavljaci.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormABC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormABC.Designer.cs">
+      <DependentUpon>FormABC.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAppoteka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,8 +307,13 @@
     <Compile Include="zaposlenici.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormABC.resx">
+      <DependentUpon>FormABC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAppoteka.resx">
       <DependentUpon>FormAppoteka.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDobavljaci.resx">
       <DependentUpon>FormDobavljaci.cs</DependentUpon>

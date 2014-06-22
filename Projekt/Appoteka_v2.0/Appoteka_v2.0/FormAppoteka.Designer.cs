@@ -44,6 +44,7 @@
             this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBCKlasifikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBCKlasifikacijaToolStripMenuItem,
             this.miFileExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -72,7 +74,7 @@
             // miFileExit
             // 
             this.miFileExit.Name = "miFileExit";
-            this.miFileExit.Size = new System.Drawing.Size(152, 22);
+            this.miFileExit.Size = new System.Drawing.Size(160, 22);
             this.miFileExit.Text = "Exit";
             this.miFileExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miFileExit_MouseUp);
             // 
@@ -89,21 +91,21 @@
             // miBrowseLijekovi
             // 
             this.miBrowseLijekovi.Name = "miBrowseLijekovi";
-            this.miBrowseLijekovi.Size = new System.Drawing.Size(152, 22);
+            this.miBrowseLijekovi.Size = new System.Drawing.Size(125, 22);
             this.miBrowseLijekovi.Text = "Lijekovi";
             this.miBrowseLijekovi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseLijekovi_MouseUp);
             // 
             // miBrowseNarudzbe
             // 
             this.miBrowseNarudzbe.Name = "miBrowseNarudzbe";
-            this.miBrowseNarudzbe.Size = new System.Drawing.Size(152, 22);
+            this.miBrowseNarudzbe.Size = new System.Drawing.Size(125, 22);
             this.miBrowseNarudzbe.Text = "Narudžbe";
             this.miBrowseNarudzbe.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseNarudzbe_MouseUp);
             // 
             // miBrowseRacuni
             // 
             this.miBrowseRacuni.Name = "miBrowseRacuni";
-            this.miBrowseRacuni.Size = new System.Drawing.Size(152, 22);
+            this.miBrowseRacuni.Size = new System.Drawing.Size(125, 22);
             this.miBrowseRacuni.Text = "Računi";
             this.miBrowseRacuni.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miBrowseRacuni_MouseUp);
             // 
@@ -177,6 +179,13 @@
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
             // 
+            // aBCKlasifikacijaToolStripMenuItem
+            // 
+            this.aBCKlasifikacijaToolStripMenuItem.Name = "aBCKlasifikacijaToolStripMenuItem";
+            this.aBCKlasifikacijaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aBCKlasifikacijaToolStripMenuItem.Text = "ABC klasifikacija";
+            this.aBCKlasifikacijaToolStripMenuItem.Click += new System.EventHandler(this.aBCKlasifikacijaToolStripMenuItem_Click);
+            // 
             // FormAppoteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,5 +223,6 @@
         private System.Windows.Forms.ToolStripMenuItem miHzzoProvjeri;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lijekoviToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBCKlasifikacijaToolStripMenuItem;
     }
 }

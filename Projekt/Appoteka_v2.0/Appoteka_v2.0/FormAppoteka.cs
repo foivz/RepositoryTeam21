@@ -99,6 +99,14 @@ namespace Appoteka_v2._0
             report.Show();
         }
 
+        private void aBCKlasifikacijaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormABC ABCform = new FormABC();
+            ABCform.MdiParent = this;
+            ABCform.WindowState = FormWindowState.Maximized;
+            ABCform.Show();
+        }
+
         
     }
 }
