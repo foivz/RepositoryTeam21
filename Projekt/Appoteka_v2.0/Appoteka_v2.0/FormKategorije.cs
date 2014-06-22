@@ -36,7 +36,7 @@ namespace Appoteka_v2._0
             {
                 using (var db = new appotekaDBEntities())
                 {
-                    var lijek = from t3 in db.lijekovi
+                    var lijek = from t3 in db.lijekovi 
                                 from t2 in t3.kategorijeLijekova.Where(
              x => x.naziv == selektiranaKategorija.naziv)
                                 select new { t3.serijskiBroj, t3.naziv};

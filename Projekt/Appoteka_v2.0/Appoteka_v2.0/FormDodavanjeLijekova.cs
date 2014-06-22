@@ -62,6 +62,7 @@ namespace Appoteka_v2._0
             FormRacuniNovi.lijekoviRacun = prijenosLijeka;
             
             this.Close();
+            
         }
     }
 }

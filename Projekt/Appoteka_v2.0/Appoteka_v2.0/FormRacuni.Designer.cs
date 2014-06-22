@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.appotekaDBDataSet2 = new Appoteka_v2._0.appotekaDBDataSet2();
-            this.racunBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.racunTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.racunTableAdapter();
             this.idrRacunaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iznosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.oIBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.racunBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.appotekaDBDataSet2 = new Appoteka_v2._0.appotekaDBDataSet2();
+            this.racunTableAdapter = new Appoteka_v2._0.appotekaDBDataSet2TableAdapters.racunTableAdapter();
             this.btnRacuniNatrag = new System.Windows.Forms.Button();
             this.btnRacuniNovi = new System.Windows.Forms.Button();
             this.btnRacuniIzmijeni = new System.Windows.Forms.Button();
             this.btnRacunIzbrisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racunBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,22 +58,8 @@
             this.dataGridView1.DataSource = this.racunBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(22, 24);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(489, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(448, 177);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // appotekaDBDataSet2
-            // 
-            this.appotekaDBDataSet2.DataSetName = "appotekaDBDataSet2";
-            this.appotekaDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // racunBindingSource
-            // 
-            this.racunBindingSource.DataMember = "racun";
-            this.racunBindingSource.DataSource = this.appotekaDBDataSet2;
-            // 
-            // racunTableAdapter
-            // 
-            this.racunTableAdapter.ClearBeforeFill = true;
             // 
             // idrRacunaDataGridViewTextBoxColumn
             // 
@@ -99,6 +85,20 @@
             this.oIBDataGridViewTextBoxColumn.DataPropertyName = "OIB";
             this.oIBDataGridViewTextBoxColumn.HeaderText = "OIB";
             this.oIBDataGridViewTextBoxColumn.Name = "oIBDataGridViewTextBoxColumn";
+            // 
+            // racunBindingSource
+            // 
+            this.racunBindingSource.DataMember = "racun";
+            this.racunBindingSource.DataSource = this.appotekaDBDataSet2;
+            // 
+            // appotekaDBDataSet2
+            // 
+            this.appotekaDBDataSet2.DataSetName = "appotekaDBDataSet2";
+            this.appotekaDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // racunTableAdapter
+            // 
+            this.racunTableAdapter.ClearBeforeFill = true;
             // 
             // btnRacuniNatrag
             // 
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 282);
+            this.ClientSize = new System.Drawing.Size(532, 282);
             this.Controls.Add(this.btnRacunIzbrisi);
             this.Controls.Add(this.btnRacuniIzmijeni);
             this.Controls.Add(this.btnRacuniNovi);
@@ -154,8 +154,8 @@
             this.Text = "Računi";
             this.Load += new System.EventHandler(this.FormRacuni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racunBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
