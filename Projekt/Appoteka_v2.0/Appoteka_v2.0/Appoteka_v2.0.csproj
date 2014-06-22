@@ -176,6 +176,12 @@
     <Compile Include="FormRacuniNovi.Designer.cs">
       <DependentUpon>FormRacuniNovi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRacunPrikazi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacunPrikazi.Designer.cs">
+      <DependentUpon>FormRacunPrikazi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormZaposlenici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +319,9 @@
     <EmbeddedResource Include="FormRacuniNovi.resx">
       <DependentUpon>FormRacuniNovi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRacunPrikazi.resx">
+      <DependentUpon>FormRacunPrikazi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormZaposlenici.resx">
       <DependentUpon>FormZaposlenici.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +342,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="ReportLijekovi.rdlc" />
+    <EmbeddedResource Include="ReportRacun.rdlc" />
     <EmbeddedResource Include="ReportRacuni.rdlc" />
     <EntityDeploy Include="ModelAppoteka.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
