@@ -111,6 +111,22 @@ namespace Appoteka_v2._0
                     {
                         db.kategorijeLijekova.Attach(selektiranaKategorija);
 
+
+                        //brisanje kad postoje ladice za kategoriju ne radi, prvo treba obrisati ladice
+                        //foreach (DataGridViewRow x in dataGridView1.Rows)
+                        //{
+                        //    if (x.Cells[1].Value != null)
+                        //    {
+                        //        int k = int.Parse(x.Cells[0].Value.ToString());
+                        //        var ladica = (from l in db.ladice
+                        //                      where l.IdLadice == k
+                        //                      select l).SingleOrDefault();
+
+                        //        //db.kategorijeLijekova.Remove(ladica);
+
+                        //    }
+                        //}
+
                         db.kategorijeLijekova.Remove(selektiranaKategorija);
                         db.SaveChanges();
                     }

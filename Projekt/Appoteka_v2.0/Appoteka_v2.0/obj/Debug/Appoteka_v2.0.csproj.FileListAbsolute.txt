@@ -96,3 +96,6 @@ D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appo
 C:\Users\lklancir\Documents\FAKS 6.0\PI\Projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
 >>>>>>> 4400ec5868842d055c66677c4994dd9b7e247cb6
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources
+C:\Users\Filip\Documents\SourceTree\RepositoryTeam21 - WORK\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
+>>>>>>> 6e60062db3b1b1188731b0b7598cd9e9cc0cc2f0
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\Projekt_appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources

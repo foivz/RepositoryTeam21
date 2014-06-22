@@ -122,6 +122,12 @@
     <Compile Include="FormHzzoProvjeriBroj.Designer.cs">
       <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKategorijaLadica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorijaLadica.Designer.cs">
+      <DependentUpon>FormKategorijaLadica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKategorije.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,26 @@
     <Compile Include="ladice.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
+    <Compile Include="ladice1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladice2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladiceBS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladiceBS2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="lijekovi.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
@@ -296,6 +322,9 @@
     <EmbeddedResource Include="FormHzzoProvjeriBroj.resx">
       <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorijaLadica.resx">
+      <DependentUpon>FormKategorijaLadica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKategorije.resx">
       <DependentUpon>FormKategorije.cs</DependentUpon>
@@ -421,6 +450,50 @@
     </None>
     <None Include="kriticneZalihe.xss">
       <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </None>
+    <None Include="ladice1.xsc">
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </None>
+    <None Include="ladice1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladice1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladice1.xss">
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </None>
+    <None Include="ladice2.xsc">
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </None>
+    <None Include="ladice2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladice2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladice2.xss">
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS1.xsc">
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladiceBS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladiceBS1.xss">
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS2.xsc">
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladiceBS2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladiceBS2.xss">
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
     </None>
     <None Include="ModelAppoteka.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
