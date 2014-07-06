@@ -17,6 +17,8 @@ namespace Appoteka_v2._0
             InitializeComponent();
         }
 
+        ///funkcija stvara novi objekt binding liste dobavljaci i postavlja je na null
+        ///dodjeljuje dobavljace u bazi (pretvorene u listu)
         private void PrikaziDobavljace()
         {
             BindingList<dobavljaci> listaDobavljaca = null;
@@ -24,10 +26,11 @@ namespace Appoteka_v2._0
             {
                 listaDobavljaca = new BindingList<dobavljaci>(db.dobavljaci.ToList());
             }
+            //lista dobavljaca dohvacena iz baze podataka stavlja se u binding source
             dobavljaciBindingSource.DataSource = listaDobavljaca;
         }
 
-
+        //učitavanjem forme poziva se funkcija
         private void FormDobavljaci_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'appotekaDBDataSet2.dobavljaci' table. You can move, or remove it, as needed.
@@ -40,6 +43,7 @@ namespace Appoteka_v2._0
             Close();
         }
 
+        //otvaranje nove forme FormDobavljaciNovi 
         private void btnDobavljaciNovi_Click(object sender, EventArgs e)
         {
             FormDobavljaciNovi DobavljaciNoviForm = new FormDobavljaciNovi();
@@ -48,6 +52,8 @@ namespace Appoteka_v2._0
             
         }
 
+        //selektirani dobavljac stavlja se u novu varijablu koja je tipa dobavljac
+        //ukoliko je selektiran neki dobavljac otvara se nova forma FormDobavljacNovi kojoj se prosljeduje selektirani dobavljac kao parametar
         private void btnDobavljaciIzmijeni_Click(object sender, EventArgs e)
         {
             dobavljaci selektiraniDobavljac = dobavljaciBindingSource.Current as dobavljaci;
@@ -59,6 +65,8 @@ namespace Appoteka_v2._0
             }
         }
 
+        //selektirani dobavljac se treba se uz pomoc naredbe 'attach' prvo registrirati da bi se mogao obrisati
+        //nakon toga spremiti promjene i u bazi; pozvati funkciju s novim stanjem dobavljaca
         private void btnDobavljaciIzbrisi_Click(object sender, EventArgs e)
         {
             dobavljaci selektiraniDobavljac = dobavljaciBindingSource.Current as dobavljaci;

@@ -17,6 +17,8 @@ namespace Appoteka_v2._0
             InitializeComponent();
         }
 
+        //klikom na odabrano otvara se nova forma 
+
         private void miBrowseLijekovi_MouseUp(object sender, MouseEventArgs e)
         {
             FormLijekovi LijekoviForma = new FormLijekovi();

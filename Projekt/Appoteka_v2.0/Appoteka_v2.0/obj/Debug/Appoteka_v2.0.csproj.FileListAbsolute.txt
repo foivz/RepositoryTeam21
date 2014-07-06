@@ -111,3 +111,6 @@ C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appot
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.application
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe.manifest
 C:\Users\Filip\Documents\SourceTree\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.application
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
