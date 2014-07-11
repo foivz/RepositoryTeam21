@@ -95,7 +95,7 @@ namespace Appoteka_v2._0
 
         private void lijekoviToolStripMenuItem_MouseUp(object sender, MouseEventArgs e)
         {
-            Report report = new Report();
+            ReportLijekovi report = new ReportLijekovi();
             report.MdiParent = this;
             report.WindowState = FormWindowState.Maximized;
             report.Show();
@@ -107,6 +107,22 @@ namespace Appoteka_v2._0
             ABCform.MdiParent = this;
             ABCform.WindowState = FormWindowState.Maximized;
             ABCform.Show();
+        }
+
+        private void dobavljačiToolStripMenuItem_MouseUp(object sender, MouseEventArgs e)
+        {
+            ReportDobavljaci report = new ReportDobavljaci();
+            report.MdiParent = this;
+            report.WindowState = FormWindowState.Maximized;
+            report.Show();
+        }
+
+        private void kategorijeToolStripMenuItem_MouseUp(object sender, MouseEventArgs e)
+        {
+            ReportKategorije report = new ReportKategorije();
+            report.MdiParent = this;
+            report.WindowState = FormWindowState.Maximized;
+            report.Show();
         }
 
         

@@ -135,6 +135,7 @@ namespace Appoteka_v2._0
             }
         }
 
+        //kod promjene selektirane kategorije pozovi funkcije
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             PrikaziLijek();

@@ -340,11 +340,23 @@
     <Compile Include="racun.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs">
+    <Compile Include="ReportDobavljaci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report.Designer.cs">
-      <DependentUpon>Report.cs</DependentUpon>
+    <Compile Include="ReportDobavljaci.Designer.cs">
+      <DependentUpon>ReportDobavljaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportKategorije.Designer.cs">
+      <DependentUpon>ReportKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLijekovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportLijekovi.Designer.cs">
+      <DependentUpon>ReportLijekovi.cs</DependentUpon>
     </Compile>
     <Compile Include="zaposlenici.cs">
       <DependentUpon>ModelAppoteka.tt</DependentUpon>
@@ -431,13 +443,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report.resx">
-      <DependentUpon>Report.cs</DependentUpon>
+    <EmbeddedResource Include="ReportKategorije.rdlc" />
+    <EmbeddedResource Include="ReportDobavljaci.rdlc" />
+    <EmbeddedResource Include="ReportDobavljaci.resx">
+      <DependentUpon>ReportDobavljaci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportKategorije.resx">
+      <DependentUpon>ReportKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLijekovi.resx">
+      <DependentUpon>ReportLijekovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportLijekovi.rdlc" />
-    <EmbeddedResource Include="ReportRacun.rdlc" />
-    <EmbeddedResource Include="ReportRacuni.rdlc" />
     <EntityDeploy Include="ModelAppoteka.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelAppoteka.Designer.cs</LastGenOutput>

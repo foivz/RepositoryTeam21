@@ -154,6 +154,7 @@ namespace Appoteka_v2._0
                                 x.Cells[4].Value = null;
 
                             }
+                            else if (int.Parse(x.Cells[4].Value.ToString()) < 0) MessageBox.Show("Količina ne može biti negativna!");
                             else
                             {
                                 float popust = float.Parse(x.Cells[2].Value.ToString()) *
@@ -173,7 +174,7 @@ namespace Appoteka_v2._0
                     }
                     catch
                     {
-                        MessageBox.Show("Niste unjeli količine!");
+                        MessageBox.Show("Niste unijeli količine!");
                     }
                 }
 

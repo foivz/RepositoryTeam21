@@ -45,6 +45,8 @@
             this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kategorijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +176,9 @@
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lijekoviToolStripMenuItem});
+            this.lijekoviToolStripMenuItem,
+            this.kategorijeToolStripMenuItem,
+            this.dobavljačiToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.reportToolStripMenuItem.Text = "Izvještaji";
@@ -182,9 +186,23 @@
             // lijekoviToolStripMenuItem
             // 
             this.lijekoviToolStripMenuItem.Name = "lijekoviToolStripMenuItem";
-            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
+            // 
+            // dobavljačiToolStripMenuItem
+            // 
+            this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
+            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
+            this.dobavljačiToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dobavljačiToolStripMenuItem_MouseUp);
+            // 
+            // kategorijeToolStripMenuItem
+            // 
+            this.kategorijeToolStripMenuItem.Name = "kategorijeToolStripMenuItem";
+            this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kategorijeToolStripMenuItem.Text = "Kategorije";
+            this.kategorijeToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.kategorijeToolStripMenuItem_MouseUp);
             // 
             // FormAppoteka
             // 
@@ -225,5 +243,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lijekoviToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBCKlasifikacijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dobavljačiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kategorijeToolStripMenuItem;
     }
 }
