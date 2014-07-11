@@ -45,8 +45,8 @@
             this.miHzzoProvjeri = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kategorijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,8 +180,8 @@
             this.kategorijeToolStripMenuItem,
             this.dobavljačiToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.reportToolStripMenuItem.Text = "Izvještaji";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportToolStripMenuItem.Text = "Reports";
             // 
             // lijekoviToolStripMenuItem
             // 
@@ -190,19 +190,19 @@
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
             // 
-            // dobavljačiToolStripMenuItem
-            // 
-            this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
-            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
-            this.dobavljačiToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dobavljačiToolStripMenuItem_MouseUp);
-            // 
             // kategorijeToolStripMenuItem
             // 
             this.kategorijeToolStripMenuItem.Name = "kategorijeToolStripMenuItem";
             this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kategorijeToolStripMenuItem.Text = "Kategorije";
             this.kategorijeToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.kategorijeToolStripMenuItem_MouseUp);
+            // 
+            // dobavljačiToolStripMenuItem
+            // 
+            this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
+            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
+            this.dobavljačiToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dobavljačiToolStripMenuItem_MouseUp);
             // 
             // FormAppoteka
             // 
