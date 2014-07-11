@@ -69,14 +69,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Appoteka_v2.0.exe" size="1836544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Appoteka_v2.0.exe" size="1837056">
       <assemblyIdentity name="Appoteka_v2.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8ZCpoI5ChdZCcA0nVqLzNJJiAhg4+r/BKk4ovLBpgsM=</dsig:DigestValue>
+        <dsig:DigestValue>o6GIiMCngSaDvavZjLxB3eoSlyOCjyTSyKTD1M700+E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

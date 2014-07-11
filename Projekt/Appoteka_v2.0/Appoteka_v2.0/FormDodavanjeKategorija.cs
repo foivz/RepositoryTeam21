@@ -52,8 +52,11 @@ namespace Appoteka_v2._0
 
         private void btnDodajKategorije_Click(object sender, EventArgs e)
         {
+            //trenutno selektiranu kategoriju spremi u varijablu tipa kategorija
             kategorijeLijekova selektiranaKategorija = kategorijeLijekovaBindingSource.Current as kategorijeLijekova;
 
+            //ako binding list ne prijenosKategorija sadrži selektiranu kategoriju, stavi je u binding list
+            //sprječava da se jedna kategorija unese više puta
             if (!prijenosKategorija.Contains(selektiranaKategorija))
             {
                 prijenosKategorija.Add(selektiranaKategorija);

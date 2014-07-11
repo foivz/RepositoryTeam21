@@ -73,12 +73,7 @@ namespace Appoteka_v2._0
                         dopunsko = Convert.ToInt32(textDopunsko.Text)
                     };
 
-                    if ((textSerijskiBroj.Text).Length != 8)
-                    {
-                        MessageBox.Show("Serijski broj mora sadržavati točno 8 znakova", "Neispravan unos");
-                    }
-                    else
-                    {
+                    
                         
                         foreach (DataGridViewRow x in dataGridView1.Rows)
                         {
@@ -100,10 +95,6 @@ namespace Appoteka_v2._0
                     }
 
 
-
-                    
-
-                }
                 else
                 {
                     db.lijekovi.Attach(LijekZaIzmjenu);
@@ -155,6 +146,51 @@ namespace Appoteka_v2._0
 
             LijekoviKategorije.Remove(selektiranaKategorija);
             kategorijeLijekovaBindingSource.DataSource = LijekoviKategorije;
+        }
+
+        private void textKolicina_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textKolicina.Text) <= 0)
+            {
+                MessageBox.Show("Neispravan unos");
+                textKolicina.Focus();
+            }
+        }
+
+        private void textCijenaKupovna_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textCijenaKupovna.Text) <= 0)
+            {
+                MessageBox.Show("Neispravan unos");
+                textCijenaKupovna.Focus();
+            }
+        }
+
+        private void textCijenaProdajna_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textCijenaProdajna.Text) <= 0)
+            {
+                MessageBox.Show("Neispravan unos");
+                textCijenaProdajna.Focus();
+            }
+        }
+
+        private void textDopunsko_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textDopunsko.Text) <= 0)
+            {
+                MessageBox.Show("Neispravan unos");
+                textDopunsko.Focus();
+            }
+        }
+
+        private void textSerijskiBroj_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textSerijskiBroj.Text) != 8)
+            {
+                MessageBox.Show("Serijski broj mora sadržavati 8 znakova", "Neispravan unos");
+                textSerijskiBroj.Focus();
+            }
         }
        
     }

@@ -228,25 +228,33 @@ namespace Appoteka_v2._0
             lijekoviBindingSource.DataSource = lijekoviNarudzba;
             float suma = 0;
 
-
+            //za svaki red u datagrid-u provjeri unesene vrijednosti
             foreach (DataGridViewRow x in dataGridView2.Rows)
             {
                 if (x.Cells[0].Value != null)
                 {
                     try
                     {
-                        suma += float.Parse(x.Cells[3].Value.ToString()) *
-                                    float.Parse(x.Cells[4].Value.ToString());
-
-                        x.Cells[5].Value = float.Parse(x.Cells[3].Value.ToString()) *
-                                    float.Parse(x.Cells[4].Value.ToString());
+                        //ako je unesena količina manja ili jednaka 0 - greška
+                        if (int.Parse(x.Cells[4].Value.ToString()) <= 0) MessageBox.Show("Količina ne može biti negativna!");
+                        else
+                        {
+                            //ako je unos ispravan, pomnozi kolicinu sa cijenom
+                            suma += float.Parse(x.Cells[3].Value.ToString()) *
+                                        float.Parse(x.Cells[4].Value.ToString());
+                            //zapisi izracunati iznos 
+                            x.Cells[5].Value = float.Parse(x.Cells[3].Value.ToString()) *
+                                        float.Parse(x.Cells[4].Value.ToString());
+                        }
                     }
                     catch
                     {
-                        MessageBox.Show("Niste unjeli količinu za " + x.Cells[1].Value.ToString());
+                        
+                        MessageBox.Show("Niste unijeli količinu za " + x.Cells[1].Value.ToString());
                     }
                 }
             }
+            //zapisi izracunatu sumu u textbox
             textNarudzbeIznos.Text = suma.ToString();
         }
 

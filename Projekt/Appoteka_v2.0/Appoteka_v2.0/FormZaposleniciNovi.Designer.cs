@@ -112,6 +112,7 @@
             this.textZaposleniciOIB.Name = "textZaposleniciOIB";
             this.textZaposleniciOIB.Size = new System.Drawing.Size(171, 20);
             this.textZaposleniciOIB.TabIndex = 6;
+            this.textZaposleniciOIB.Leave += new System.EventHandler(this.textZaposleniciOIB_Leave);
             // 
             // textZaposleniciPrezime
             // 
