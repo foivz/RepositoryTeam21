@@ -47,6 +47,8 @@
             this.lijekoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kategorijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dobavljačiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uputeZaKoristenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,8 @@
             this.managementToolStripMenuItem,
             this.managmentToolStripMenuItem,
             this.clientsToolStripMenuItem,
-            this.reportToolStripMenuItem});
+            this.reportToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1017, 24);
@@ -204,6 +207,25 @@
             this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
             this.dobavljačiToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dobavljačiToolStripMenuItem_MouseUp);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uputeZaKoristenjeToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.ShowShortcutKeys = false;
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // uputeZaKoristenjeToolStripMenuItem
+            // 
+            this.uputeZaKoristenjeToolStripMenuItem.Name = "uputeZaKoristenjeToolStripMenuItem";
+            this.uputeZaKoristenjeToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.uputeZaKoristenjeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.uputeZaKoristenjeToolStripMenuItem.ShowShortcutKeys = false;
+            this.uputeZaKoristenjeToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.uputeZaKoristenjeToolStripMenuItem.Text = "Upute za koristenje";
+            this.uputeZaKoristenjeToolStripMenuItem.Click += new System.EventHandler(this.uputeZaKoristenjeToolStripMenuItem_Click);
+            // 
             // FormAppoteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,6 +239,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appoteka";
             this.Load += new System.EventHandler(this.miHzzoProvjeri_Click);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAppoteka_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -245,5 +268,7 @@
         private System.Windows.Forms.ToolStripMenuItem aBCKlasifikacijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dobavljačiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kategorijeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uputeZaKoristenjeToolStripMenuItem;
     }
 }

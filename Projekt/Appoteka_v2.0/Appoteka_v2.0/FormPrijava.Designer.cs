@@ -73,6 +73,7 @@
             this.textPrijavaKorime.Name = "textPrijavaKorime";
             this.textPrijavaKorime.Size = new System.Drawing.Size(204, 26);
             this.textPrijavaKorime.TabIndex = 3;
+            this.textPrijavaKorime.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textPrijavaKorime_KeyDown);
             // 
             // textPrijavaLozinka
             // 
@@ -81,9 +82,11 @@
             this.textPrijavaLozinka.Name = "textPrijavaLozinka";
             this.textPrijavaLozinka.Size = new System.Drawing.Size(204, 26);
             this.textPrijavaLozinka.TabIndex = 4;
+            this.textPrijavaLozinka.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textPrijavaLozinka_KeyDown);
             // 
             // FormPrijava
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
@@ -96,6 +99,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
             this.Load += new System.EventHandler(this.FormPrijava_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPrijava_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

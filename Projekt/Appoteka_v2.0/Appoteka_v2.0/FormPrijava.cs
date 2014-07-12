@@ -67,5 +67,29 @@ namespace Appoteka_v2._0
         {
 
         }
+
+        private void FormPrijava_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                provjeriZaposlenika();
+            }
+        }
+
+        private void textPrijavaKorime_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                provjeriZaposlenika();
+            }
+        }
+
+        private void textPrijavaLozinka_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                provjeriZaposlenika();
+            }
+        }
     }
 }

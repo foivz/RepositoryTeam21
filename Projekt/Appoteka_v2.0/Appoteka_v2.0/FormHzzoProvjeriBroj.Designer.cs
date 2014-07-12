@@ -88,6 +88,7 @@
             this.textKlijentIme.ReadOnly = true;
             this.textKlijentIme.Size = new System.Drawing.Size(198, 26);
             this.textKlijentIme.TabIndex = 1;
+            this.textKlijentIme.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textKlijentIme_KeyDown);
             // 
             // label1
             // 
@@ -424,6 +425,7 @@
             this.Name = "FormHzzoProvjeriBroj";
             this.Text = "FormHzzoProvjeriBroj";
             this.Load += new System.EventHandler(this.FormHzzoProvjeriBroj_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormHzzoProvjeriBroj_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoReceptBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hzzoDBDataSet)).EndInit();

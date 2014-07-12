@@ -394,6 +394,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Lijekovi";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLijekovi_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lijekoviBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appotekaDBDataSet)).EndInit();

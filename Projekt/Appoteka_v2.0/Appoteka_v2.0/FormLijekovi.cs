@@ -143,6 +143,14 @@ namespace Appoteka_v2._0
             PrikaziKategorije();
         }
 
+        private void FormLijekovi_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+        }
+
     }
 }
     

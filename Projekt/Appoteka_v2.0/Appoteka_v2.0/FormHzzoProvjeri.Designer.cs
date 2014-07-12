@@ -51,6 +51,7 @@
             this.textZdrastvena.Size = new System.Drawing.Size(231, 29);
             this.textZdrastvena.TabIndex = 1;
             this.textZdrastvena.TextChanged += new System.EventHandler(this.textSerijskiBroj_TextChanged);
+            this.textZdrastvena.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textZdrastvena_KeyDown);
             // 
             // btnFormHzzoProvjeri
             // 

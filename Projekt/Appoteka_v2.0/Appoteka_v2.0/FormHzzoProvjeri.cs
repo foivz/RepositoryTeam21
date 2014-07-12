@@ -30,5 +30,15 @@ namespace Appoteka_v2._0
             FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj(selektiraniBroj);
             ProvjeriBrojForm.ShowDialog();
         }
+
+        private void textZdrastvena_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string selektiraniBroj = textZdrastvena.Text;
+                FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj(selektiraniBroj);
+                ProvjeriBrojForm.ShowDialog();
+            }
+        }
     }
 }
