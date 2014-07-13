@@ -57,20 +57,12 @@ namespace Appoteka_v2._0
                         adresa = textDobavljaciAdresa.Text
                     };
 
-                    
-                   //ako duljina OIB-a ili IBAN-a ne odgovara zadanom, greska
-                    if (textDobavljaciOIB.TextLength != 11 || textDobavljaciIBAN.TextLength != 21)
-                    {
-                        textDobavljaciOIB.Focus();
-                        MessageBox.Show("Neispravna duljina znakova kod unosa", "Neispravan unos");
-                    }
-                    else
-                    {
+                   
                         //ukoliko je unos ispravan, novi dobavljac se dodaje i sprema u bazu
                         db.dobavljaci.Add(Dobavljac);
                         db.SaveChanges();
                         MessageBox.Show("Uspješno ste dodali novog dobavljača", "Ispravan unos");
-                    }
+                    
                 }
                 else
                 {
@@ -93,6 +85,26 @@ namespace Appoteka_v2._0
         private void btnDobavljaciNoviIzlaz_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textDobavljaciOIB_Leave(object sender, EventArgs e)
+        {
+            //ako duljina OIB-a ne odgovara zadanom, greska
+            if (textDobavljaciOIB.TextLength != 11)
+            {
+                textDobavljaciOIB.Focus();
+                MessageBox.Show("OIB se mora sastojati od 11 znakova", "Neispravan unos");
+            }
+        }
+
+        private void textDobavljaciIBAN_Leave(object sender, EventArgs e)
+        {
+            //ako duljina IBAN-a ne odgovara zadanom, greska
+            if (textDobavljaciIBAN.TextLength != 21)
+            {
+                textDobavljaciIBAN.Focus();
+                MessageBox.Show("IBAN se mora sastojati od 21 znaka", "Neispravan unos");
+            }
         }
     }
 }

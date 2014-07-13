@@ -103,10 +103,7 @@ namespace Appoteka_v2._0
 
         private void aBCKlasifikacijaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormABC ABCform = new FormABC();
-            ABCform.MdiParent = this;
-            ABCform.WindowState = FormWindowState.Maximized;
-            ABCform.Show();
+           
         }
 
         private void dobavljačiToolStripMenuItem_MouseUp(object sender, MouseEventArgs e)

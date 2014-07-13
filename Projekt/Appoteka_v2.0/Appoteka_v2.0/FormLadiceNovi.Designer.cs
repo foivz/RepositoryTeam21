@@ -73,6 +73,7 @@
             this.textLadiceNoviKapacitet.Name = "textLadiceNoviKapacitet";
             this.textLadiceNoviKapacitet.Size = new System.Drawing.Size(205, 26);
             this.textLadiceNoviKapacitet.TabIndex = 3;
+            this.textLadiceNoviKapacitet.Leave += new System.EventHandler(this.textLadiceNoviKapacitet_Leave);
             // 
             // FormLadiceNovi
             // 

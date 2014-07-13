@@ -22,13 +22,15 @@ namespace Appoteka_v2._0
             InitializeComponent();
         }
 
-
+        //konstruktor koji sluzi za izmjenu racuna
+        //kao parametar prima racun koji se zeli izmijeniti
         public FormRacuniNovi(racun Racun)
         {
             InitializeComponent();
             racunZaIzmjenu = Racun;
         }
-
+        
+        //konstruktor koji prima listu lijekova koji se nalaze na racunu
         public FormRacuniNovi(BindingList<lijekovi> lR)
 	    {
             InitializeComponent();
@@ -131,7 +133,8 @@ namespace Appoteka_v2._0
             lijekoviBindingSource.DataSource = lijekoviRacun;
             float suma = 0;
 
-
+            //za svaki red u datagrid-u gdje postoji neka vrijednost (!=null)
+            //provjeri serijski broj i dohvati podatke o tom lijeku iz baze
             foreach (DataGridViewRow x in dataGridView1.Rows)
             {
                 if (x.Cells[2].Value != null)
@@ -147,6 +150,7 @@ namespace Appoteka_v2._0
                                              l.serijskiBroj == sb
                                          select l).SingleOrDefault();
 
+                            //ako je kolicina na zalihama unesena za odabrani lijek manja od 0
                             if (lijek.kolicina - int.Parse(x.Cells[4].Value.ToString()) < 0)
                             {
                                 MessageBox.Show("Tražena količina ne postoji na skladištu");
@@ -154,16 +158,20 @@ namespace Appoteka_v2._0
                                 x.Cells[4].Value = null;
 
                             }
+                                //ako je kolicina manja ili jednaka nuli, greska
                             else if (int.Parse(x.Cells[4].Value.ToString()) <= 0) MessageBox.Show("Količina ne može biti negativna!");
                             else
                             {
+                                //izracunaj popust za dopunsko osiguranje
+                                //cijena * kolicina * dopunsko /100
                                 float popust = float.Parse(x.Cells[2].Value.ToString()) *
                                 float.Parse(x.Cells[4].Value.ToString()) * float.Parse(x.Cells[3].Value.ToString()) / 100;
 
-
+                                //cijena * kolicina - izracunati popust = ukupan iznos
                                 suma += float.Parse(x.Cells[2].Value.ToString()) *
                                     float.Parse(x.Cells[4].Value.ToString()) - popust;
 
+                                //u iznos zapisi izracunati ukupan iznos sa popustom
                                 x.Cells[5].Value = float.Parse(x.Cells[2].Value.ToString()) *
                                     float.Parse(x.Cells[4].Value.ToString()) - popust;
 
@@ -179,6 +187,7 @@ namespace Appoteka_v2._0
                 }
 
             }
+            //izracunati ukupan iznos (suma) upisi u predvideni textbox
             textRacuniIznos.Text = suma.ToString();
 
 
@@ -191,19 +200,20 @@ namespace Appoteka_v2._0
             {
                 if (racunZaIzmjenu == null)
                 {
-                    
-                     
+                    //ako se radi o unosu novog racuna, kreiraj novu instancu racuna i popuni podatke
                     racun Racun = new racun
                     {
                         iznos = Math.Round(Convert.ToSingle(textRacuniIznos.Text), 2),
                         datum = Convert.ToDateTime(dateTimeRacuniDatum.Text),
                         OIB = comboBox1.SelectedValue.ToString()
                         
-
                     };
 
+                    //dodaj racun u bazu podataka
                     db.racun.Add(Racun);
 
+                    //za svaki red u datagrid-u gdje je vrijednost unesena - razlicita od null
+                    //provjeri serijski broj i dohvati podatke iz baze o tom lijeku
                     foreach (DataGridViewRow x in dataGridView1.Rows)
                     {
                         if (x.Cells[0].Value != null)
@@ -214,16 +224,17 @@ namespace Appoteka_v2._0
                                              l.serijskiBroj == sb
                                          select l).SingleOrDefault();
 
+                            //spremi podatke o novoj kolicini lijeka (smanjena kolicina jer se lijek izdaje)
                             int novaKolicina = lijek.kolicina - int.Parse(x.Cells[4].Value.ToString());
+                            //lijek se prvo attach na bazu podataka, zatim mu se pridruzi nova vrijednost kolicine
 
                             db.lijekovi.Attach(lijek);
                             lijek.kolicina = novaKolicina;
 
+                            //u tablicu vise-vise (racun-lijekovi) dodaj nove vrijednosti 
                             Racun.lijekovi.Add(lijek);
-
-                            db.SaveChanges();
-
-                            
+                            //spremi promjene u bazi podataka
+                            db.SaveChanges();                          
                         }
                     }
 
@@ -234,6 +245,9 @@ namespace Appoteka_v2._0
                 }
                 else
                 {
+                    //ako se radi o izmjeni racuna, prvo se mora attach na bazu podataka
+                    //nakon toga mu se pridruze uneseni podaci
+                    //sve promjene se spremaju u bazi podataka
                     db.racun.Attach(racunZaIzmjenu);
                     racunZaIzmjenu.iznos = Convert.ToSingle(textRacuniIznos.Text);
                     racunZaIzmjenu.datum = Convert.ToDateTime(dateTimeRacuniDatum.Text);

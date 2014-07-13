@@ -121,7 +121,6 @@ D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
-D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormABC.resources
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\Appoteka projekt\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources

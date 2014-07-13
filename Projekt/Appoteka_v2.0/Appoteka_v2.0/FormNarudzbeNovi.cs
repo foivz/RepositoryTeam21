@@ -21,6 +21,8 @@ namespace Appoteka_v2._0
             InitializeComponent();
         }
 
+        //konstruktor koji sluzi za izmjenu narudzbe
+        //kao parametar prima narudzbu koja se zeli izmijeniti
         public FormNarudzbeNovi(narudzbe Narudzba)
         {
             InitializeComponent();
@@ -141,7 +143,10 @@ namespace Appoteka_v2._0
             this.zaposleniciTableAdapter.Fill(this.appotekaDBDataSet2.zaposlenici);
             // TODO: This line of code loads data into the 'appotekaDBDataSet2.dobavljaci' table. You can move, or remove it, as needed.
             this.dobavljaciTableAdapter.Fill(this.appotekaDBDataSet2.dobavljaci);
+           
             textNarudzbeIznos.Focus();
+            //ako se radi o izmjeni narudzbe
+            //popuni polja sa podacima narudzbe koja se zeli izmijeniti
             if (narudzbaZaIzmjenu != null)
             {
                 textNarudzbeIznos.Text = narudzbaZaIzmjenu.iznos.ToString();
@@ -149,15 +154,13 @@ namespace Appoteka_v2._0
             }
 
             
-        }
-
-       
-        
+        }      
 
         private void btnNarudzbeNoviSpremi_Click(object sender, EventArgs e)
         {
             using (var db = new appotekaDBEntities())
             {
+                //ako se radi o unosu nove narudzbe, kreiraj novu instancu tipa narudzbe i popuni podacima
                 if (narudzbaZaIzmjenu == null)
                 {
                     narudzbe Narudzba = new narudzbe
@@ -167,8 +170,11 @@ namespace Appoteka_v2._0
                         IdDobavljac = int.Parse(comboBoxDobavljac.SelectedValue.ToString()),
                         OIB = comboBoxZaposlenik.SelectedValue.ToString()
                     };
+                    //dodaj narudzbu u bazu podataka
                     db.narudzbe.Add(Narudzba);
 
+                    //za svaki red u datagrid-u gdje je vrijednost razlitica od null (gdje je unesena vrijednost)
+                    //provjeri sb lijekova za koje se izdaje narudzba i dohvati podatke o tom lijeku
                     foreach (DataGridViewRow x in dataGridView2.Rows)
                     {
                         if (x.Cells[0].Value != null)
@@ -178,16 +184,20 @@ namespace Appoteka_v2._0
                                          where
                                              l.serijskiBroj == sb
                                          select l).SingleOrDefault();
+                            //u tablicu vise-vise spremi narudzbu i lijek koji je na njoj
                             Narudzba.lijekovi.Add(lijek);
                             db.SaveChanges();
                         }
                     }
+                    //spremi promjene u bazi podataka
                     db.SaveChanges();
                     MessageBox.Show("Uspješno ste dodali novu narudžbu", "Ispravan unos");
                     PrintanjeNarudzbe();
                 }
                 else
                 {
+                    //ako se radi o izmjeni narudzbe, najprije se mora attach na bazu podataka
+                    //unesene podatke spremiti kao njene atribute i spremiti promjene u bazi podataka
                     db.narudzbe.Attach(narudzbaZaIzmjenu);
                     narudzbaZaIzmjenu.iznos = Convert.ToSingle(textNarudzbeIznos.Text);
                     narudzbaZaIzmjenu.datum = Convert.ToDateTime(dateTimeNaruzbeDatum.Text);

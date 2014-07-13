@@ -30,7 +30,6 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBCKlasifikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.managementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miBrowseLijekovi = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,23 +69,15 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBCKlasifikacijaToolStripMenuItem,
             this.miFileExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // aBCKlasifikacijaToolStripMenuItem
-            // 
-            this.aBCKlasifikacijaToolStripMenuItem.Name = "aBCKlasifikacijaToolStripMenuItem";
-            this.aBCKlasifikacijaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.aBCKlasifikacijaToolStripMenuItem.Text = "ABC klasifikacija";
-            this.aBCKlasifikacijaToolStripMenuItem.Click += new System.EventHandler(this.aBCKlasifikacijaToolStripMenuItem_Click);
-            // 
             // miFileExit
             // 
             this.miFileExit.Name = "miFileExit";
-            this.miFileExit.Size = new System.Drawing.Size(160, 22);
+            this.miFileExit.Size = new System.Drawing.Size(152, 22);
             this.miFileExit.Text = "Exit";
             this.miFileExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.miFileExit_MouseUp);
             // 
@@ -189,21 +180,21 @@
             // lijekoviToolStripMenuItem
             // 
             this.lijekoviToolStripMenuItem.Name = "lijekoviToolStripMenuItem";
-            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lijekoviToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.lijekoviToolStripMenuItem.Text = "Lijekovi";
             this.lijekoviToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lijekoviToolStripMenuItem_MouseUp);
             // 
             // kategorijeToolStripMenuItem
             // 
             this.kategorijeToolStripMenuItem.Name = "kategorijeToolStripMenuItem";
-            this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kategorijeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.kategorijeToolStripMenuItem.Text = "Kategorije";
             this.kategorijeToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.kategorijeToolStripMenuItem_MouseUp);
             // 
             // dobavljačiToolStripMenuItem
             // 
             this.dobavljačiToolStripMenuItem.Name = "dobavljačiToolStripMenuItem";
-            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dobavljačiToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.dobavljačiToolStripMenuItem.Text = "Dobavljači";
             this.dobavljačiToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dobavljačiToolStripMenuItem_MouseUp);
             // 
@@ -265,7 +256,6 @@
         private System.Windows.Forms.ToolStripMenuItem miHzzoProvjeri;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lijekoviToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aBCKlasifikacijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dobavljačiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kategorijeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;

@@ -68,6 +68,7 @@ namespace Appoteka_v2._0
 
         }
 
+        //ako se tipkom enter zeli obaviti aktivnost
         private void FormPrijava_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

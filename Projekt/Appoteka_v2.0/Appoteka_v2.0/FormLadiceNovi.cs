@@ -41,13 +41,7 @@ namespace Appoteka_v2._0
 
         private void btnLadiceNoviSpremi_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(textLadiceNoviKapacitet.Text) <= 0)
-            {
-                MessageBox.Show("Neispravan unos!");
-                textLadiceNoviKapacitet.Focus();
-            }
-            else
-            {
+           
                 using (var db = new appotekaDBEntities())
                 {
                     //ako se dodaje nova ladica
@@ -72,13 +66,23 @@ namespace Appoteka_v2._0
                         db.SaveChanges();
                     }
                 }
-            }
+            
             Close();
         }
 
         private void btnLadiceNoviIzlaz_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        //kad se makne fokus s textboxa, provjeri se je li unos ispravan (veci od 0)
+        private void textLadiceNoviKapacitet_Leave(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(textLadiceNoviKapacitet.Text) <= 0)
+            {
+                MessageBox.Show("Neispravan unos!");
+                textLadiceNoviKapacitet.Focus();
+            }
         }
     }
 }

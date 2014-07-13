@@ -95,6 +95,7 @@
             this.textDobavljaciOIB.Name = "textDobavljaciOIB";
             this.textDobavljaciOIB.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciOIB.TabIndex = 5;
+            this.textDobavljaciOIB.Leave += new System.EventHandler(this.textDobavljaciOIB_Leave);
             // 
             // textDobavljaciIBAN
             // 
@@ -103,6 +104,7 @@
             this.textDobavljaciIBAN.Name = "textDobavljaciIBAN";
             this.textDobavljaciIBAN.Size = new System.Drawing.Size(168, 26);
             this.textDobavljaciIBAN.TabIndex = 6;
+            this.textDobavljaciIBAN.Leave += new System.EventHandler(this.textDobavljaciIBAN_Leave);
             // 
             // textDobavljaciAdresa
             // 

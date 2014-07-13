@@ -107,8 +107,7 @@ namespace Appoteka_v2._0
         private void textZaposleniciOIB_Leave(object sender, EventArgs e)
         {
             if (textZaposleniciOIB.TextLength != 11)
-            {
-               
+            {               
                 MessageBox.Show("OIB mora sadržavati 11 znakova", "Neispravan unos");
                 textZaposleniciOIB.Focus();
 
