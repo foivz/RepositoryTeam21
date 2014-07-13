@@ -162,7 +162,6 @@ C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
-C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormABC.resources
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
 C:\Users\ADMIN\Documents\GitHub\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
