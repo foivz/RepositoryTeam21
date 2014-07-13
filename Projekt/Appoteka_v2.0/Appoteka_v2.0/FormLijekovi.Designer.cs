@@ -364,6 +364,7 @@
             this.txtTrazi.Name = "txtTrazi";
             this.txtTrazi.Size = new System.Drawing.Size(243, 20);
             this.txtTrazi.TabIndex = 0;
+            this.txtTrazi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTrazi_KeyDown);
             // 
             // label1
             // 

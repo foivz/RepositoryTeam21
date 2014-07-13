@@ -117,6 +117,7 @@ namespace Appoteka_v2._0
 
         }
 
+        //na pritisak tipke trazi pretrazi odredeni unos
         private void btnTrazi_Click(object sender, EventArgs e)
         {
             string searchValue = txtTrazi.Text.ToLower();
@@ -148,6 +149,36 @@ namespace Appoteka_v2._0
             if (e.KeyCode == Keys.Escape)
             {
                 Close();
+            }
+        }
+
+        //na enter unutar textbox-a pretrazi uneseni podatak
+        private void txtTrazi_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string searchValue = txtTrazi.Text.ToLower();
+                int trenutni = 0;
+                try
+                {
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        var red = row.Cells[0].Value.ToString().ToLower();
+                        if (red.Equals(searchValue))
+                        {
+                            row.Selected = true;
+                            dataGridView1.CurrentCell = dataGridView1.Rows[trenutni].Cells[0];
+                            break;
+                        }
+                        trenutni++;
+                    }
+                }
+
+                catch
+                {
+                    MessageBox.Show("Vrijednost ne postoji!", "Greška!");
+                }
+                PrikaziKategorije();
             }
         }
 
