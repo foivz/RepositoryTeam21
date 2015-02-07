@@ -276,3 +276,44 @@ D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\appoteka\Projekt\Appoteka_v2.0\Appo
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe.manifest
 D:\FAKS\3 GODINA\IVANA\2 SEMESTAR\PI\PROJEKT\appoteka\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.application
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.config
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.pdb
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe.manifest
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.application
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.exe
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\Appoteka_v2.0.pdb
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.dll
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\bin\Debug\EntityFramework.xml
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csprojResolveAssemblyReference.cache
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormAppoteka.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaci.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDobavljaciNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeKategorija.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormDodavanjeLijekova.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeri.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormHzzoProvjeriBroj.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijaLadica.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorije.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormKategorijeNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadice.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLadiceNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormLijekoviNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbe.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormNarudzbeNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormPrijava.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuni.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacuniNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormRacunPrikazi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposlenici.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.FormZaposleniciNovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.Properties.Resources.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.ReportDobavljaci.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.ReportKategorije.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2._0.ReportLijekovi.resources
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.csproj.GenerateResource.Cache
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.cache
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\RdlCompile.compiled
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.exe.manifest
+D:\Programi\Git\RepositoryTeam21\Projekt\Appoteka_v2.0\Appoteka_v2.0\obj\Debug\Appoteka_v2.0.application

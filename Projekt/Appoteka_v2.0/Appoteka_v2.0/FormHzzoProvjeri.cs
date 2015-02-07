@@ -15,6 +15,7 @@ namespace Appoteka_v2._0
         public FormHzzoProvjeri()
         {
             InitializeComponent();
+            textZdrastvena.MaxLength = 10;
         }
 
         private void textSerijskiBroj_TextChanged(object sender, EventArgs e)
