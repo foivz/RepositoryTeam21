@@ -27,10 +27,7 @@ namespace Appoteka_v2._0
             LijekoviForma.Show();
         }
 
-        private void miFileExit_MouseUp(object sender, MouseEventArgs e)
-        {
-            Close();
-        }
+      
 
         private void miManagementKategorije_MouseUp(object sender, MouseEventArgs e)
         {
@@ -133,6 +130,11 @@ namespace Appoteka_v2._0
             {
                 Help.ShowHelp(this, "file://C:\\Users\\Josip\\Documents\\Help\\help.chm"); 
             }
+        }
+
+        private void miFileExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         
