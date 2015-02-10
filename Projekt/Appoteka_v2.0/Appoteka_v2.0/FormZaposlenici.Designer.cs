@@ -63,10 +63,12 @@
             this.korImeDataGridViewTextBoxColumn,
             this.lozinkaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.zaposleniciBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(685, 190);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(913, 234);
             this.dataGridView1.TabIndex = 0;
             // 
             // oIBDataGridViewTextBoxColumn
@@ -128,9 +130,10 @@
             // btnZaposleniciNatrag
             // 
             this.btnZaposleniciNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZaposleniciNatrag.Location = new System.Drawing.Point(22, 239);
+            this.btnZaposleniciNatrag.Location = new System.Drawing.Point(29, 294);
+            this.btnZaposleniciNatrag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZaposleniciNatrag.Name = "btnZaposleniciNatrag";
-            this.btnZaposleniciNatrag.Size = new System.Drawing.Size(102, 35);
+            this.btnZaposleniciNatrag.Size = new System.Drawing.Size(136, 43);
             this.btnZaposleniciNatrag.TabIndex = 1;
             this.btnZaposleniciNatrag.Text = "Natrag";
             this.btnZaposleniciNatrag.UseVisualStyleBackColor = true;
@@ -139,9 +142,10 @@
             // btnZaposleniciNovi
             // 
             this.btnZaposleniciNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZaposleniciNovi.Location = new System.Drawing.Point(320, 224);
+            this.btnZaposleniciNovi.Location = new System.Drawing.Point(427, 276);
+            this.btnZaposleniciNovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZaposleniciNovi.Name = "btnZaposleniciNovi";
-            this.btnZaposleniciNovi.Size = new System.Drawing.Size(102, 35);
+            this.btnZaposleniciNovi.Size = new System.Drawing.Size(136, 43);
             this.btnZaposleniciNovi.TabIndex = 2;
             this.btnZaposleniciNovi.Text = "Novi";
             this.btnZaposleniciNovi.UseVisualStyleBackColor = true;
@@ -150,9 +154,10 @@
             // btnZaposleniciIzmijeni
             // 
             this.btnZaposleniciIzmijeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZaposleniciIzmijeni.Location = new System.Drawing.Point(462, 224);
+            this.btnZaposleniciIzmijeni.Location = new System.Drawing.Point(616, 276);
+            this.btnZaposleniciIzmijeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZaposleniciIzmijeni.Name = "btnZaposleniciIzmijeni";
-            this.btnZaposleniciIzmijeni.Size = new System.Drawing.Size(102, 35);
+            this.btnZaposleniciIzmijeni.Size = new System.Drawing.Size(136, 43);
             this.btnZaposleniciIzmijeni.TabIndex = 3;
             this.btnZaposleniciIzmijeni.Text = "Izmijeni";
             this.btnZaposleniciIzmijeni.UseVisualStyleBackColor = true;
@@ -161,9 +166,10 @@
             // btnZaposleniciIzbrisi
             // 
             this.btnZaposleniciIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZaposleniciIzbrisi.Location = new System.Drawing.Point(604, 224);
+            this.btnZaposleniciIzbrisi.Location = new System.Drawing.Point(805, 276);
+            this.btnZaposleniciIzbrisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZaposleniciIzbrisi.Name = "btnZaposleniciIzbrisi";
-            this.btnZaposleniciIzbrisi.Size = new System.Drawing.Size(102, 35);
+            this.btnZaposleniciIzbrisi.Size = new System.Drawing.Size(136, 43);
             this.btnZaposleniciIzbrisi.TabIndex = 4;
             this.btnZaposleniciIzbrisi.Text = "Izbriši";
             this.btnZaposleniciIzbrisi.UseVisualStyleBackColor = true;
@@ -171,14 +177,15 @@
             // 
             // FormZaposlenici
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 294);
+            this.ClientSize = new System.Drawing.Size(977, 362);
             this.Controls.Add(this.btnZaposleniciIzbrisi);
             this.Controls.Add(this.btnZaposleniciIzmijeni);
             this.Controls.Add(this.btnZaposleniciNovi);
             this.Controls.Add(this.btnZaposleniciNatrag);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormZaposlenici";
             this.Text = "Zaposlenici";
             this.Load += new System.EventHandler(this.FormZaposlenik_Load);

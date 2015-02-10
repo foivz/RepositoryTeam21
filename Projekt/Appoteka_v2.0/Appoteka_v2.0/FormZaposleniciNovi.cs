@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace Appoteka_v2._0
 {
+
     public partial class FormZaposleniciNovi : Form
     {
+        bool dobar = false;
         private zaposlenici zaposlenikZaIzmjenu;
         public FormZaposleniciNovi()
         {
             InitializeComponent();
+            textZaposleniciOIB.MaxLength = 11;
+
         }
 
         //konstruktor koji služi za izmjenu zaposlenika
@@ -23,6 +27,8 @@ namespace Appoteka_v2._0
         public FormZaposleniciNovi(zaposlenici Zaposlenik)
         {
             InitializeComponent();
+            textZaposleniciOIB.MaxLength = 11;
+
             zaposlenikZaIzmjenu = Zaposlenik;
         }
 
@@ -63,6 +69,7 @@ namespace Appoteka_v2._0
                     //kreiraj novu instancu zaposlenika i ispuni atribute
                     zaposlenici Zaposlenik = new zaposlenici
                     {
+                        
                         OIB = textZaposleniciOIB.Text,
                         ime = textZaposleniciIme.Text,
                         prezime = textZaposleniciPrezime.Text,
@@ -72,9 +79,23 @@ namespace Appoteka_v2._0
                     };
                     
                     //dodaj novog zaposlenika i spremi podatke u bazu
-                        db.zaposlenici.Add(Zaposlenik);
-                        db.SaveChanges();
-                        MessageBox.Show("Uspješno ste dodali novog zaposlenika", "Ispravan unos");
+                    try
+                    {
+                        double oib = double.Parse(textZaposleniciOIB.Text);
+                        dobar = false;
+                        if (oib > 0 && oib < 99999999999)
+                        {
+                            dobar = true;
+                            db.zaposlenici.Add(Zaposlenik);
+                            db.SaveChanges();
+                            MessageBox.Show("Uspješno ste dodali novog zaposlenika", "Ispravan unos");
+                        }
+                        if (!dobar) MessageBox.Show("Unesite samo brojeve u OIB");
+                    }
+                    catch
+                    {
+                        
+                    }
                     
                 }
                 else
@@ -95,12 +116,12 @@ namespace Appoteka_v2._0
 
 
             }
-            Close();
+            if(dobar) Close();
         }
 
         private void btnZaposleniciNoviIzlaz_Click(object sender, EventArgs e)
         {
-            Close();
+            if (dobar) Close();
         }
 
         //kad se makne fokus s textboxa za OIB, ispitaj je li OIB ispravno unesen
