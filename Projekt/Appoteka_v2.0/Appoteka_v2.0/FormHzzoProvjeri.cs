@@ -27,9 +27,20 @@ namespace Appoteka_v2._0
 
         private void btnFormHzzoProvjeri_Click(object sender, EventArgs e)
         {
-            string selektiraniBroj = textZdrastvena.Text;
-            FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj(selektiraniBroj);
-            ProvjeriBrojForm.ShowDialog();
+            try
+            {
+                double provjera = double.Parse(textZdrastvena.Text);
+                if (provjera > 0000000000 && provjera < 9999999999)
+                {
+                    string selektiraniBroj = textZdrastvena.Text;
+                    FormHzzoProvjeriBroj ProvjeriBrojForm = new FormHzzoProvjeriBroj(selektiraniBroj);
+                    ProvjeriBrojForm.ShowDialog();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Unesite ponovno broj");
+            }
         }
 
         private void textZdrastvena_KeyDown(object sender, KeyEventArgs e)

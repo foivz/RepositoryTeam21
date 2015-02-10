@@ -64,9 +64,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(24, 14);
+            this.label1.Location = new System.Drawing.Point(32, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datum";
             // 
@@ -74,9 +75,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(24, 53);
+            this.label2.Location = new System.Drawing.Point(32, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 16);
+            this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ukupan iznos";
             // 
@@ -84,32 +86,37 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(24, 90);
+            this.label3.Location = new System.Drawing.Point(32, 111);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(88, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Zaposlenik";
             // 
             // textRacuniIznos
             // 
-            this.textRacuniIznos.Location = new System.Drawing.Point(141, 52);
+            this.textRacuniIznos.Location = new System.Drawing.Point(188, 64);
+            this.textRacuniIznos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textRacuniIznos.Name = "textRacuniIznos";
-            this.textRacuniIznos.Size = new System.Drawing.Size(200, 20);
+            this.textRacuniIznos.ReadOnly = true;
+            this.textRacuniIznos.Size = new System.Drawing.Size(265, 22);
             this.textRacuniIznos.TabIndex = 3;
             // 
             // dateTimeRacuniDatum
             // 
-            this.dateTimeRacuniDatum.Location = new System.Drawing.Point(141, 17);
+            this.dateTimeRacuniDatum.Location = new System.Drawing.Point(188, 21);
+            this.dateTimeRacuniDatum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeRacuniDatum.Name = "dateTimeRacuniDatum";
-            this.dateTimeRacuniDatum.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeRacuniDatum.Size = new System.Drawing.Size(265, 22);
             this.dateTimeRacuniDatum.TabIndex = 4;
             // 
             // btnRacuniNoviSpremi
             // 
             this.btnRacuniNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnRacuniNoviSpremi.Location = new System.Drawing.Point(583, 293);
+            this.btnRacuniNoviSpremi.Location = new System.Drawing.Point(777, 361);
+            this.btnRacuniNoviSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRacuniNoviSpremi.Name = "btnRacuniNoviSpremi";
-            this.btnRacuniNoviSpremi.Size = new System.Drawing.Size(91, 33);
+            this.btnRacuniNoviSpremi.Size = new System.Drawing.Size(121, 41);
             this.btnRacuniNoviSpremi.TabIndex = 5;
             this.btnRacuniNoviSpremi.Text = "Izdaj";
             this.btnRacuniNoviSpremi.UseVisualStyleBackColor = true;
@@ -118,9 +125,10 @@
             // btnRacuniNoviIzlaz
             // 
             this.btnRacuniNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnRacuniNoviIzlaz.Location = new System.Drawing.Point(22, 293);
+            this.btnRacuniNoviIzlaz.Location = new System.Drawing.Point(29, 361);
+            this.btnRacuniNoviIzlaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRacuniNoviIzlaz.Name = "btnRacuniNoviIzlaz";
-            this.btnRacuniNoviIzlaz.Size = new System.Drawing.Size(91, 33);
+            this.btnRacuniNoviIzlaz.Size = new System.Drawing.Size(121, 41);
             this.btnRacuniNoviIzlaz.TabIndex = 6;
             this.btnRacuniNoviIzlaz.Text = "Izlaz";
             this.btnRacuniNoviIzlaz.UseVisualStyleBackColor = true;
@@ -131,9 +139,10 @@
             this.comboBox1.DataSource = this.zaposleniciBindingSource1;
             this.comboBox1.DisplayMember = "prezime";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 88);
+            this.comboBox1.Location = new System.Drawing.Point(188, 108);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
+            this.comboBox1.Size = new System.Drawing.Size(265, 24);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.ValueMember = "OIB";
             // 
@@ -170,9 +179,10 @@
             this.iznos});
             this.dataGridView1.DataSource = this.lijekoviBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 152);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 187);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 124);
+            this.dataGridView1.Size = new System.Drawing.Size(863, 153);
             this.dataGridView1.TabIndex = 8;
             // 
             // serijskiBrojDataGridViewTextBoxColumn
@@ -221,9 +231,10 @@
             // btnNoviRacunDodaj
             // 
             this.btnNoviRacunDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNoviRacunDodaj.Location = new System.Drawing.Point(319, 293);
+            this.btnNoviRacunDodaj.Location = new System.Drawing.Point(425, 361);
+            this.btnNoviRacunDodaj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNoviRacunDodaj.Name = "btnNoviRacunDodaj";
-            this.btnNoviRacunDodaj.Size = new System.Drawing.Size(91, 33);
+            this.btnNoviRacunDodaj.Size = new System.Drawing.Size(121, 41);
             this.btnNoviRacunDodaj.TabIndex = 9;
             this.btnNoviRacunDodaj.Text = "Dodaj";
             this.btnNoviRacunDodaj.UseVisualStyleBackColor = true;
@@ -232,9 +243,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(455, 293);
+            this.button1.Location = new System.Drawing.Point(607, 361);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 33);
+            this.button1.Size = new System.Drawing.Size(121, 41);
             this.button1.TabIndex = 10;
             this.button1.Text = "Osvježi";
             this.button1.UseVisualStyleBackColor = true;
@@ -244,17 +256,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(23, 129);
+            this.label4.Location = new System.Drawing.Point(31, 159);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.Size = new System.Drawing.Size(138, 25);
             this.label4.TabIndex = 11;
             this.label4.Text = "Stavke računa";
             // 
             // FormRacuniNovi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 398);
+            this.ClientSize = new System.Drawing.Size(933, 490);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNoviRacunDodaj);
@@ -267,6 +280,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormRacuniNovi";
             this.Text = "Novi račun";
             this.Activated += new System.EventHandler(this.FormRacuniNovi_Activated_1);

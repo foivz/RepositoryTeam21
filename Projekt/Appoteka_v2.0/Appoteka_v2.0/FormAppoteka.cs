@@ -121,14 +121,14 @@ namespace Appoteka_v2._0
 
         private void uputeZaKoristenjeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "file://C:\\Users\\Josip\\Documents\\Help\\help.chm"); 
+            Help.ShowHelp(this, "file://C:\\Users\\ADMIN\\Documents\\GitHub\\RepositoryTeam21\\Projekt\\Help\\help.chm"); 
         }
 
         private void FormAppoteka_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
             {
-                Help.ShowHelp(this, "file://C:\\Users\\Josip\\Documents\\Help\\help.chm"); 
+                Help.ShowHelp(this, "file://C:\\Users\\ADMIN\\Documents\\GitHub\\RepositoryTeam21\\Projekt\\Help\\help.chm"); 
             }
         }
 
