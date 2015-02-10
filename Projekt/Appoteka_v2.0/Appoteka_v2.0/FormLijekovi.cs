@@ -121,6 +121,7 @@ namespace Appoteka_v2._0
         private void btnTrazi_Click(object sender, EventArgs e)
         {
             string searchValue = txtTrazi.Text.ToLower();
+            bool pronadeno = false;
             int trenutni = 0;
             try
             {
@@ -129,13 +130,16 @@ namespace Appoteka_v2._0
                     var red = row.Cells[0].Value.ToString().ToLower();
                     if (red.Equals(searchValue))
                     {
+                        pronadeno = true;
                         row.Selected = true;
                         dataGridView1.CurrentCell = dataGridView1.Rows[trenutni].Cells[0];
                         break;
                     }
                     trenutni++;
                 }
+                if (!pronadeno) MessageBox.Show("Ne postoji tražena vrjednost");
             }
+                
 
             catch
             {

@@ -39,7 +39,7 @@ namespace Appoteka_v2._0
             }
             catch
             {
-                MessageBox.Show("Unesite ponovno broj");
+                MessageBox.Show("Unesite ponovo broj");
             }
         }
 
