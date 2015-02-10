@@ -13,9 +13,13 @@ namespace Appoteka_v2._0
     public partial class FormDobavljaciNovi : Form
     {
         private dobavljaci dobavljacZaIzmjenu;
+        bool dobarOIB = false;
         public FormDobavljaciNovi()
         {
             InitializeComponent();
+            textDobavljaciOIB.MaxLength = 11;
+            textDobavljaciIBAN.MaxLength = 21;
+            
         }
 
         //konstruktor za izmjenu (kao parametar prima selektiranog dobavljaca)
@@ -57,11 +61,23 @@ namespace Appoteka_v2._0
                         adresa = textDobavljaciAdresa.Text
                     };
 
-                   
+                    try
+                    {
+                        double oib = double.Parse(textDobavljaciOIB.Text);
+                        double iban = double.Parse(textDobavljaciIBAN.Text);
+
+
+
                         //ukoliko je unos ispravan, novi dobavljac se dodaje i sprema u bazu
                         db.dobavljaci.Add(Dobavljac);
                         db.SaveChanges();
+                        dobarOIB = true;
                         MessageBox.Show("Uspješno ste dodali novog dobavljača", "Ispravan unos");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Unesite ponovno brojeve");
+                    }
                     
                 }
                 else
@@ -79,7 +95,7 @@ namespace Appoteka_v2._0
 
 
             }
-            Close();
+           if(dobarOIB) Close();
         }
 
         private void btnDobavljaciNoviIzlaz_Click(object sender, EventArgs e)
