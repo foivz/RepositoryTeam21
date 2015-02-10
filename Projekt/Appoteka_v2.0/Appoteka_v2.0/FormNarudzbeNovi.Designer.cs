@@ -74,9 +74,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(28, 41);
+            this.label1.Location = new System.Drawing.Point(37, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datum";
             // 
@@ -84,9 +85,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(28, 82);
+            this.label3.Location = new System.Drawing.Point(37, 101);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dobavljač";
             // 
@@ -94,25 +96,28 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(28, 121);
+            this.label4.Location = new System.Drawing.Point(37, 149);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Zaposlenik";
             // 
             // dateTimeNaruzbeDatum
             // 
-            this.dateTimeNaruzbeDatum.Location = new System.Drawing.Point(120, 35);
+            this.dateTimeNaruzbeDatum.Location = new System.Drawing.Point(160, 43);
+            this.dateTimeNaruzbeDatum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeNaruzbeDatum.Name = "dateTimeNaruzbeDatum";
-            this.dateTimeNaruzbeDatum.Size = new System.Drawing.Size(190, 20);
+            this.dateTimeNaruzbeDatum.Size = new System.Drawing.Size(252, 22);
             this.dateTimeNaruzbeDatum.TabIndex = 5;
             // 
             // btnNarudzbeNoviSpremi
             // 
             this.btnNarudzbeNoviSpremi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(606, 361);
+            this.btnNarudzbeNoviSpremi.Location = new System.Drawing.Point(808, 444);
+            this.btnNarudzbeNoviSpremi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeNoviSpremi.Name = "btnNarudzbeNoviSpremi";
-            this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeNoviSpremi.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeNoviSpremi.TabIndex = 6;
             this.btnNarudzbeNoviSpremi.Text = "Izdaj";
             this.btnNarudzbeNoviSpremi.UseVisualStyleBackColor = true;
@@ -121,9 +126,10 @@
             // btnNarudzbeNoviIzlaz
             // 
             this.btnNarudzbeNoviIzlaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(31, 360);
+            this.btnNarudzbeNoviIzlaz.Location = new System.Drawing.Point(41, 443);
+            this.btnNarudzbeNoviIzlaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeNoviIzlaz.Name = "btnNarudzbeNoviIzlaz";
-            this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeNoviIzlaz.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeNoviIzlaz.TabIndex = 7;
             this.btnNarudzbeNoviIzlaz.Text = "Izlaz";
             this.btnNarudzbeNoviIzlaz.UseVisualStyleBackColor = true;
@@ -134,9 +140,10 @@
             this.comboBoxDobavljac.DataSource = this.dobavljaciBindingSource;
             this.comboBoxDobavljac.DisplayMember = "naziv";
             this.comboBoxDobavljac.FormattingEnabled = true;
-            this.comboBoxDobavljac.Location = new System.Drawing.Point(121, 79);
+            this.comboBoxDobavljac.Location = new System.Drawing.Point(161, 97);
+            this.comboBoxDobavljac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDobavljac.Name = "comboBoxDobavljac";
-            this.comboBoxDobavljac.Size = new System.Drawing.Size(189, 21);
+            this.comboBoxDobavljac.Size = new System.Drawing.Size(251, 24);
             this.comboBoxDobavljac.TabIndex = 9;
             this.comboBoxDobavljac.ValueMember = "IdDobavljac";
             // 
@@ -155,9 +162,10 @@
             this.comboBoxZaposlenik.DataSource = this.zaposleniciBindingSource;
             this.comboBoxZaposlenik.DisplayMember = "prezime";
             this.comboBoxZaposlenik.FormattingEnabled = true;
-            this.comboBoxZaposlenik.Location = new System.Drawing.Point(121, 121);
+            this.comboBoxZaposlenik.Location = new System.Drawing.Point(161, 149);
+            this.comboBoxZaposlenik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxZaposlenik.Name = "comboBoxZaposlenik";
-            this.comboBoxZaposlenik.Size = new System.Drawing.Size(189, 21);
+            this.comboBoxZaposlenik.Size = new System.Drawing.Size(251, 24);
             this.comboBoxZaposlenik.TabIndex = 10;
             this.comboBoxZaposlenik.ValueMember = "OIB";
             // 
@@ -201,9 +209,11 @@
             // textNarudzbeIznos
             // 
             this.textNarudzbeIznos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textNarudzbeIznos.Location = new System.Drawing.Point(542, 122);
+            this.textNarudzbeIznos.Location = new System.Drawing.Point(723, 150);
+            this.textNarudzbeIznos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textNarudzbeIznos.Name = "textNarudzbeIznos";
-            this.textNarudzbeIznos.Size = new System.Drawing.Size(139, 22);
+            this.textNarudzbeIznos.ReadOnly = true;
+            this.textNarudzbeIznos.Size = new System.Drawing.Size(184, 26);
             this.textNarudzbeIznos.TabIndex = 11;
             // 
             // lijekoviBindingSource4
@@ -214,9 +224,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(372, 361);
+            this.button1.Location = new System.Drawing.Point(496, 444);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 36);
+            this.button1.Size = new System.Drawing.Size(99, 44);
             this.button1.TabIndex = 13;
             this.button1.Text = "Dodaj";
             this.button1.UseVisualStyleBackColor = true;
@@ -225,9 +236,10 @@
             // btnOsvjezi
             // 
             this.btnOsvjezi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnOsvjezi.Location = new System.Drawing.Point(487, 361);
+            this.btnOsvjezi.Location = new System.Drawing.Point(649, 444);
+            this.btnOsvjezi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOsvjezi.Name = "btnOsvjezi";
-            this.btnOsvjezi.Size = new System.Drawing.Size(78, 36);
+            this.btnOsvjezi.Size = new System.Drawing.Size(104, 44);
             this.btnOsvjezi.TabIndex = 14;
             this.btnOsvjezi.Text = "Osvježi";
             this.btnOsvjezi.UseVisualStyleBackColor = true;
@@ -237,9 +249,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(436, 125);
+            this.label2.Location = new System.Drawing.Point(581, 154);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 16);
+            this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "Ukupan iznos";
             // 
@@ -256,9 +269,10 @@
             this.kolicina,
             this.iznos});
             this.dataGridView2.DataSource = this.lijekoviBindingSource4;
-            this.dataGridView2.Location = new System.Drawing.Point(31, 167);
+            this.dataGridView2.Location = new System.Drawing.Point(41, 206);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(650, 176);
+            this.dataGridView2.Size = new System.Drawing.Size(867, 217);
             this.dataGridView2.TabIndex = 16;
             // 
             // serijskiBrojDataGridViewTextBoxColumn1
@@ -297,9 +311,9 @@
             // 
             // FormNarudzbeNovi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 412);
+            this.ClientSize = new System.Drawing.Size(957, 507);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnOsvjezi);
@@ -313,6 +327,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormNarudzbeNovi";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Nova narudžba";

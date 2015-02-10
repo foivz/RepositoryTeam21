@@ -61,10 +61,12 @@
             this.idDobavljacDataGridViewTextBoxColumn,
             this.oIBDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.narudzbeBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 37);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 170);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(727, 209);
             this.dataGridView1.TabIndex = 0;
             // 
             // idNarudzbeDataGridViewTextBoxColumn
@@ -119,9 +121,10 @@
             // btnNarudzbeNatrag
             // 
             this.btnNarudzbeNatrag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeNatrag.Location = new System.Drawing.Point(21, 218);
+            this.btnNarudzbeNatrag.Location = new System.Drawing.Point(28, 268);
+            this.btnNarudzbeNatrag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeNatrag.Name = "btnNarudzbeNatrag";
-            this.btnNarudzbeNatrag.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeNatrag.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeNatrag.TabIndex = 1;
             this.btnNarudzbeNatrag.Text = "Natrag";
             this.btnNarudzbeNatrag.UseVisualStyleBackColor = true;
@@ -130,9 +133,10 @@
             // btnNarudzbeNovi
             // 
             this.btnNarudzbeNovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeNovi.Location = new System.Drawing.Point(275, 218);
+            this.btnNarudzbeNovi.Location = new System.Drawing.Point(367, 268);
+            this.btnNarudzbeNovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeNovi.Name = "btnNarudzbeNovi";
-            this.btnNarudzbeNovi.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeNovi.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeNovi.TabIndex = 2;
             this.btnNarudzbeNovi.Text = "Nova";
             this.btnNarudzbeNovi.UseVisualStyleBackColor = true;
@@ -141,9 +145,10 @@
             // btnNarudzbeIzmijeni
             // 
             this.btnNarudzbeIzmijeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeIzmijeni.Location = new System.Drawing.Point(385, 218);
+            this.btnNarudzbeIzmijeni.Location = new System.Drawing.Point(513, 268);
+            this.btnNarudzbeIzmijeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeIzmijeni.Name = "btnNarudzbeIzmijeni";
-            this.btnNarudzbeIzmijeni.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeIzmijeni.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeIzmijeni.TabIndex = 3;
             this.btnNarudzbeIzmijeni.Text = "Izmijeni";
             this.btnNarudzbeIzmijeni.UseVisualStyleBackColor = true;
@@ -152,9 +157,10 @@
             // btnNarudzbeIzbrisi
             // 
             this.btnNarudzbeIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNarudzbeIzbrisi.Location = new System.Drawing.Point(491, 218);
+            this.btnNarudzbeIzbrisi.Location = new System.Drawing.Point(655, 268);
+            this.btnNarudzbeIzbrisi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNarudzbeIzbrisi.Name = "btnNarudzbeIzbrisi";
-            this.btnNarudzbeIzbrisi.Size = new System.Drawing.Size(75, 36);
+            this.btnNarudzbeIzbrisi.Size = new System.Drawing.Size(100, 44);
             this.btnNarudzbeIzbrisi.TabIndex = 4;
             this.btnNarudzbeIzbrisi.Text = "Izbriši";
             this.btnNarudzbeIzbrisi.UseVisualStyleBackColor = true;
@@ -162,14 +168,15 @@
             // 
             // FormNarudzbe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 275);
+            this.ClientSize = new System.Drawing.Size(787, 338);
             this.Controls.Add(this.btnNarudzbeIzbrisi);
             this.Controls.Add(this.btnNarudzbeIzmijeni);
             this.Controls.Add(this.btnNarudzbeNovi);
             this.Controls.Add(this.btnNarudzbeNatrag);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormNarudzbe";
             this.Text = "Narudžbe";
             this.Load += new System.EventHandler(this.FormNarudzbe_Load);
